@@ -1,0 +1,33 @@
+{
+    "顶级竞赛科研型人才": {
+        "precondition": [
+            {
+                "dimension": "学业表现",
+                "question_list":[1,2,3,4,5,6,7,8,9,10],
+                "score_threshold":15
+            },
+            {
+                "dimension": "学能表现",
+                "question_list":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+                "score_threshold":27
+            }
+        ],
+        "dimension":"综合素质",
+        "question_list":[1,2,3,4,5,6,7,8]
+    },
+    "社会公众影响型人才": {
+        "precondition": [],
+        "dimension":"综合素质",
+        "question_list":[9,10,11,12,13,14,15,16]
+    },
+    "人文艺术型人才": {
+        "precondition": [],
+        "dimension":"体育人文艺术",
+        "question_list":[9,10,11,12,13,14,15,16]
+    },
+    "体育竞技型人才": {
+        "precondition": [],
+        "dimension":"体育人文艺术",
+        "question_list":[1,2,3,4,5,6,7,8]
+    }
+}

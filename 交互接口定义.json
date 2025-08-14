@@ -1,0 +1,111 @@
+### 六大维度雷达图 & 标签 & 画像
+{
+    "input":{
+        "student_info": {
+            "name": "姓名",
+            "gender": "性别",
+            "school": "学校",
+            "school_type": "学校类型",
+            "current_grade": "年级",
+            "city_location": "所在城市",
+            "college_goal_path": "升学目标路径",
+            "id": "全局唯一id"
+        },
+        "eval_result": "评测结果，和demo格式保持一致即可"
+    },
+    "output":{
+        "eval_dimension": {
+            ### 六大评测维度
+            "性格特质": {
+                "radar_score":{
+                    "气质类型": 100,
+                    "社交表现": 100,
+                    "动机驱动": 100,
+                    ...
+                },
+                "tag":{
+                    "气质类型": ["活跃型", "稳定"],
+                    "社交表现": ["社交敏感", "依附"],
+                    "动机驱动": ["安于现状", "外部激励"],
+                    ...
+                }
+            },
+            "学业表现": {},
+            ...
+        },
+        "english_ablity": {
+            "level": "英语等级",
+            "rate": "英语分档：A级、B级、C级"
+        },
+        "profile": {
+            "profile_type": "主画像类型",
+            "sub_profile_type": "次画像类型",
+            "description": "画像短描述"
+        },
+        "keyword": "核心关键词",
+        "academic_direction": "专业方向",
+        "swot": {
+            "strength": "优势",
+            "weakness": "劣势",
+            "opportunity": "机遇",
+            "threat": "挑战"
+        }
+    }
+}
+
+### 成长建议
+{
+    "input":{
+        "student_info": {
+            "name": "姓名",
+            "gender": "性别",
+            "school": "学校",
+            "school_type": "学校类型",
+            "current_grade": "年级",
+            "city_location": "所在城市",
+            "college_goal_path": "升学目标路径",
+            "subject_interest": "学生兴趣学科",
+            "profile_type": "主画像",
+            "sub_profile_type": "次画像",
+            "english_level": "英语能力等级",
+            "rate": "档位",
+            "open_questions_response": "开放式问题回答",
+            "id": "全局唯一id"
+        },
+        "eval_result": "评测结果，和demo格式保持一致即可"
+    },
+    "output": [
+        ### 从当前年级开始一直到G12
+        "G5": {
+            "本科推荐院校": xxx,
+            "学年目标": xxx,
+            "推荐资源": xxx,
+            "应完成的项目": xxx,
+            "升学节点提示": xxx,
+            "延续性建议": xxx,
+            "英语进阶目标": xxx,
+            "特别提醒": xxx
+        },
+        "G6": {
+            "本科推荐院校": xxx,
+            "学年目标": xxx,
+            "推荐资源": xxx,
+            "应完成的项目": xxx,
+            "升学节点提示": xxx,
+            "延续性建议": xxx,
+            "英语进阶目标": xxx,
+            "特别提醒": xxx
+        },
+        ...
+        "G12": {
+            "本科推荐院校": xxx,
+            "学年目标": xxx,
+            "推荐资源": xxx,
+            "应完成的项目": xxx,
+            "升学节点提示": xxx,
+            "延续性建议": xxx,
+            "英语进阶目标": xxx,
+            "特别提醒": xxx
+        }
+    ]
+}
