@@ -1,0 +1,32 @@
+nohup: python: No such file or directory
+ * Serving Flask app 'run_app'
+ * Debug mode: on
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+On macOS, try disabling the 'AirPlay Receiver' service from System Preferences -> General -> AirDrop & Handoff.
+ * Serving Flask app 'run_app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.50.144:5001
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 521-169-329
+ * Detected change in '/Users/rafantasy/Documents/低龄规划项目/ai_based_education/test.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 521-169-329
+Traceback (most recent call last):
+  File "/Users/rafantasy/Documents/低龄规划项目/ai_based_education/run_app.py", line 149, in <module>
+    app.run('0.0.0.0',port=5001,debug=True)
+  File "/Users/rafantasy/Library/Python/3.9/lib/python/site-packages/flask/app.py", line 662, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "/Users/rafantasy/Library/Python/3.9/lib/python/site-packages/werkzeug/serving.py", line 1115, in run_simple
+    run_with_reloader(
+  File "/Users/rafantasy/Library/Python/3.9/lib/python/site-packages/werkzeug/_reloader.py", line 459, in run_with_reloader
+    ensure_echo_on()
+  File "/Users/rafantasy/Library/Python/3.9/lib/python/site-packages/werkzeug/_reloader.py", line 439, in ensure_echo_on
+    termios.tcsetattr(sys.stdin, termios.TCSANOW, attributes)
+termios.error: (4, 'Interrupted system call')
