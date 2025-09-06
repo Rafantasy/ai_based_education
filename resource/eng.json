@@ -1,0 +1,56 @@
+{
+	"public_school":
+		[
+		  {
+		    "grade": ["G1","G2"],
+		    "cefr_level": "A1"
+		  },
+		  {
+		    "grade": ["G3","G4"],
+		    "cefr_level": "A2"
+		  },
+		  {
+		    "grade": ["G5","G6"],
+		    "cefr_level": "A2+,B1"
+		  },
+		  {
+		    "grade": ["G7","G8","G9"],
+		    "cefr_level": "B1+"
+		  },
+		  {
+		    "grade": ["G10","G11","G12"],
+		    "cefr_level": "B2"
+		  },
+		  {
+		    "grade": ["G12+"],
+		    "cefr_level": "C1,C2"
+		  }
+		],
+    "private_school":
+		[
+		  {
+		    "grade": ["G1","G2"],
+		    "cefr_level": "A1"
+		  },
+		  {
+		    "grade": ["G3","G4"],
+		    "cefr_level": "A2"
+		  },
+		  {
+		    "grade": ["G5","G6"],
+		    "cefr_level": "B1"
+		  },
+		  {
+		    "grade": ["G7","G8"],
+		    "cefr_level": "B2"
+		  },
+		  {
+		    "grade": ["G9"],
+		    "cefr_level": "C1"
+		  },
+		  {
+		    "grade": ["G10","G11","G12"],
+		    "cefr_level": "C2"
+		  }
+		]
+}

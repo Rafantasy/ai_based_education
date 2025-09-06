@@ -1,32 +1,2244 @@
-nohup: python: No such file or directory
- * Serving Flask app 'run_app'
- * Debug mode: on
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-On macOS, try disabling the 'AirPlay Receiver' service from System Preferences -> General -> AirDrop & Handoff.
  * Serving Flask app 'run_app'
  * Debug mode: on
 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5001
- * Running on http://192.168.50.144:5001
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.25.21.92:5000
 [33mPress CTRL+C to quit[0m
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 521-169-329
- * Detected change in '/Users/rafantasy/Documents/低龄规划项目/ai_based_education/test.py', reloading
+ * Debugger PIN: 995-271-986
+127.0.0.1 - - [04/Sep/2025 13:34:20] "POST /open_question HTTP/1.1" 200 -
+ * Serving Flask app 'run_app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.25.21.92:5000
+[33mPress CTRL+C to quit[0m
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 521-169-329
+ * Debugger PIN: 995-271-986
+--- Logging error ---
 Traceback (most recent call last):
-  File "/Users/rafantasy/Documents/低龄规划项目/ai_based_education/run_app.py", line 149, in <module>
-    app.run('0.0.0.0',port=5001,debug=True)
-  File "/Users/rafantasy/Library/Python/3.9/lib/python/site-packages/flask/app.py", line 662, in run
-    run_simple(t.cast(str, host), port, self, **options)
-  File "/Users/rafantasy/Library/Python/3.9/lib/python/site-packages/werkzeug/serving.py", line 1115, in run_simple
-    run_with_reloader(
-  File "/Users/rafantasy/Library/Python/3.9/lib/python/site-packages/werkzeug/_reloader.py", line 459, in run_with_reloader
-    ensure_echo_on()
-  File "/Users/rafantasy/Library/Python/3.9/lib/python/site-packages/werkzeug/_reloader.py", line 439, in ensure_echo_on
-    termios.tcsetattr(sys.stdin, termios.TCSANOW, attributes)
-termios.error: (4, 'Interrupted system call')
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+127.0.0.1 - - [04/Sep/2025 13:36:00] "POST /open_question HTTP/1.1" 200 -
+ * Serving Flask app 'run_app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.25.21.92:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+127.0.0.1 - - [04/Sep/2025 13:37:07] "POST /open_question HTTP/1.1" 200 -
+ * Detected change in '/root/code/ai_based_education/test.py', reloading
+input_check_result: False
+eval_result [{'question_section_name': '性格特征', 'question_type': 2, 'question': '如果让你描述一下孩子的性格（优点和短板），你会怎样描述？', 'answer': '我觉得自己挺开朗的，愿意帮助别人，但有时候太急躁。'}]
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+127.0.0.1 - - [04/Sep/2025 13:38:07] "POST /instant_profile HTTP/1.1" 200 -
+ * Detected change in '/root/code/ai_based_education/run_app.py', reloading
+input_check_result: False
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Serving Flask app 'run_app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.25.21.92:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+127.0.0.1 - - [04/Sep/2025 13:39:44] "POST /instant_profile HTTP/1.1" 200 -
+ * Serving Flask app 'run_app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.25.21.92:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+127.0.0.1 - - [04/Sep/2025 13:40:17] "POST /instant_profile HTTP/1.1" 200 -
+ * Detected change in '/root/code/ai_based_education/test.py', reloading
+input_check_result: False
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+127.0.0.1 - - [04/Sep/2025 13:40:44] "POST /swot HTTP/1.1" 200 -
+ * Detected change in '/root/code/ai_based_education/test.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Serving Flask app 'run_app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.25.21.92:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+127.0.0.1 - - [04/Sep/2025 13:42:05] "[35m[1mPOST /growth_advice HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 137, in produe_growth_advice
+    rules = get_growth_advice_rules(request.json)
+  File "/root/code/ai_based_education/main.py", line 72, in get_growth_advice_rules
+    res['name'] = req['name']
+KeyError: 'name'
+ * Detected change in '/root/code/ai_based_education/run_app.py', reloading
+input_check_result: False
+<class 'int'>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Serving Flask app 'run_app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.25.21.92:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+127.0.0.1 - - [04/Sep/2025 13:42:50] "POST /growth_advice HTTP/1.1" 200 -
+198.235.24.34 - - [04/Sep/2025 13:42:50] "[33mGET / HTTP/1.1[0m" 404 -
+ * Detected change in '/root/code/ai_based_education/test.py', reloading
+input_check_result: False
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Detected change in '/root/code/ai_based_education/test.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Detected change in '/root/code/ai_based_education/test.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Detected change in '/root/code/ai_based_education/test.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+127.0.0.1 - - [04/Sep/2025 13:47:03] "POST /instant_profile HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [04/Sep/2025 13:55:26] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [04/Sep/2025 13:56:52] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [04/Sep/2025 13:57:38] "POST /open_question HTTP/1.1" 200 -
+111.9.62.28 - - [04/Sep/2025 13:58:50] "POST /instant_profile HTTP/1.1" 200 -
+111.9.62.28 - - [04/Sep/2025 14:00:42] "[31m[1mGET /swot HTTP/1.1[0m" 405 -
+111.9.62.28 - - [04/Sep/2025 14:01:25] "[31m[1mGET /swot HTTP/1.1[0m" 405 -
+111.9.62.28 - - [04/Sep/2025 14:01:33] "POST /swot HTTP/1.1" 200 -
+111.9.62.28 - - [04/Sep/2025 14:02:52] "POST /growth_advice HTTP/1.1" 200 -
+96.126.104.20 - - [04/Sep/2025 14:03:06] code 400, message Bad request version ('â')
+96.126.104.20 - - [04/Sep/2025 14:03:06] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03\x08\x15Üã¨nûÏM°CJ`³ß~\x19\x09Lu\x0e\x09b\x83Ev$\x89®ulf f¶äÞ\x8bÕ\x17#¥;7uX\x85â[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [04/Sep/2025 14:03:07] "[33mGET /signin HTTP/1.1[0m" 404 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [04/Sep/2025 14:04:29] "POST /open_question HTTP/1.1" 200 -
+64.227.159.215 - - [04/Sep/2025 15:19:59] "[33mGET / HTTP/1.1[0m" 404 -
+64.227.159.215 - - [04/Sep/2025 15:19:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+59.82.21.118 - - [04/Sep/2025 15:55:18] "[33mGET / HTTP/1.1[0m" 404 -
+96.126.104.20 - - [04/Sep/2025 17:56:14] code 400, message Bad request version ('À\x13À')
+96.126.104.20 - - [04/Sep/2025 17:56:14] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03\x16xmêQ?GDÐ~lèÜè\x0c¬\x07ä8\x0c²ÞøH­¾ÀS`Xîa T×\x8eU\x06\x8dZF&#\x01v;p\x9eFpO\x8a9Èµ\x1dóâ\x16ï®1ß£^\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [04/Sep/2025 17:56:15] "[33mGET /signin HTTP/1.1[0m" 404 -
+59.82.21.67 - - [04/Sep/2025 18:11:02] "[33mGET / HTTP/1.1[0m" 404 -
+167.94.145.98 - - [04/Sep/2025 20:54:49] code 400, message Bad request version ('³®\x8b\x1bòMQ\x04Ce)`ÎB')
+167.94.145.98 - - [04/Sep/2025 20:54:49] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03Ocêa,f\x84º<\x03fLñÉl\x16\x15á,\x1e\x05<\x0d\x87õ=\x86\x9f#¥ºö ³®\x8b\x1bòMQ\x04Ce)`ÎB[0m" HTTPStatus.BAD_REQUEST -
+167.94.145.98 - - [04/Sep/2025 20:54:52] "[33mGET / HTTP/1.1[0m" 404 -
+167.94.145.98 - - [04/Sep/2025 20:54:56] "[33mGET / HTTP/1.1[0m" 404 -
+167.94.145.98 - - [04/Sep/2025 20:54:57] code 505, message Invalid HTTP version (2.0)
+167.94.145.98 - - [04/Sep/2025 20:54:57] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.145.98 - - [04/Sep/2025 20:55:01] code 505, message Invalid HTTP version (2.0)
+167.94.145.98 - - [04/Sep/2025 20:55:01] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.145.98 - - [04/Sep/2025 20:55:02] "[33mGET /login HTTP/1.1[0m" 404 -
+96.126.104.20 - - [04/Sep/2025 21:59:30] code 400, message Bad request version ('À\x13À')
+96.126.104.20 - - [04/Sep/2025 21:59:30] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03<k\x907\x1e¾sS? i\x95OBv]Ï\x92#´\x08î\x17\x03\x9fÒ\x87Ë\x13©.c Uß¡0kZfR1\x14x×UÑò\x02+©¹\x0fß\x0e\x97+\x8cí\x0bþ\x17Âr\x9d\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [04/Sep/2025 21:59:31] "[33mGET /signin HTTP/1.1[0m" 404 -
+65.49.1.132 - - [04/Sep/2025 22:01:55] "[33mGET / HTTP/1.1[0m" 404 -
+65.49.1.133 - - [04/Sep/2025 22:02:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+195.184.76.24 - - [04/Sep/2025 23:11:43] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x03\x01¦\x01\x00\x01¢\x03\x03\x9d\x8a¿*\x18iß\x82øó\x04Ý´¯ÏL\x02Ï\x13\x0e-\x86\x19Ó9ø©6\x13¯Ò\x9e')
+195.184.76.24 - - [04/Sep/2025 23:11:43] "[35m[1m\x16\x03\x03\x01¦\x01\x00\x01¢\x03\x03\x9d\x8a¿*\x18iß\x82øó\x04Ý´¯ÏL\x02Ï\x13\x0e-\x86\x19Ó9ø©6\x13¯Ò\x9e \x95[0m" HTTPStatus.BAD_REQUEST -
+195.184.76.110 - - [04/Sep/2025 23:11:47] "[33mGET / HTTP/1.1[0m" 404 -
+195.184.76.166 - - [04/Sep/2025 23:24:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+91.196.152.101 - - [05/Sep/2025 01:41:50] code 400, message Bad request version ('À#À¬À®À+À')
+91.196.152.101 - - [05/Sep/2025 01:41:50] "[35m[1m\x16\x03\x03\x01¦\x01\x00\x01¢\x03\x03¤8\x7f@?*=¤úÚ"=\x90\x9f\x8cÿ#\x0fø.­!\x7f¤\x99UóKã\x9d¶, (ùB¢\x18#5ôÎ\x15O\x03y\x87\x8dãëÜ9óÔó\x0c\x81ÿk}E\x9dBª\x84\x00\x8a\x00\x16\x003\x00gÀ\x9eÀ¢\x00\x9e\x009\x00kÀ\x9fÀ£\x00\x9f\x00E\x00¾\x00\x88\x00Ä\x00\x9aÀ\x08À\x09À#À¬À®À+À[0m" HTTPStatus.BAD_REQUEST -
+91.196.152.14 - - [05/Sep/2025 01:41:55] "[33mGET / HTTP/1.1[0m" 404 -
+91.196.152.101 - - [05/Sep/2025 01:50:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+196.251.86.195 - - [05/Sep/2025 01:50:58] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+196.251.86.195 - - [05/Sep/2025 01:50:58] "[35m[1m\x05\x02\x00\x02[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [05/Sep/2025 02:04:30] code 400, message Bad request version ('À\x13À')
+96.126.104.20 - - [05/Sep/2025 02:04:30] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03ù\x11\x91èþ\x0f<M~Ä2¤n\x97û²c(Òã;\x97\x04öfò´\x95$L\x8eE \x85èFùZvÃ\x98\x14A\x99àF\x11l-^S\x08}ç;éZÝjÁàÌîþ|\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [05/Sep/2025 02:04:31] "[33mGET /signin HTTP/1.1[0m" 404 -
+147.185.133.149 - - [05/Sep/2025 04:05:16] code 400, message Bad request version ('À\x13À')
+147.185.133.149 - - [05/Sep/2025 04:05:16] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03¨äF\x9cNØoÂ¬|ÌtÁ©j×Ô\x98+ò\x1f\x08­²\x1b\x1a\x1e½+\x1f µ \x87\x0fIÛ,<\x9bJ\x83±)Ä\x82ö8Kç\x07_ÞÙ1\x1f®\x87¹$ÿ=\x19g"\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+147.185.133.149 - - [05/Sep/2025 04:05:16] code 400, message Bad request version ('À(À$À\x14À')
+147.185.133.149 - - [05/Sep/2025 04:05:16] "[35m[1m\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03#ÊÍ\x07T\x00\x97&Y,\x98¡$\x9a ü»rÈ4lç\x01¹r\x92\x0b?Hn\x7f¸\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À[0m" HTTPStatus.BAD_REQUEST -
+205.210.31.19 - - [05/Sep/2025 04:08:39] "[33mGET / HTTP/1.1[0m" 404 -
+96.126.104.20 - - [05/Sep/2025 05:59:25] code 400, message Bad request version ('À\x13À')
+96.126.104.20 - - [05/Sep/2025 05:59:25] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03ª°N\x82v>Òg\x90ûýíÙ\x12JÊ³\x881o\x7feU\x18\x9e<y9ß¢pí f\x13 e\x153©Ü\x97×\x0fÿ)¶?¯\x80\x01\x1b[\x86laÚ"Ðþ\x0214Dj\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [05/Sep/2025 05:59:26] "[33mGET /signin HTTP/1.1[0m" 404 -
+198.235.24.13 - - [05/Sep/2025 08:01:03] "[33mGET / HTTP/1.0[0m" 404 -
+66.175.213.4 - - [05/Sep/2025 08:14:46] code 400, message Bad request syntax ('\x16\x03\x01\x01')
+66.175.213.4 - - [05/Sep/2025 08:14:46] "[35m[1m\x16\x03\x01\x01[0m" HTTPStatus.BAD_REQUEST -
+66.175.213.4 - - [05/Sep/2025 08:14:46] code 400, message Bad request syntax ('\x16\x03\x01\x01')
+66.175.213.4 - - [05/Sep/2025 08:14:46] "[35m[1m\x16\x03\x01\x01[0m" HTTPStatus.BAD_REQUEST -
+198.235.24.42 - - [05/Sep/2025 08:33:47] "[33mGET / HTTP/1.1[0m" 404 -
+45.33.14.5 - - [05/Sep/2025 08:37:16] "[33mGET / HTTP/1.1[0m" 404 -
+172.236.127.133 - - [05/Sep/2025 08:37:31] "[33mGET / HTTP/1.1[0m" 404 -
+ * Detected change in '/root/code/ai_based_education/prompt_template.py', reloading
+input_check_result: False
+eval_result 评测结果，和demo格式保持一致即可
+input_check_result: False
+eval_result [{'question_section_name': '性格特征', 'question_type': 2, 'question': '问题', 'answer': '答案'}]
+input_check_result: False
+eval_result [{'question_section_name': '性格特征', 'question_type': 2, 'question': '问题', 'answer': '答案'}]
+input_check_result: False
+input_check_result: False
+input_check_result: False
+eval_result [{'question_section_name': '性格特征', 'question_type': 2, 'question': '问题', 'answer': '答案'}]
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Detected change in '/root/code/ai_based_education/main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 09:08:22] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+47.96.17.121 - - [05/Sep/2025 09:10:54] "POST /open_question HTTP/1.1" 200 -
+116.62.170.223 - - [05/Sep/2025 09:11:55] "POST /instant_profile HTTP/1.1" 200 -
+47.111.13.228 - - [05/Sep/2025 09:12:00] "POST /swot HTTP/1.1" 200 -
+47.110.249.186 - - [05/Sep/2025 09:12:06] "POST /growth_advice HTTP/1.1" 200 -
+116.62.78.94 - - [05/Sep/2025 09:19:04] "POST /growth_advice HTTP/1.1" 200 -
+96.126.104.20 - - [05/Sep/2025 10:02:07] code 400, message Bad request version ('À\x13À')
+96.126.104.20 - - [05/Sep/2025 10:02:07] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x032\x11T2MfX\x9b\x8e\x1eëä|\x85s?Øþ\x94i)\x93Ã\x0b\x03Ì°\x9f?\x9bº? %D ü6\x92)eEô5å0\x18ñJÿìãÔ!à°gÄÿ\x7f\x1b()ýÃ\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [05/Sep/2025 10:02:08] "[33mGET /signin HTTP/1.1[0m" 404 -
+178.159.37.112 - - [05/Sep/2025 10:26:37] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+178.159.37.112 - - [05/Sep/2025 10:26:37] "[35m[1m\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+2.57.122.89 - - [05/Sep/2025 10:47:23] code 400, message Bad request syntax ('SSH-2.0-Go')
+2.57.122.89 - - [05/Sep/2025 10:47:23] "[35m[1mSSH-2.0-Go[0m" HTTPStatus.BAD_REQUEST -
+196.251.83.136 - - [05/Sep/2025 10:50:30] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+196.251.83.136 - - [05/Sep/2025 10:50:30] "[35m[1m\x05\x02\x00\x02[0m" HTTPStatus.BAD_REQUEST -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 11:03:27] "[35m[1mPOST /open_question HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 45, in produe_open_question_ans
+    res = get_open_question_summary(request.json)
+  File "/root/code/ai_based_education/main.py", line 48, in get_open_question_summary
+    dim = eval_result[0]['question_section_name']
+KeyError: 'question_section_name'
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 11:04:27] "[35m[1mPOST /open_question HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 45, in produe_open_question_ans
+    res = get_open_question_summary(request.json)
+  File "/root/code/ai_based_education/main.py", line 48, in get_open_question_summary
+    dim = eval_result[0]['question_section_name']
+KeyError: 'question_section_name'
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 11:06:13] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 11:07:32] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 11:10:55] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 11:12:42] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+120.27.154.98 - - [05/Sep/2025 11:13:37] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+223.85.219.47 - - [05/Sep/2025 11:25:53] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+223.85.219.47 - - [05/Sep/2025 11:35:27] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+223.85.219.47 - - [05/Sep/2025 11:36:38] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+223.85.219.47 - - [05/Sep/2025 11:42:55] "POST /open_question HTTP/1.1" 200 -
+3.132.23.201 - - [05/Sep/2025 11:51:29] "[33mGET / HTTP/1.1[0m" 404 -
+3.132.23.201 - - [05/Sep/2025 11:53:03] "[33mGET / HTTP/1.1[0m" 404 -
+3.132.23.201 - - [05/Sep/2025 11:54:37] code 400, message Bad request version ('À\x14À')
+3.132.23.201 - - [05/Sep/2025 11:54:37] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x92æ/U~t\x82ÿ t!qõ¥rJ*­FR\x15ívá`5¡6i\x18lþ\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+3.132.23.201 - - [05/Sep/2025 11:55:43] code 400, message Bad request syntax ('SSH-2.0-Go')
+3.132.23.201 - - [05/Sep/2025 11:55:43] "[35m[1mSSH-2.0-Go[0m" HTTPStatus.BAD_REQUEST -
+3.132.23.201 - - [05/Sep/2025 11:56:26] code 400, message Bad request version ('À\x14À')
+3.132.23.201 - - [05/Sep/2025 11:56:26] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03þ\x83\x147Ã,?ºõ¿\\\x0b\x06Å-\x18wÏ6\x98°¨íãMÌ¡a£»)H\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+35.203.211.197 - - [05/Sep/2025 12:10:02] code 400, message Bad request version ('À\x13À')
+35.203.211.197 - - [05/Sep/2025 12:10:02] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ÜeÿDw\x9c%XA]c«\x88&\x05\x08\x14fâFb¢f\x18EáAª!õ\x12Ù ÿÁ\x85\x99\x8a×ï©÷ðkÕ@ã0­!®©¹z3lr§\x07\x14ý\x8e<Ñx\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+35.203.211.197 - - [05/Sep/2025 12:10:02] code 400, message Bad request version ('À(À$À\x14À')
+35.203.211.197 - - [05/Sep/2025 12:10:02] "[35m[1m\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03 À®¹\x95æÖ\x17lOÊ7\x08GÜªÀÜw¦Á\x82aÂ\x09\x84\x84èWU\x90\x8f\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À[0m" HTTPStatus.BAD_REQUEST -
+64.62.156.222 - - [05/Sep/2025 13:09:39] "[33mGET / HTTP/1.1[0m" 404 -
+64.62.156.222 - - [05/Sep/2025 13:09:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 13:53:10] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 13:54:28] "POST /open_question HTTP/1.1" 200 -
+96.126.104.20 - - [05/Sep/2025 14:03:56] code 400, message Bad request version ('À\x13À')
+96.126.104.20 - - [05/Sep/2025 14:03:56] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03W±a\\j1ì¥w\x06n\x09Ý\x84^EÝþ§qûçØ1{,q\x07¢ÑHÒ çÁî\x06\x8c\x10[ùÂ\\=K\x0fÏ\x9aþ£5\x8fÈ²>"¿jEc\x9d\x83\x1e=£\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [05/Sep/2025 14:03:56] "[33mGET /signin HTTP/1.1[0m" 404 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 14:06:19] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 14:06:49] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 14:09:09] "POST /open_question HTTP/1.1" 200 -
+213.209.143.117 - - [05/Sep/2025 14:11:14] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+213.209.143.117 - - [05/Sep/2025 14:11:14] "[35m[1m\x05\x02\x00\x02[0m" HTTPStatus.BAD_REQUEST -
+178.159.37.112 - - [05/Sep/2025 14:13:58] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+178.159.37.112 - - [05/Sep/2025 14:13:58] "[35m[1m\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 14:15:03] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 14:17:29] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 14:18:21] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 14:18:57] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+111.9.62.28 - - [05/Sep/2025 14:19:29] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+223.85.219.47 - - [05/Sep/2025 14:26:51] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+223.85.219.47 - - [05/Sep/2025 14:27:10] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+223.85.219.47 - - [05/Sep/2025 14:27:44] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+223.85.219.47 - - [05/Sep/2025 14:28:24] "POST /open_question HTTP/1.1" 200 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/logging/__init__.py", line 1085, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 929, in format
+    return fmt.format(record)
+  File "/usr/lib64/python3.8/logging/__init__.py", line 668, in format
+    record.message = record.getMessage()
+  File "/usr/lib64/python3.8/logging/__init__.py", line 373, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib64/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib64/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.8/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/usr/lib64/python3.8/http/server.py", line 435, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.8/http/server.py", line 423, in handle_one_request
+    method()
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/usr/local/lib64/python3.8/site-packages/werkzeug/debug/__init__.py", line 343, in debug_application
+    app_iter = self.app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/root/code/ai_based_education/run_app.py", line 42, in produe_open_question_ans
+    logger.info('input req type:', type(request.json))
+Message: 'input req type:'
+Arguments: (<class 'dict'>,)
+223.85.219.47 - - [05/Sep/2025 14:29:07] "POST /open_question HTTP/1.1" 200 -
+205.210.31.91 - - [05/Sep/2025 15:28:35] "[33mGET / HTTP/1.0[0m" 404 -
+165.154.152.6 - - [05/Sep/2025 16:48:45] "[33mGET / HTTP/1.1[0m" 404 -
+165.154.152.6 - - [05/Sep/2025 16:48:45] code 400, message Bad request version ('À\x13À')
+165.154.152.6 - - [05/Sep/2025 16:48:45] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03Ò§àÂcÎY{\x91Ò-]Ìf`~\x95\x9dÂ¬\x92<ª\x90Z»p/ìnßL ®Íx\x15F\x15\x09Cþ­°ÎzÄ'\x1e\x157{\x09©ÌP{KJ\x13±|Íþö\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+165.154.152.6 - - [05/Sep/2025 16:48:46] code 400, message Bad request syntax ('\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03®î\x01\x954zÒ:ïm\x133&w\x82Sû\x17\x14?üh(\x9c÷½\x08Ê\x15n')
+165.154.152.6 - - [05/Sep/2025 16:48:46] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03®î\x01\x954zÒ:ïm\x133&w\x82Sû\x17\x14?üh(\x9c÷½\x08Ê\x15n[0m" HTTPStatus.BAD_REQUEST -
+165.154.152.6 - - [05/Sep/2025 16:48:54] code 400, message Bad request syntax ('{\x01\x00\x1613911111112À¨\x01\x01\x13\x90{')
+165.154.152.6 - - [05/Sep/2025 16:48:54] "[35m[1m{\x01\x00\x1613911111112À¨\x01\x01\x13\x90{[0m" HTTPStatus.BAD_REQUEST -
+165.154.152.6 - - [05/Sep/2025 16:48:55] "[33mGET / HTTP/1.0[0m" 404 -
+165.154.152.6 - - [05/Sep/2025 16:49:04] code 400, message Bad request syntax ('~\x00\x02\x00\x00\x02\x00\x00\x00\x00\x15\x00\x032~')
+165.154.152.6 - - [05/Sep/2025 16:49:04] "[35m[1m~\x00\x02\x00\x00\x02\x00\x00\x00\x00\x15\x00\x032~[0m" HTTPStatus.BAD_REQUEST -
+165.154.152.6 - - [05/Sep/2025 16:49:12] code 400, message Bad request syntax ('\x80Õ\x00\x00\x00\x05\x00+\x0e\x01\x00')
+165.154.152.6 - - [05/Sep/2025 16:49:12] "[35m[1m\x80Õ\x00\x00\x00\x05\x00+\x0e\x01\x00[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [05/Sep/2025 18:03:52] code 400, message Bad request version ('À\x13À')
+96.126.104.20 - - [05/Sep/2025 18:03:52] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03´+×oó\x1et±[\x02ø\x00\x80u¾\x05°ún°ù¢¸{$J\x98½\x0e½ºï «x\\º`\x93¯Ö¶¯)j\x8dàI\x07t¸;h(lw\x1d\x93\x97\x9d»{É}?\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [05/Sep/2025 18:03:52] "[33mGET /signin HTTP/1.1[0m" 404 -
+138.68.156.214 - - [05/Sep/2025 21:24:34] code 400, message Bad request version ('À\x14À')
+138.68.156.214 - - [05/Sep/2025 21:24:34] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03Þ\x9bX\x04O\x80»jDuäµ\x84ð¯aO \x98\x82\x0el«\\\x1aØ;~ qQ.\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+138.68.156.214 - - [05/Sep/2025 21:24:35] code 400, message Bad request syntax ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x033ouå\x83\x93RHv\x10EX~ðT')
+138.68.156.214 - - [05/Sep/2025 21:24:35] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x033ouå\x83\x93RHv\x10EX~ðT[0m" HTTPStatus.BAD_REQUEST -
+138.68.156.214 - - [05/Sep/2025 21:24:35] "[33mGET / HTTP/1.1[0m" 404 -
+167.94.138.113 - - [05/Sep/2025 22:01:26] code 400, message Bad request version ('À\x14À')
+167.94.138.113 - - [05/Sep/2025 22:01:26] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x1d®$ããm\x1a´C³Cí¶¬¬\x11Ó\x8eZ.¾5Q\x09\x97q1h%\x0cús \x00\x14#ñqp!Í¥·ÙP\x9f÷4Úií\x80/¸40,þb×èL\x09åK\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+167.94.138.113 - - [05/Sep/2025 22:01:27] "[33mGET / HTTP/1.1[0m" 404 -
+96.126.104.20 - - [05/Sep/2025 22:02:05] code 400, message Bad request version ('À\x13À')
+96.126.104.20 - - [05/Sep/2025 22:02:05] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03\x1d5ö2½\x07%U7>?o\x8fñ{ \x9cYL\x92Í;g\x8f·\x04§¢\x96ú2Õ ÿ°ls®û\x03¸æ^(EK\x19VÖ^Nyyq\x16]n¤\x8d¶µ\x06\x8dy#\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [05/Sep/2025 22:02:06] "[33mGET /signin HTTP/1.1[0m" 404 -
+20.40.250.19 - - [05/Sep/2025 22:19:16] "[33mGET /v2/ HTTP/1.1[0m" 404 -
+123.160.221.141 - - [05/Sep/2025 22:47:50] code 400, message Bad request version ('À\x13À')
+123.160.221.141 - - [05/Sep/2025 22:47:50] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03I\x06²ù¼\x99iÀYûøºe-\x83Ud]\x0e\x8d·b8´gÆÝ9dZ8f gÁ\x81i³öòË°©\x19NÖ½\x95g|püé<Z¡\x90T·é¥8'O;\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+123.160.221.141 - - [05/Sep/2025 22:48:00] "[33mGET / HTTP/1.1[0m" 404 -
+196.251.69.18 - - [06/Sep/2025 01:24:52] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+196.251.69.18 - - [06/Sep/2025 01:24:52] "[35m[1m\x05\x02\x00\x02[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [06/Sep/2025 01:54:42] code 400, message Bad request version ('À\x13À')
+96.126.104.20 - - [06/Sep/2025 01:54:42] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03èN\x9c>û\x96Ï\x11+¡]Z\x96·Áaimzùùæznµp\x84©\x8d{éù 'u4ßÛM\x98ä"\x80`mÃ¬ÒDmyEªDÏëëªj÷ \x156+\x1b\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [06/Sep/2025 01:54:43] "[33mGET /signin HTTP/1.1[0m" 404 -
+198.235.24.130 - - [06/Sep/2025 02:10:05] "[33mGET / HTTP/1.1[0m" 404 -
+45.156.128.156 - - [06/Sep/2025 05:06:37] "[33mGET / HTTP/1.1[0m" 404 -
+45.156.128.156 - - [06/Sep/2025 05:07:00] "[33mGET /cgi-bin/authLogin.cgi HTTP/1.1[0m" 404 -
+45.156.128.158 - - [06/Sep/2025 05:07:16] "[33mGET /api/session/properties HTTP/1.1[0m" 404 -
+96.126.104.20 - - [06/Sep/2025 05:54:28] code 400, message Bad request version ('Gljm')
+96.126.104.20 - - [06/Sep/2025 05:54:28] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03Flg6E¹àöNñz\x80wë" þý\x7fì)Ü#¬°\x07\x94WI\x13\x82± \x1cGljm[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [06/Sep/2025 05:54:29] "[33mGET /signin HTTP/1.1[0m" 404 -
+35.203.211.181 - - [06/Sep/2025 05:59:55] code 400, message Bad request syntax ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03æ#Z®w%s\x83')
+35.203.211.181 - - [06/Sep/2025 05:59:55] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03æ#Z®w%s\x83[0m" HTTPStatus.BAD_REQUEST -
+35.203.211.181 - - [06/Sep/2025 05:59:55] code 400, message Bad request version ('À(À$À\x14À')
+35.203.211.181 - - [06/Sep/2025 05:59:55] "[35m[1m\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03Z"\x8f\x88Méq6Ú\x95~\x02×Ì\x14\x11Ô\x91sª\x09c\x88Û]ì¥\x95\x0bÿ®@\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À[0m" HTTPStatus.BAD_REQUEST -
+167.94.145.101 - - [06/Sep/2025 06:28:25] code 400, message Bad request version ('À\x14À')
+167.94.145.101 - - [06/Sep/2025 06:28:25] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ÅYÝUDà9Èoà¨\x9eá\x98³ñ\x01[\x17Ç\x88t[Ä\x1bªÈJÕÌº¨ \x0bd*¾N£XÿgÞ\x18\x88«Âé\x14}`h\x8eg²\x87Wx=7\x9d\x84y0¥\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+167.94.145.101 - - [06/Sep/2025 06:28:29] "[33mGET / HTTP/1.1[0m" 404 -
+167.94.145.101 - - [06/Sep/2025 06:28:33] "[33mGET / HTTP/1.1[0m" 404 -
+167.94.145.101 - - [06/Sep/2025 06:28:33] code 505, message Invalid HTTP version (2.0)
+167.94.145.101 - - [06/Sep/2025 06:28:33] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.145.101 - - [06/Sep/2025 06:28:39] code 505, message Invalid HTTP version (2.0)
+167.94.145.101 - - [06/Sep/2025 06:28:39] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.145.101 - - [06/Sep/2025 06:28:39] "[33mGET /sitemap.xml HTTP/1.1[0m" 404 -
+101.133.136.80 - - [06/Sep/2025 08:10:46] "[33mGET / HTTP/1.0[0m" 404 -
+101.133.136.80 - - [06/Sep/2025 08:10:53] code 400, message Bad request version ('RTSP/1.0')
+101.133.136.80 - - [06/Sep/2025 08:10:53] "[35m[1mOPTIONS / RTSP/1.0[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:11:05] code 400, message Bad HTTP/0.9 request type ('\x00')
+101.133.136.80 - - [06/Sep/2025 08:11:05] "[35m[1m\x00\x1e\x00\x06\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x07version\x04bind\x00\x00\x10\x00\x03[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:11:12] code 400, message Bad request version ('0.12\x00')
+101.133.136.80 - - [06/Sep/2025 08:11:12] "[35m[1m\x00\x00\x00¤ÿSMBr\x00\x00\x00\x00\x08\x01@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x06\x00\x00\x01\x00\x00\x81\x00\x02PC NETWORK PROGRAM 1.0\x00\x02MICROSOFT NETWORKS 1.03\x00\x02MICROSOFT NETWORKS 3.0\x00\x02LANMAN1.0\x00\x02LM1.2X002\x00\x02Samba\x00\x02NT LANMAN 1.0\x00\x02NT LM 0.12\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:11:19] code 400, message Bad request version ('GetClassName\x00\x00\x00\x02\x04\x00\x00\x00\x00\x01\x00')
+101.133.136.80 - - [06/Sep/2025 08:11:19] "[35m[1m\x00\x00\x00\x1f\x00\x00\x00\x00\x00\x00\x00\x0cGetClassName\x00\x00\x00\x02\x04\x00\x00\x00\x00\x01\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:11:21] "[33mOPTIONS / HTTP/1.0[0m" 404 -
+101.133.136.80 - - [06/Sep/2025 08:11:31] code 400, message Bad request version ('\x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+101.133.136.80 - - [06/Sep/2025 08:11:31] "[35m[1m\x80\x00\x00(rþ\x1d\x13\x00\x00\x00\x00\x00\x00\x00\x02\x00\x01\x86 \x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:11:38] code 400, message Bad HTTP/0.9 request type ('\x00')
+101.133.136.80 - - [06/Sep/2025 08:11:38] "[35m[1m\x00\x0c\x00\x00\x10\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:11:40] code 400, message Bad request syntax ('EHLO')
+101.133.136.80 - - [06/Sep/2025 08:11:40] "[35m[1mEHLO[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:11:45] code 400, message Bad request syntax ('HELP')
+101.133.136.80 - - [06/Sep/2025 08:11:45] "[35m[1mHELP[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:11:51] code 400, message Bad request syntax ('\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00')
+101.133.136.80 - - [06/Sep/2025 08:11:51] "[35m[1m\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:11:56] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+101.133.136.80 - - [06/Sep/2025 08:11:56] "[35m[1m\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie: mstshash=nmap[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:12:01] code 400, message Bad request version ('\x00/\x00')
+101.133.136.80 - - [06/Sep/2025 08:12:01] "[35m[1m\x16\x03\x00\x00i\x01\x00\x00e\x03\x03U\x1c§ärandom1random2random3random4\x00\x00\x0c\x00/\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:12:08] code 400, message Bad HTTP/0.9 request type ('\x80\x9e\x01\x03\x01\x00u\x00\x00\x00')
+101.133.136.80 - - [06/Sep/2025 08:12:08] "[35m[1m\x80\x9e\x01\x03\x01\x00u\x00\x00\x00 \x00\x00f\x00\x00e\x00\x00d\x00\x00c\x00\x00b\x00\x00:\x00\x009\x00\x008\x00\x005\x00\x004\x00\x003\x00\x002\x00\x00/\x00\x00\x1b\x00\x00\x1a\x00\x00\x19\x00\x00\x18\x00\x00\x17\x00\x00\x16\x00\x00\x15\x00\x00\x14\x00\x00\x13\x00\x00\x12\x00\x00\x11\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:12:14] code 400, message Bad request syntax ('\x00\x00\x00qj\x81n0\x81k¡\x03\x02\x01\x05¢\x03\x02\x01')
+101.133.136.80 - - [06/Sep/2025 08:12:14] "[35m[1m\x00\x00\x00qj\x81n0\x81k¡\x03\x02\x01\x05¢\x03\x02\x01[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:12:25] code 400, message Bad HTTP/0.9 request type ('l\x00')
+101.133.136.80 - - [06/Sep/2025 08:12:25] "[35m[1ml\x00\x0b\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:12:27] "[33mGET /nice%20ports,/Trinity.txt.bak HTTP/1.0[0m" 404 -
+101.133.136.80 - - [06/Sep/2025 08:12:32] code 400, message Bad request syntax ('\x01default')
+101.133.136.80 - - [06/Sep/2025 08:12:32] "[35m[1m\x01default[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:12:39] code 400, message Bad request syntax ('0\x84\x00\x00\x00-\x02\x01\x07c\x84\x00\x00\x00$\x04\x00')
+101.133.136.80 - - [06/Sep/2025 08:12:39] "[35m[1m0\x84\x00\x00\x00-\x02\x01\x07c\x84\x00\x00\x00$\x04\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:12:51] code 400, message Bad HTTP/0.9 request type ('0')
+101.133.136.80 - - [06/Sep/2025 08:12:51] "[35m[1m0\x0c\x02\x01\x01`\x07\x02\x01\x02\x04\x00\x80\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:12:53] code 400, message Bad request version ('SIP/2.0')
+101.133.136.80 - - [06/Sep/2025 08:12:53] "[35m[1mOPTIONS sip:nm SIP/2.0[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:13:04] code 400, message Bad request syntax ('TNMP\x04\x00\x00\x00TNME\x00\x00\x04\x00')
+101.133.136.80 - - [06/Sep/2025 08:13:04] "[35m[1mTNMP\x04\x00\x00\x00TNME\x00\x00\x04\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:13:12] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00')
+101.133.136.80 - - [06/Sep/2025 08:13:12] "[35m[1m\x03\x00\x00\x0b\x06à\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:13:19] code 400, message Bad request syntax ('DmdT\x00\x00\x00\x17\x00\x00\x00\x01\x00\x00\x00\x00\x11\x11\x00ÿ\x01ÿ\x13')
+101.133.136.80 - - [06/Sep/2025 08:13:19] "[35m[1mDmdT\x00\x00\x00\x17\x00\x00\x00\x01\x00\x00\x00\x00\x11\x11\x00ÿ\x01ÿ\x13[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:13:25] code 400, message Bad HTTP/0.9 request type (':\x00\x00\x00/\x00\x00\x00\x02\x00\x00@\x02\x0f\x00\x01\x00=\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/\x00\x00\x00\x00\x00\x00\x00\x00\x00@')
+101.133.136.80 - - [06/Sep/2025 08:13:25] "[35m[1m:\x00\x00\x00/\x00\x00\x00\x02\x00\x00@\x02\x0f\x00\x01\x00=\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x1f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:13:32] code 400, message Bad request syntax ('DIST00000001ARGC00000005ARGV00000002ccARGV00000002-cARGV00000006nmap.cARGV00000002-oARGV00000006nmap.oDOTI00000000')
+101.133.136.80 - - [06/Sep/2025 08:13:32] "[35m[1mDIST00000001ARGC00000005ARGV00000002ccARGV00000002-cARGV00000006nmap.cARGV00000002-oARGV00000006nmap.oDOTI00000000[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:13:39] code 400, message Bad request syntax ('JRMI\x00\x02K')
+101.133.136.80 - - [06/Sep/2025 08:13:39] "[35m[1mJRMI\x00\x02K[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:13:46] code 400, message Bad request syntax ('\x01\x00\x00\x00\x01\x00\x00\x00\x08\x08')
+101.133.136.80 - - [06/Sep/2025 08:13:46] "[35m[1m\x01\x00\x00\x00\x01\x00\x00\x00\x08\x08[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:13:47] code 400, message Bad request version ('>')
+101.133.136.80 - - [06/Sep/2025 08:13:47] "[35m[1m< NTP/1.0 >[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:13:57] code 400, message Bad request version ('\x00{\x000\x000\x000\x000\x00A\x00A\x000\x000\x00-\x000\x00A\x000\x000\x00-\x000\x000\x00a\x000\x00-\x00A\x00A\x000\x00A\x00-\x000\x000\x000\x000\x00A\x000\x00A\x00A\x000\x00A\x00A\x000\x00}\x00\x00\x00àmß_')
+101.133.136.80 - - [06/Sep/2025 08:13:57] "[35m[1m\x01\x00\x00ýÎú\x0b° \x00\x00\x00MMS\x14\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x12\x00\x00\x00\x01\x00\x03\x00ðððð\x0b\x00\x04\x00\x1c\x00\x03\x00N\x00S\x00P\x00l\x00a\x00y\x00e\x00r\x00/\x009\x00.\x000\x00.\x000\x00.\x002\x009\x008\x000\x00;\x00 \x00{\x000\x000\x000\x000\x00A\x00A\x000\x000\x00-\x000\x00A\x000\x000\x00-\x000\x000\x00a\x000\x00-\x00A\x00A\x000\x00A\x00-\x000\x000\x000\x000\x00A\x000\x00A\x00A\x000\x00A\x00A\x000\x00}\x00\x00\x00àmß_[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:14:04] code 400, message Bad HTTP/0.9 request type ('\x00Z\x00\x00\x01\x00\x00\x00\x016\x01,\x00\x00\x08\x00\x7fÿ\x7f\x08\x00\x00\x00\x01\x00')
+101.133.136.80 - - [06/Sep/2025 08:14:04] "[35m[1m\x00Z\x00\x00\x01\x00\x00\x00\x016\x01,\x00\x00\x08\x00\x7fÿ\x7f\x08\x00\x00\x00\x01\x00 \x00:\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x004æ\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00(CONNECT_DATA=(COMMAND=version))[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:14:06] code 400, message Bad request syntax ('Subscribe')
+101.133.136.80 - - [06/Sep/2025 08:14:06] "[35m[1mSubscribe[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:14:11] code 400, message Bad request syntax ('Query')
+101.133.136.80 - - [06/Sep/2025 08:14:11] "[35m[1mQuery[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:14:17] code 400, message Bad request syntax ('\x05\x04\x00\x01\x02\x80\x05\x01\x00\x03')
+101.133.136.80 - - [06/Sep/2025 08:14:17] "[35m[1m\x05\x04\x00\x01\x02\x80\x05\x01\x00\x03[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:14:26] code 400, message Bad request syntax ('\x04\x01\x00\x16\x7f\x00\x00\x01root\x00')
+101.133.136.80 - - [06/Sep/2025 08:14:26] "[35m[1m\x04\x01\x00\x16\x7f\x00\x00\x01root\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:14:33] code 400, message Bad request version ('\x03\x00(\x00\x04ÿ\x08\x00\x01U\x00\x00\x00MSSQLServer\x00H\x0f\x00\x00')
+101.133.136.80 - - [06/Sep/2025 08:14:33] "[35m[1m\x12\x01\x004\x00\x00\x00\x00\x00\x00\x15\x00\x06\x01\x00\x1b\x00\x01\x02\x00\x1c\x00\x0c\x03\x00(\x00\x04ÿ\x08\x00\x01U\x00\x00\x00MSSQLServer\x00H\x0f\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:14:35] code 400, message Bad request syntax ('HELP')
+101.133.136.80 - - [06/Sep/2025 08:14:35] "[35m[1mHELP[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:14:41] code 400, message Bad request syntax ('stats')
+101.133.136.80 - - [06/Sep/2025 08:14:41] "[35m[1mstats[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:14:45] code 400, message Bad request version ('\x06\x00\x00\x00\x00\x00\x08\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x02\x00\x00\x00')
+101.133.136.80 - - [06/Sep/2025 08:14:45] "[35m[1m\x00\x00\x00\x01\x00\x00\x00\x13\x00\x00\x00\x02\x00\x00\x00$\x00\x00\x00\x0bservice_mgr\x00\x00\x00\x00\x02\x00\x00\x00\x13\x01\x08scanner \x04\x05nmap \x06\x00\x00\x00\x00\x00\x08\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x02\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:14:57] code 400, message Bad request version ('\x00\x00\x00\x04')
+101.133.136.80 - - [06/Sep/2025 08:14:57] "[35m[1m\x00\x00\x00\x00DB2DAS      \x01\x04\x00\x00\x00\x109z\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x0c\x00\x00\x00\x00\x00\x00\x0c\x00\x00\x00\x0c\x00\x00\x00\x04[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:15:05] code 400, message Bad request version ('\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00ÿ\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00ä\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x7f')
+101.133.136.80 - - [06/Sep/2025 08:15:05] "[35m[1m\x01Â\x00\x00\x00\x04\x00\x00¶\x01\x00\x00SQLDB2RA\x00\x01\x00\x00\x04\x01\x01\x00\x05\x00\x1d\x00\x88\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x09\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x09\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x08\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x01\x00\x00@\x00\x00\x00@\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x02\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x03\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00\x80\x00\x00\x00\x01\x08\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x10\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x10\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x04\x00\x00@\x00\x00\x00\x01\x09\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x09\x00\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x04\x00\x00\x00\x03\x00\x00\x80\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x04\x00\x00\x01\x00\x00\x80\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00@\x00\x00\x00\x00        \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00ÿ\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00ä\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x7f[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:15:11] code 400, message Bad request version ('1\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+101.133.136.80 - - [06/Sep/2025 08:15:11] "[35m[1mClient string for PARC version 1 Wire Encryption version 1\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:15:13] code 400, message Bad HTTP/0.9 request type ('<\x00K\x00\x00\x00')
+101.133.136.80 - - [06/Sep/2025 08:15:13] "[35m[1m<\x00K\x00\x00\x00 \x00\x00\x00\x00\x00\x00\x00\x00\x00ÿÿÿÿ\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:15:17] code 400, message Bad request syntax ('\x124\x00\x01')
+101.133.136.80 - - [06/Sep/2025 08:15:17] "[35m[1m\x124\x00\x01[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:15:27] code 400, message Bad request syntax ('\x00\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x0f\x00')
+101.133.136.80 - - [06/Sep/2025 08:15:27] "[35m[1m\x00\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x0f\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:15:28] code 400, message Bad request syntax ('serverstatus')
+101.133.136.80 - - [06/Sep/2025 08:15:28] "[35m[1mserverstatus[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:15:39] code 400, message Bad HTTP/0.9 request type ('Âååå\x9e')
+101.133.136.80 - - [06/Sep/2025 08:15:39] "[35m[1mÂååå\x9e ×¤¦ÐÕÝÜÈÖÝ×ÕÈÑÖ\x83\x80ÈÝ¤Ñ¡È¤ÒÕ×Ý£¤¡Ý¦×Ý\x98å[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:15:40] code 400, message Bad request syntax ('#ST')
+101.133.136.80 - - [06/Sep/2025 08:15:40] "[35m[1m#ST[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:15:50] code 400, message Bad request version ('\x00\x00\x00\x03\x00\x05nmap\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x00\x00\x00\x7f')
+101.133.136.80 - - [06/Sep/2025 08:15:50] "[35m[1m\x00\x94\x01<\x00\x00\x00d\x00e\x00\x00\x00=\x00\x06IEEEM\x00\x00lsqlexec\x00\x00\x00\x00\x00\x00\x069.280\x00\x00\x0cRDS#R000000\x00\x00\x05sqli\x00\x00\x00\x013\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x05nmap\x00\x00\x05nmap\x00ol\x00\x00\x00\x00\x00\x00\x00\x00\x00=tlitcp\x00\x00\x00\x00\x00\x01\x00h\x00\x0b\x00\x00\x00\x03\x00\x05nmap\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x00\x00\x00\x7f[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:15:59] code 400, message Bad request syntax ('\x002Ð\x01\x00\x01\x00,\x10A\x00\x04\x11^\x00\x04\x11m\x00\x04\x11Z\x00\x18\x14\x04\x14\x03\x00\x07$\x07\x00\x08$\x0f\x00\x08\x14@\x00\x08\x14t\x00\x08\x00\x04\x11G')
+101.133.136.80 - - [06/Sep/2025 08:15:59] "[35m[1m\x002Ð\x01\x00\x01\x00,\x10A\x00\x04\x11^\x00\x04\x11m\x00\x04\x11Z\x00\x18\x14\x04\x14\x03\x00\x07$\x07\x00\x08$\x0f\x00\x08\x14@\x00\x08\x14t\x00\x08\x00\x04\x11G[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:16:00] code 400, message Bad HTTP/0.9 request type ('TSH')
+101.133.136.80 - - [06/Sep/2025 08:16:00] "[35m[1mTSH \x00\x00\x00ì\x01\x011\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x11\x04¸\x00\x00ID  [0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:16:05] "[33mGET /server-info HTTP/1.1[0m" 404 -
+101.133.136.80 - - [06/Sep/2025 08:16:14] code 400, message Bad request syntax ('A\x00\x00\x00:0\x00\x00ÿÿÿÿÔ\x07\x00\x00\x00\x00\x00\x00test.$cmd\x00\x00\x00\x00\x00ÿÿÿÿ\x1b\x00\x00\x00\x01serverStatus\x00\x00\x00\x00\x00\x00\x00ð?\x00')
+101.133.136.80 - - [06/Sep/2025 08:16:14] "[35m[1mA\x00\x00\x00:0\x00\x00ÿÿÿÿÔ\x07\x00\x00\x00\x00\x00\x00test.$cmd\x00\x00\x00\x00\x00ÿÿÿÿ\x1b\x00\x00\x00\x01serverStatus\x00\x00\x00\x00\x00\x00\x00ð?\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:16:16] code 400, message Bad request syntax ('*1')
+101.133.136.80 - - [06/Sep/2025 08:16:16] "[35m[1m*1[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:16:26] code 400, message Bad request syntax ('\x00\x00\x00\x01\x07')
+101.133.136.80 - - [06/Sep/2025 08:16:26] "[35m[1m\x00\x00\x00\x01\x07[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:16:27] code 400, message Bad HTTP/0.9 request type ('show')
+101.133.136.80 - - [06/Sep/2025 08:16:27] "[35m[1mshow info[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:16:37] code 400, message Bad request syntax ('\x80\x10\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x15ðÑb\x00\x00\x00\x00\x00\x00\x00\x00')
+101.133.136.80 - - [06/Sep/2025 08:16:37] "[35m[1m\x80\x10\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x15ðÑb\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:16:44] code 400, message Bad request syntax ('\x00\x01n')
+101.133.136.80 - - [06/Sep/2025 08:16:44] "[35m[1m\x00\x01n[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:16:50] code 400, message Bad request syntax ('vp3')
+101.133.136.80 - - [06/Sep/2025 08:16:50] "[35m[1mvp3[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:16:55] code 400, message Bad request syntax ('\x94\x00ÍïÑa\x91\x03')
+101.133.136.80 - - [06/Sep/2025 08:16:55] "[35m[1m\x94\x00ÍïÑa\x91\x03[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:17:02] code 400, message Bad request syntax ('þ\x01')
+101.133.136.80 - - [06/Sep/2025 08:17:02] "[35m[1mþ\x01[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:17:03] "[33mGET /version HTTP/1.1[0m" 404 -
+101.133.136.80 - - [06/Sep/2025 08:17:12] code 400, message Bad request syntax ('\x00\x00\x07\x00\x08\x00\x03\x00\x04\x00\x05\x00\x06')
+101.133.136.80 - - [06/Sep/2025 08:17:12] "[35m[1m\x00\x00\x07\x00\x08\x00\x03\x00\x04\x00\x05\x00\x06[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:17:18] code 400, message Bad request syntax ('ÿû\x18ÿú\x18\x00IBM-3279-4-Eÿðÿû\x19ÿý\x19ÿû\x00ÿý\x00')
+101.133.136.80 - - [06/Sep/2025 08:17:18] "[35m[1mÿû\x18ÿú\x18\x00IBM-3279-4-Eÿðÿû\x19ÿý\x19ÿû\x00ÿý\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:17:23] code 400, message Bad request syntax ('GIOP\x01\x00\x01\x00$\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x06\x00\x00\x00abcdef\x00\x00\x04\x00\x00\x00get\x00\x00\x00\x00\x00')
+101.133.136.80 - - [06/Sep/2025 08:17:23] "[35m[1mGIOP\x01\x00\x01\x00$\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x06\x00\x00\x00abcdef\x00\x00\x04\x00\x00\x00get\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:17:29] code 400, message Bad request syntax ('VERSION')
+101.133.136.80 - - [06/Sep/2025 08:17:29] "[35m[1mVERSION[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:17:34] code 400, message Bad request syntax ('CNXN\x00\x00\x00\x01\x00\x10\x00\x00\x07\x00\x00\x002\x02\x00\x00¼±§±host::\x00')
+101.133.136.80 - - [06/Sep/2025 08:17:34] "[35m[1mCNXN\x00\x00\x00\x01\x00\x10\x00\x00\x07\x00\x00\x002\x02\x00\x00¼±§±host::\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:17:40] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00\x10\x00\x00\x00')
+101.133.136.80 - - [06/Sep/2025 08:17:40] "[35m[1m\x00\x00\x00\x10\x00\x00\x00\x0c{"code":106}[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:17:45] code 400, message Bad request syntax ('\x0c\x00\x01\x00\x00\x00ImYorDad0u\x00\x00')
+101.133.136.80 - - [06/Sep/2025 08:17:45] "[35m[1m\x0c\x00\x01\x00\x00\x00ImYorDad0u\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:17:50] code 400, message Bad HTTP/0.9 request type ('ÚÚ\x01\x00\x00\x00\x14\x00\x10\x03\x08\x00\x00\x00')
+101.133.136.80 - - [06/Sep/2025 08:17:50] "[35m[1mÚÚ\x01\x00\x00\x00\x14\x00\x10\x03\x08\x00\x00\x00\x0bM\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:20:35] code 400, message Bad request version ("ºl\x98\x1bjä\x8c\x94\x8có0ªÔä\x07ö\x94\x08\x00\x9c\x13\x02\x13\x03\x13\x01\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À\xadÀ£À\x9fÀ]ÀaÀWÀSÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀRÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½À")
+101.133.136.80 - - [06/Sep/2025 08:20:35] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03L\x98\x09´ÿNßÃÝAuý\x08'Í²\x8d½\x15Ç©!ß3×k\x04\x1dA\x14bN Åj\x04ó¶bþNxÇ¶¸S\x1dºl\x98\x1bjä\x8c\x94\x8có0ªÔä\x07ö\x94\x08\x00\x9c\x13\x02\x13\x03\x13\x01\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À­À£À\x9fÀ]ÀaÀWÀSÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀRÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½À[0m" HTTPStatus.BAD_REQUEST -
+101.133.136.80 - - [06/Sep/2025 08:20:53] code 400, message Bad HTTP/0.9 request type ('\x80\x00\x00(!YÊ;\x00\x00\x00\x00\x00\x00\x00\x02\x00\x01\x86')
+101.133.136.80 - - [06/Sep/2025 08:20:53] "[35m[1m\x80\x00\x00(!YÊ;\x00\x00\x00\x00\x00\x00\x00\x02\x00\x01\x86 \x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [06/Sep/2025 09:58:46] code 400, message Bad request syntax ('\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03Þ_EÒP.Ø1{!\x14RI\x18_%ÕãËêl')
+96.126.104.20 - - [06/Sep/2025 09:58:46] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03Þ_EÒP.Ø1{!\x14RI\x18_%ÕãËêl[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [06/Sep/2025 09:58:46] "[33mGET /signin HTTP/1.1[0m" 404 -
+147.185.132.105 - - [06/Sep/2025 10:23:19] "[33mGET / HTTP/1.0[0m" 404 -
+198.235.24.13 - - [06/Sep/2025 11:34:27] "[33mGET / HTTP/1.0[0m" 404 -
+3.132.23.201 - - [06/Sep/2025 11:37:40] "[33mGET / HTTP/1.1[0m" 404 -
+3.132.23.201 - - [06/Sep/2025 11:41:34] code 400, message Bad request version ('À\x14À')
+3.132.23.201 - - [06/Sep/2025 11:41:34] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03¯\x12-\x11Æ/\x0cá\x1fK\x94Dø»ÿ\x1d\x99l!\x90\x9f\x93½\x1e?\x82\x154\x98\x04`\x8a\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+3.132.23.201 - - [06/Sep/2025 11:43:09] code 400, message Bad request syntax ('SSH-2.0-Go')
+3.132.23.201 - - [06/Sep/2025 11:43:09] "[35m[1mSSH-2.0-Go[0m" HTTPStatus.BAD_REQUEST -
+3.132.23.201 - - [06/Sep/2025 11:44:59] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03M\x98SF¢c\x10y\x8d\x82{³xÓÿ\x91\x8d±Ðê2\x94±R~\x84\x00ceÎ«Ô\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+3.132.23.201 - - [06/Sep/2025 11:44:59] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03M\x98SF¢c\x10y\x8d\x82{³xÓÿ\x91\x8d±Ðê2\x94±R~\x84\x00ceÎ«Ô\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+65.49.1.182 - - [06/Sep/2025 13:31:24] "[33mGET / HTTP/1.1[0m" 404 -
+65.49.1.182 - - [06/Sep/2025 13:31:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+96.126.104.20 - - [06/Sep/2025 13:57:54] code 400, message Bad request version ('À\x13À')
+96.126.104.20 - - [06/Sep/2025 13:57:54] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03\x92:u\x9f\x81\x90Þ\x99\x85Çr\x0d\x8cëÏ\x1d8\x9d4üì¾\x04 ¬¹ÅP\x9a`.\x86 ­Y¾uïñ8gèqIöÖ¥á\x9a, \x04\x80gE\x0e¸36\x04\x1e\x80\x1c\x8e\x0d\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [06/Sep/2025 13:57:54] "[33mGET /signin HTTP/1.1[0m" 404 -
+142.93.230.252 - - [06/Sep/2025 14:09:42] "[33mGET / HTTP/1.1[0m" 404 -
+198.235.24.113 - - [06/Sep/2025 17:35:20] "[33mGET / HTTP/1.1[0m" 404 -
+96.126.104.20 - - [06/Sep/2025 17:56:14] code 400, message Bad request version ('À\x13À')
+96.126.104.20 - - [06/Sep/2025 17:56:14] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03ß8{~rc&` \x0dQÇÿ òÌ¦AI\x01;o\x15ÛÔJ\x9e\x14Núé\x8b O\x14$\x82\x14)þÑ\x7fq2Õ\x98Ëx­\x84~vX>ç¥Y\x1eK«÷pÝ\x82\x03\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [06/Sep/2025 17:56:15] "[33mGET /signin HTTP/1.1[0m" 404 -
+39.103.152.13 - - [06/Sep/2025 19:08:16] code 400, message Bad request version ("ð\x9fKý×»~q\x83æÀþôÍ~¸Ê\x94ýNÉÌ\x8bÌ4(ââÅoZZ\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+39.103.152.13 - - [06/Sep/2025 19:08:16] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x17ÞÐß»:®0\x04ÍTº\x810z®b¡ó\x0c+oÐ\x1bÀº$\x89×¼\x18H ð\x9fKý×»~q\x83æÀþôÍ~¸Ê\x94ýNÉÌ\x8bÌ4(ââÅoZZ\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" HTTPStatus.BAD_REQUEST -
+39.103.152.13 - - [06/Sep/2025 19:08:16] "[33mGET / HTTP/1.1[0m" 404 -
+96.126.104.20 - - [06/Sep/2025 21:59:25] code 400, message Bad request version ('À\x13À')
+96.126.104.20 - - [06/Sep/2025 21:59:25] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03E\x87\x85[ß¦Âé±\x80\x87`Q\x10GtÂo~zþxvx¤ \x97\x0fývD> \x1dïùÝ¡ó­\x11\x8c@õßÄ\x07*\x18WÔñew¸\x15\x8c,t\x81Öºj×C\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+96.126.104.20 - - [06/Sep/2025 21:59:25] "[33mGET /signin HTTP/1.1[0m" 404 -
+ * Detected change in '/root/code/ai_based_education/main.py', reloading
+input_check_result: False
+eval_result [{'question_section_name': '性格特征', 'question_type': 2, 'question': '问题', 'answer': '答案'}]
+input_check_result: False
+eval_result [{'question_section_name': '性格特征', 'question_type': 2, 'question': '问题', 'answer': '答案'}]
+input_check_result: False
+input_check_result: False
+input_check_result: False
+input_check_result: False
+eval_result [{'question_type': 2, 'answer': '方式发电公司地方'}]
+input_check_result: False
+eval_result [{'question_type': 2, 'answer': '方式发电公司地方'}]
+input_check_result: False
+eval_result [{'question_section_name': '性格特质', 'question_type': 2, 'question': '请回忆最近一次和同学/朋友发生不愉快的事情，描述一下经过。（40-90秒）', 'answer': '方式发电公司地方'}]
+input_check_result: False
+eval_result [{'question_section_name': '性格特质', 'question_type': 2, 'question': '请回忆最近一次和同学/朋友发生不愉快的事情，描述一下经过。（40-90秒）', 'answer': '方式发电公司地方'}]
+input_check_result: False
+eval_result [{'question_section_name': '学业表现', 'question_type': 2, 'question': '孩子最喜欢的学科是哪一个？为什么喜欢？有参加过学科竞赛吗？是什么竞赛？有拿到奖项吗？', 'answer': '暂时没有，没有奖项'}]
+input_check_result: False
+eval_result [{'question_section_name': '学能表现', 'question_type': 2, 'question': '孩子有多少个学科补习班？补习的内容是校内相关还是额外拓展？有明显效果吗？/对孩子有帮助吗？', 'answer': '科目：语文\n对孩子有帮助'}]
+input_check_result: False
+eval_result [{'question_section_name': '性格特征', 'question_type': 2, 'question': '问题', 'answer': '答案'}]
+input_check_result: False
+eval_result [{'question_section_name': '综合素质', 'question_type': 2, 'question': '你/孩子平时最喜欢的活动或学科是什么？为什么喜欢？', 'answer': '是发电公司地方告诉对方'}]
+input_check_result: False
+eval_result [{'question_section_name': '性格特质', 'question_type': 2, 'question': '请回忆最近一次和同学/朋友发生不愉快的事情，描述一下经过。（40-90秒）', 'answer': 'rtyry'}]
+input_check_result: False
+eval_result [{'question_section_name': '学业表现', 'question_type': 2, 'question': '孩子最喜欢的学科是哪一个？为什么喜欢？有参加过学科竞赛吗？是什么竞赛？有拿到奖项吗？', 'answer': 'fdgsdf\n'}]
+input_check_result: False
+eval_result [{'question_section_name': '学能表现', 'question_type': 2, 'question': '孩子有多少个学科补习班？补习的内容是校内相关还是额外拓展？有明显效果吗？/对孩子有帮助吗？', 'answer': 'FGDFG'}]
+input_check_result: False
+eval_result [{'question_section_name': '综合素质', 'question_type': 2, 'question': '你/孩子平时最喜欢的活动或学科是什么？为什么喜欢？', 'answer': '12342234323423412346234'}]
+input_check_result: False
+eval_result [{'question_section_name': '体育艺术', 'question_type': 2, 'question': '请描述一下孩子自己最近一次在体育或艺术方面坚持练习或创作的经历？是什么让你坚持下去的？', 'answer': '大撒发射点发'}]
+input_check_result: False
+eval_result [{'question_section_name': '性格特质', 'question_type': 2, 'question': '请回忆最近一次和同学/朋友发生不愉快的事情，描述一下经过。（40-90秒）', 'answer': 'rtyry'}]
+input_check_result: False
+eval_result [{'question_section_name': '学业表现', 'question_type': 2, 'question': '孩子最喜欢的学科是哪一个？为什么喜欢？有参加过学科竞赛吗？是什么竞赛？有拿到奖项吗？', 'answer': 'fdgsdf\n'}]
+input_check_result: False
+eval_result [{'question_section_name': '学能表现', 'question_type': 2, 'question': '孩子有多少个学科补习班？补习的内容是校内相关还是额外拓展？有明显效果吗？/对孩子有帮助吗？', 'answer': 'FGDFG'}]
+input_check_result: False
+eval_result [{'question_section_name': '性格特质', 'question_type': 2, 'question': '请回忆最近一次和同学/朋友发生不愉快的事情，描述一下经过。（40-90秒）', 'answer': '哇，走啊走啊，走啊走。'}]
+input_check_result: False
+eval_result [{'question_section_name': '学业表现', 'question_type': 2, 'question': '孩子最喜欢的学科是哪一个？为什么喜欢？有参加过学科竞赛吗？是什么竞赛？有拿到奖项吗？', 'answer': '录音开始，语音识别已开启。'}]
+input_check_result: False
+eval_result [{'question_section_name': '学能表现', 'question_type': 2, 'question': '孩子有多少个学科补习班？补习的内容是校内相关还是额外拓展？有明显效果吗？/对孩子有帮助吗？', 'answer': '录音权限已提前获取，录音开始微博搜k特意建立修正。'}]
+input_check_result: False
+eval_result [{'question_section_name': '综合素质', 'question_type': 2, 'question': '你/孩子平时最喜欢的活动或学科是什么？为什么喜欢？', 'answer': '你平时最喜欢的活动为科学是什么？为什么喜欢？'}]
+input_check_result: False
+eval_result [{'question_section_name': '体育艺术', 'question_type': 2, 'question': '请描述一下孩子自己最近一次在体育或艺术方面坚持练习或创作的经历？是什么让你坚持下去的？', 'answer': '最后一道题去新疆。'}]
+input_check_result: False
+eval_result [{'question_section_name': '性格特质', 'question_type': 2, 'question': '请回忆最近一次和同学/朋友发生不愉快的事情，描述一下经过。（40-90秒）', 'answer': '性格特质。'}]
+input_check_result: False
+eval_result [{'question_section_name': '学业表现', 'question_type': 2, 'question': '孩子最喜欢的学科是哪一个？为什么喜欢？有参加过学科竞赛吗？是什么竞赛？有拿到奖项吗？', 'answer': '这是说话的时候'}]
+input_check_result: False
+eval_result [{'question_section_name': '学能表现', 'question_type': 2, 'question': '孩子有多少个学科补习班？补习的内容是校内相关还是额外拓展？有明显效果吗？/对孩子有帮助吗？', 'answer': '走啊走走到等等，凡是签名未报备。'}]
+input_check_result: False
+eval_result [{'question_section_name': '综合素质', 'question_type': 2, 'question': '你/孩子平时最喜欢的活动或学科是什么？为什么喜欢？', 'answer': '开始录音综合素质。你平时最喜欢活动或科学是什么？为什么喜欢？我也不知道为什么会喜欢。'}]
+input_check_result: False
+eval_result [{'question_section_name': '体育艺术', 'question_type': 2, 'question': '请描述一下孩子自己最近一次在体育或艺术方面坚持练习或创作的经历？是什么让你坚持下去的？', 'answer': '我会让他坚持的。'}]
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/root/code/ai_based_education/run_app.py", line 10, in <module>
+    from main import (
+  File "/root/code/ai_based_education/main.py", line 28, in <module>
+    from profile_desc import (
+  File "/root/code/ai_based_education/profile_desc.py", line 4, in <module>
+    with open('./resource/LARS_definition.json', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './resource/LARS_definition.json'

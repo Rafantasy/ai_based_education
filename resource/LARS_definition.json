@@ -1,0 +1,354 @@
+[
+    {
+        "name": "LADE 演说家 🎤",
+        "english_name": "Orator",
+        "definition": "以语言与舞台影响他人，天生的公众沟通者。",
+        "description": "善于表达、具备舞台自信，常活跃在演讲、主持、辩论、社团中。逻辑清晰，能快速抓住重点并感染他人。",
+        "major": "传媒、新闻、国际关系、政治学、工商管理",
+        "college": "国内顶尖/国际双轨 冲顶型",
+        "hof": [
+            {
+            "name_education": "马云（杭州师范大学英语专业 → 后赴美进修）",
+            "major_event": "从英语+交流起步，成长为世界级商业演讲家与公众影响力人物。"
+            },
+            {
+            "name_education": "奥巴马（哥伦比亚大学政治学 → 哈佛法学院）",
+            "major_event": "法律+公共政策背景，典型的“公众沟通/政治路径”。"
+            },
+            {
+            "name_education": "吴晓波（复旦大学新闻系）",
+            "major_event": "国内传媒路径的代表，影响力延伸至商业与社会评论。"
+            }
+        ]
+    },
+{
+  "name": "LADB 守护者 🛡",
+  "english_name": "Guardian",
+  "definition": "稳健可靠的教育者与管理者，责任感强。",
+  "description": "温和坚韧，重视秩序与责任，具备管理和协调气质，适合教育、社会服务和公共管理。",
+  "major": "教育学、社会学、公共管理、人力资源",
+  "college": "国内/港澳 稳进型",
+  "hof": [
+    {
+      "name_education": "马丁·路德·金（莫尔豪斯学院社会学 → 波士顿大学神学博士）",
+      "major_event": "以教育与宗教为基础，成为社会正义与公共管理的领军人物。"
+    },
+    {
+      "name_education": "潘基文（首尔大学国际关系 → 哈佛肯尼迪学院公共行政学）",
+      "major_event": "国际组织与公共治理的典范，稳健推进全球公共事务。"
+    },
+    {
+      "name_education": "俞敏洪（北京大学英语专业）",
+      "major_event": "从教育出发，成长为管理型与教育型企业家，典型的守望者路径。"
+    }
+  ]
+},
+{
+  "name": "LAGE 外交家 🌍",
+  "english_name": "Diplomat",
+  "definition": "跨文化沟通者，国际舞台的自信代言人。",
+  "description": "跨语言、跨文化沟通能力强，逻辑清晰，热衷辩论与模拟联合国，注重全球视野。",
+  "major": "国际关系、法律、语言与传播",
+  "college": "国际名校 冲顶型",
+  "hof": [
+    {
+      "name_education": "周恩来（南开大学政治系 → 留学日本/法国）",
+      "major_event": "跨文化沟通典范，国际关系与外交家的代表。"
+    },
+    {
+      "name_education": "亨利·基辛格（哈佛大学 → 哈佛博士）",
+      "major_event": "国际政治学术+实务并重，典型的外交家与谈判家路径。"
+    },
+    {
+      "name_education": "郎朗（柯蒂斯音乐学院 → 茱莉亚音乐学院）",
+      "major_event": "跨文化舞台的艺术外交代表，用音乐搭建国际沟通桥梁。"
+    }
+  ]
+},
+{
+  "name": "LAGB 桥梁者 🤝",
+  "english_name": "Connector",
+  "definition": "把资源和人脉织成网络的协作者。",
+  "description": "沟通协调能力强，执行力突出，善于推动团队合作，实现目标。",
+  "major": "工商管理、市场营销、公共事务、品牌传播",
+  "college": "国际本科 稳进型",
+  "hof": [
+    {
+      "name_education": "比尔·盖茨（哈佛大学计算机 → 创业）",
+      "major_event": "融合科技与商业，成为全球范围的连接与推动者。"
+    },
+    {
+      "name_education": "马化腾（深圳大学计算机 → 创立腾讯）",
+      "major_event": "商业与公共平台的“连接者”，把技术与社会生活深度融合。"
+    },
+    {
+      "name_education": "李开复（哥伦比亚大学计算机 → 卡耐基梅隆大学博士）",
+      "major_event": "科技+商业运营路径的典型，桥接学术与产业。"
+    }
+  ]
+},
+{
+  "name": "SADE 舞台主角 🎭",
+  "english_name": "Performer",
+  "definition": "在舞台灯光下展现才华的表演者。",
+  "description": "艺术表现力突出，适合戏剧、表演、舞蹈等艺术舞台领域。",
+  "major": "戏剧、表演、舞蹈",
+  "college": "艺术本 国际/国内 冲顶型",
+  "hof": [
+    {
+      "name_education": "巩俐（中央戏剧学院 → 国际影坛）",
+      "major_event": "戏剧与表演科班出身，成长为国际级影后与艺术形象代表。"
+    },
+    {
+      "name_education": "休·杰克曼（悉尼科技大学传播学 → 西澳表演艺术学院）",
+      "major_event": "专业舞台训练起点，舞台与电影双栖的国际表演典范。"
+    },
+    {
+      "name_education": "张艺谋（北京电影学院摄影专业）",
+      "major_event": "从幕后到台前，兼具导演与艺术舞台影响力的表演类代表。"
+    }
+  ]
+},
+{
+  "name": "SADB 匠艺实践者 🎨",
+  "english_name": "Craftsman",
+  "definition": "坚持热爱，稳健投入艺术创作。",
+  "description": "专注与耐心兼具，长时间沉浸在手作、设计、艺术教育等方向。",
+  "major": "设计学、艺术教育、应用艺术",
+  "college": "国内/国际 稳进型",
+  "hof": [
+    {
+      "name_education": "梵高（皇家美术学院进修 → 自由艺术创作）",
+      "major_event": "典型的“技艺+应用艺术”路径，执着于绘画语言探索。"
+    },
+    {
+      "name_education": "坂本龙一（东京艺术大学作曲专业 → 国际音乐合作）",
+      "major_event": "从古典作曲起点，走向跨界实验与应用艺术融合。"
+    },
+    {
+      "name_education": "吴冠中（清华大学艺专 → 巴黎国立美术学院）",
+      "major_event": "中西融合的艺术教育与创作实践者，稳健型典范。"
+    }
+  ]
+},
+{
+  "name": "SAGE 光影新星 ✨",
+  "english_name": "Luminary",
+  "definition": "用作品征服国际舞台的艺术家。",
+  "description": "音乐、影视、视觉艺术表现突出，具备国际艺术竞赛与作品影响力。",
+  "major": "音乐、影视、视觉艺术",
+  "college": "国际顶尖艺术学院 冲顶型",
+  "hof": [
+    {
+      "name_education": "李安（国立艺专戏剧 → 伊利诺伊大学电影硕士）",
+      "major_event": "戏剧+电影教育背景，成为国际顶尖导演，艺术冲顶型典范。"
+    },
+    {
+      "name_education": "Lady Gaga（纽约大学Tisch艺术学院）",
+      "major_event": "融合音乐、视觉与舞台的全能型艺术新星。"
+    },
+    {
+      "name_education": "王家卫（香港理工大学 → 香港演艺学院）",
+      "major_event": "独特的电影美学语言，奠定国际视觉艺术风格地位。"
+    }
+  ]
+},
+{
+  "name": "SAGB 跨界美学者 ⚖️",
+  "english_name": "Aesthete",
+  "definition": "艺术与管理的双语者。",
+  "description": "兼顾艺术创作与品牌管理，具备跨界整合能力。",
+  "major": "艺术管理、文创、传媒",
+  "college": "国内/国际混合 稳进型",
+  "hof": [
+    {
+      "name_education": "安藤忠雄（自学 → 国际建筑大师）",
+      "major_event": "将艺术与应用结合，典型的跨界艺术与管理型路径。"
+    },
+    {
+      "name_education": "隋建国（中央美术学院雕塑系 → 教授/策展）",
+      "major_event": "从艺术教育到跨界艺术管理，国内外融合型代表。"
+    },
+    {
+      "name_education": "大卫·霍克尼（伦敦皇家艺术学院）",
+      "major_event": "艺术与数字技术结合，视觉管理与跨界实践典范。"
+    }
+  ]
+},
+{
+  "name": "SRDE 挑战者 🚀",
+  "english_name": "Challenger",
+  "definition": "敢于拼搏，冲击高水平竞技。",
+  "description": "运动意志力强，具备冲击国际赛事和高水平比赛的潜质。",
+  "major": "体育教育、运动训练、竞技体育",
+  "college": "国际赛事+体育本 冲顶型",
+  "hof": [
+    {
+      "name_education": "姚明（上海体育学院 → NBA）",
+      "major_event": "国内体育本 → 国际赛事平台，典型体育升学路径。"
+    },
+    {
+      "name_education": "谷爱凌（斯坦福大学 → 国际赛事）",
+      "major_event": "学业+体育双修，NCAA/奖学金典范。"
+    },
+    {
+      "name_education": "迈克尔·菲尔普斯（密歇根大学）",
+      "major_event": "NCAA游泳体系培养，奥运冠军。"
+    }
+  ]
+},
+{
+  "name": "SRDB 进取者 🌱",
+  "english_name": "Striver",
+  "definition": "稳步成长，兼顾学业与体育。",
+  "description": "注重长期训练与学业平衡，纪律性强，目标清晰。",
+  "major": "体育教育、运动康复、学科交叉",
+  "college": "国内体育特长 稳进型",
+  "hof": [
+    {
+      "name_education": "孙杨（上海体育学院）",
+      "major_event": "国内体校系统培养，循序渐进成为世界冠军。"
+    },
+    {
+      "name_education": "丁俊晖（谢菲尔德大学体育管理 → 世界斯诺克冠军）",
+      "major_event": "留学+训练双轨发展，稳健成长型运动员。"
+    },
+    {
+      "name_education": "福原爱（早稻田大学 → 乒乓球职业赛场）",
+      "major_event": "典型的学业+体育稳步成长路径，亚洲体育代表。"
+    }
+  ]
+},
+{
+  "name": "SRGE 开拓者 🌐",
+  "english_name": "Pioneer",
+  "definition": "跨界探索，勇登国际舞台。",
+  "description": "结合体育与学术，善于在国际体育体系（如NCAA）中发展。",
+  "major": "体育+学科双轨，国际奖学金路径",
+  "college": "NCAA/国际体育奖学金 冲顶型",
+  "hof": [
+    {
+      "name_education": "刘翔（上海体育学院 → 奥运冠军）",
+      "major_event": "从国内田径队到国际赛道，突破亚洲短跑极限。"
+    },
+    {
+      "name_education": "大坂直美（美国佛罗里达网校 → WTA大满贯）",
+      "major_event": "国际化体育路径，跨文化+顶级赛事的代表。"
+    },
+    {
+      "name_education": "姚安娜（哈佛大学 → 花样滑冰国际赛场）",
+      "major_event": "学术+体育双重背景，NCAA/国际赛事开拓者。"
+    }
+  ]
+},
+{
+  "name": "SRGB 平衡者 🧩",
+  "english_name": "Balancer",
+  "definition": "学业与体育并重的均衡发展者。",
+  "description": "自律，全面发展，注重团队合作。",
+  "major": "体育+普通本科结合",
+  "college": "国内/国际 稳进型",
+  "hof": [
+    {
+      "name_education": "科比·布莱恩特（注：同时也是冲顶代表，这里强调他后期学业/慈善结合）",
+      "major_event": "退役后进入商学院与慈善领域，体育+教育融合发展。"
+    },
+    {
+      "name_education": "李娜（武汉体育学院 → 法网/澳网冠军）",
+      "major_event": "兼顾网球职业与学业成长，平衡型典范。"
+    },
+    {
+      "name_education": "林丹（八一队体系 → 奥运羽毛球双冠王）",
+      "major_event": "长期坚持，兼顾国家队使命与个人发展，稳健持久。"
+    }
+  ]
+},
+{
+  "name": "LRDE 倡导者 📚",
+  "english_name": "Advocate",
+  "definition": "以科研推动社会进步的学术先锋。",
+  "description": "逻辑推理强，具备科研热情与长远视野，常参加数理/科研竞赛。",
+  "major": "数学、工程、生命科学、科研方向",
+  "college": "国际科研本 冲顶型",
+  "hof": [
+    {
+      "name_education": "杨振宁（清华大学物理学 → 芝加哥大学博士）",
+      "major_event": "国内顶尖+国际科研深造路径，诺贝尔奖得主。"
+    },
+    {
+      "name_education": "屠呦呦（北京医学院 → 中医药研究院）",
+      "major_event": "国内科研体系代表，国际影响力。"
+    },
+    {
+      "name_education": "埃隆·马斯克（宾夕法尼亚大学物理+沃顿商学院）",
+      "major_event": "跨学科科研冲顶型典范，AI/新能源/跨界探索者。"
+    }
+  ]
+},
+{
+  "name": "LRDB 策划者 📝",
+  "english_name": "Strategist",
+  "definition": "稳健执行，厚积薄发的科研践行者。",
+  "description": "踏实，注重计划与积累，适合工科/应用科学方向。",
+  "major": "工程、编程、应用科学",
+  "college": "国内/国际 稳进型",
+  "hof": [
+    {
+      "name_education": "沈向洋（复旦大学计算机 → 卡内基梅隆大学博士 → 微软全球执行副总裁）",
+      "major_event": "工程/计算机路径，稳健积累科研成果并转化为产业影响力。"
+    },
+    {
+      "name_education": "李飞飞（普林斯顿大学物理 → 加州理工学院电子工程博士 → 斯坦福AI实验室主任）",
+      "major_event": "稳扎稳打，从科研到产业落地的AI代表人物。"
+    },
+    {
+      "name_education": "张亚勤（中科大少年班 → 乔治华盛顿大学博士 → 百度总裁）",
+      "major_event": "工程技术路径，典型的科研+企业领导者。"
+    }
+  ]
+},
+{
+  "name": "LRGE 思想家 🧠",
+  "english_name": "Thinker",
+  "definition": "全球视野的跨学科创新者。",
+  "description": "具备跨界整合力，善于在新兴领域（AI/新能源/医学等）中进行探索。",
+  "major": "跨学科科研、AI、新能源、医学",
+  "college": "国际科研本 冲顶型",
+  "hof": [
+    {
+      "name_education": "霍金（牛津大学 → 剑桥大学博士 → 理论物理巨擘）",
+      "major_event": "全球视野，勇于探索宇宙奥秘，科研思想家典范。"
+    },
+    {
+      "name_education": "王贻芳（中科大 → 佛罗里达大学博士 → 中国高能物理学会会长）",
+      "major_event": "典型的国内本科 + 国际博士，再回国推动大科学工程。"
+    },
+    {
+      "name_education": "萨提亚·纳德拉（印度工程学院 → 威斯康星大学计算机硕士 → 微软CEO）",
+      "major_event": "工程+管理结合，科研思维推动企业战略。"
+    }
+  ]
+},
+{
+  "name": "LRGB 知识传播者 📖",
+  "english_name": "Scholar",
+  "definition": "用知识与写作影响世界。",
+  "description": "热衷学术写作与知识分享，擅长用表达影响学界与公众。",
+  "major": "科研+写作、科学传播、学术文献",
+  "college": "国内/国际 稳进型",
+  "hof": [
+    {
+      "name_education": "钱学森（交通大学 → 麻省理工硕士 → 加州理工博士 → 中国导弹之父）",
+      "major_event": "典型的‘科研+传播+应用’，知识影响国家战略。"
+    },
+    {
+      "name_education": "纪尧姆·杜瓦尔（巴黎综合理工 → 《经济学人》专栏作家）",
+      "major_event": "科研成果+写作传播，推动公共认知。"
+    },
+    {
+      "name_education": "卡尔·萨根（芝加哥大学博士 → 《宇宙》作者 → NASA顾问）",
+      "major_event": "以科研写作影响大众科学认知，跨越学术与社会。"
+    }
+  ]
+}
+]

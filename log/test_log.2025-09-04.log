@@ -1,0 +1,14 @@
+[2025-09-04 13:34:20,911] [182414] [INFO] - run_app.produe_open_question_ans (run_app.py:41) - begin call model
+[2025-09-04 13:36:00,907] [182475] [INFO] - run_app.produe_open_question_ans (run_app.py:41) - input req:
+[2025-09-04 13:36:00,908] [182475] [INFO] - run_app.produe_open_question_ans (run_app.py:44) - begin call model
+[2025-09-04 13:36:59,724] [182535] [INFO] - run_app.produe_open_question_ans (run_app.py:41) - input req:
+[2025-09-04 13:36:59,726] [182535] [INFO] - run_app.produe_open_question_ans (run_app.py:44) - begin call model
+[2025-09-04 13:47:03,928] [182875] [ERROR] - run_app.produe_instant_profile (run_app.py:58) - please check format of request
+[2025-09-04 13:55:26,667] [182875] [INFO] - run_app.produe_open_question_ans (run_app.py:41) - input req:
+[2025-09-04 13:55:26,668] [182875] [INFO] - run_app.produe_open_question_ans (run_app.py:44) - begin call model
+[2025-09-04 13:56:50,885] [182875] [INFO] - run_app.produe_open_question_ans (run_app.py:41) - input req:
+[2025-09-04 13:56:50,886] [182875] [INFO] - run_app.produe_open_question_ans (run_app.py:44) - begin call model
+[2025-09-04 13:57:37,083] [182875] [INFO] - run_app.produe_open_question_ans (run_app.py:41) - input req:
+[2025-09-04 13:57:37,083] [182875] [INFO] - run_app.produe_open_question_ans (run_app.py:44) - begin call model
+[2025-09-04 14:04:27,819] [182875] [INFO] - run_app.produe_open_question_ans (run_app.py:41) - input req:
+[2025-09-04 14:04:27,820] [182875] [INFO] - run_app.produe_open_question_ans (run_app.py:44) - begin call model

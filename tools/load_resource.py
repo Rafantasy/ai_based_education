@@ -1,8 +1,11 @@
 import pandas as pd
 from utils.func_str import str2list
+from pathlib import Path
 
 def load_growth_advice_rule():
-    raw_data = pd.read_excel('./resource/升学规划&成长建议板模版.xlsx',sheet_name='模版（通用&个性化）').fillna('')
+    base_dir = Path(__file__).resolve().parent.parent
+    excel_path = base_dir / 'resource' / '升学规划&成长建议板模版.xlsx'
+    raw_data = pd.read_excel(str(excel_path), sheet_name='模版（通用&个性化）').fillna('')
 
     # 补充列
     value = """db_英语能力知识库,db_A档&B档升学路径对标本科要求知识库

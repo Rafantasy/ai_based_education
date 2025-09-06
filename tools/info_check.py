@@ -42,10 +42,8 @@ def input_valid_growth_advice(req):
         or ('college_goal_path' not in req_input['student_info'])\
         or ('subject_interest' not in req_input['student_info'])\
         or ('profile_type' not in req_input['student_info'])\
-        or ('sub_profile_type' not in req_input['student_info'])\
         or ('english_level' not in req_input['student_info'])\
         or ('rate' not in req_input['student_info'])\
-        or ('open_questions_response' not in req_input['student_info'])\
         or ('id' not in req_input['student_info']):
         return False
 

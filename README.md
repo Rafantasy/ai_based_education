@@ -1,6 +1,7 @@
 # 测试
 - 安装包要求：flask
-- step1: 执行run_app.py(保证在后台一直run)
+- python版本要求：请适用python3.8执行所有任务
+- step1: 执行 run_app.py(保证在后台一直run)
 - step2: 执行 test.py
 
 # run_app说明
