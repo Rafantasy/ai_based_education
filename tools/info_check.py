@@ -4,11 +4,7 @@ import json
 '''
 输入参数格式校验
 '''
-def input_valid_instant_profile(req):
-    req_input = req.get('input',{})
-    if not len(req_input):
-        return False
-
+def input_valid_instant_profile(req_input):
     if ('student_info' not in req_input) or ('eval_result' not in req_input):
         return False
     
@@ -25,11 +21,7 @@ def input_valid_instant_profile(req):
     return True 
     
 
-def input_valid_growth_advice(req):
-    req_input = req.get('input',{})
-    if not len(req_input):
-        return False
-
+def input_valid_growth_advice(req_input):
     if ('student_info' not in req_input) or ('eval_result' not in req_input):
         return False
     

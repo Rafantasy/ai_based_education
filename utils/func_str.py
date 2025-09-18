@@ -17,3 +17,7 @@ def str2list(input_str):
         end = int(raw_list[0])
 
     return [start+i for i in range(end-start+1)]
+
+def common_chars(str_1, str_2):
+    return len(set(str_1) & set(str_2))
+

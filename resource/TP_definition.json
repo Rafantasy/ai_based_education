@@ -1,0 +1,354 @@
+[
+{
+  "name": "ALIR｜演说家 📣",
+  "english_name": "Public Speaker",
+  "definition": "具备强烈舞台感与语言感染力，善于用表达打动人心。",
+  "description": "他们在公众场合敢于发声，喜欢辩论、演讲和主持，往往是班级或社团的“发言人”。能快速抓住听众注意力，未来适合媒体、法律、政治等需要口才与表达的领域。",
+  "major": "新闻传媒、法律、国际关系、政治学、工商管理",
+  "college": "国内：复旦新闻、人大国际关系、北大法学；国际：哥伦比亚新闻学院、LSE 政治与传播、纽约大学传媒",
+  "hof": [
+    {
+      "name_education": "马云（英语教师 → 阿里巴巴创始人）",
+      "major_event": "以演讲带动企业文化和公众认知"
+    },
+    {
+      "name_education": "奥巴马（哈佛法学院 → 美国总统）",
+      "major_event": "公众演讲塑造领导魅力"
+    },
+    {
+      "name_education": "罗翔（中国政法大学教授）",
+      "major_event": "以幽默表达推动法治教育普及"
+    }
+  ]
+},
+{
+  "name": "ALIB｜意见领袖 👑",
+  "english_name": "Opinion Leader",
+  "definition": "以人格魅力与鲜明观点影响他人，具备天然号召力。",
+  "description": "他们是“社交中心”，常成为同龄人追随的对象。善于提出新观点，敢于表达立场。未来适合成为社会意见领袖、教育者、公众人物。",
+  "major": "社会学、心理学、教育学、公共管理、传媒",
+  "college": "国内：北大社会学、清华公管、人大心理；国际：哈佛社会学、耶鲁心理学、NYU 公共政策",
+  "hof": [
+    {
+      "name_education": "马斯克（工程师 → 全球意见领袖）",
+      "major_event": "用极具争议和远见的观点塑造公众议程"
+    },
+    {
+      "name_education": "鲁迅（文学家）",
+      "major_event": "以犀利文字引领社会思潮"
+    },
+    {
+      "name_education": "蔡康永（主持人、作家）",
+      "major_event": "温柔而坚定的公众表达代表"
+    }
+  ]
+},
+{
+  "name": "SLIR｜战略策士 🧠",
+  "english_name": "Strategist",
+  "definition": "具备格局与前瞻性，擅长谋划全局，善于在复杂局面中找到路径。",
+  "description": "他们冷静理智，善于分析与布局，常担任‘智囊’角色。未来在国际关系、经济战略、企业管理等领域具备优势。",
+  "major": "国际关系、经济学、战略管理、法律",
+  "college": "国内：人大国际关系、北大经济学、清华法学；国际：牛津 PPE（哲政经济）、芝加哥经济、哈佛法学院",
+  "hof": [
+    {
+      "name_education": "周恩来（中国总理）",
+      "major_event": "外交智慧与战略思维的典范"
+    },
+    {
+      "name_education": "基辛格（美国外交家）",
+      "major_event": "国际关系战略的代表人物"
+    },
+    {
+      "name_education": "乔布斯（企业家）",
+      "major_event": "将战略眼光转化为产品与产业格局"
+    }
+  ]
+},
+{
+  "name": "SLIB｜组织者 🧩",
+  "english_name": "Community Organizer",
+  "definition": "稳健可靠，擅长统筹与执行，善于将想法落地。",
+  "description": "他们重视团队与规则，能够调动资源、整合力量，把任务落实到底。未来适合教育管理、社会服务、公共事务等岗位。",
+  "major": "公共管理、教育学、社会工作、活动管理",
+  "college": "国内：北师大教育学、人大公管、华东师大社会工作；国际：康奈尔公共事务、伦敦国王学院教育管理、UBC 社会工作",
+  "hof": [
+    {
+      "name_education": "南丁格尔（护理改革家）",
+      "major_event": "以执行力与组织力推动现代护理体系"
+    },
+    {
+      "name_education": "米歇尔·奥巴马（美国前第一夫人）",
+      "major_event": "倡导教育与公益，社会组织典范"
+    },
+    {
+      "name_education": "蔡崇信（阿里巴巴联合创始人）",
+      "major_event": "善于组织与资源支持，推动企业稳健发展"
+    }
+  ]
+},
+{
+  "name": "AJIR｜创作家 🎨",
+  "english_name": "Creative Maker",
+  "definition": "富有想象力与原创精神，擅长用作品表达自我。",
+  "description": "他们灵感不断，喜欢写作、绘画、作曲或影像创作。常常沉浸在个人的艺术世界中，享受‘从无到有’的过程。未来适合走纯艺术、文学、原创音乐等方向。",
+  "major": "文学、艺术设计、作曲、影视编导",
+  "college": "国内：中央美院设计、北大中文、上戏编导；国际：伦敦艺术大学、帕森斯设计学院、纽约大学 Tisch 艺术学院",
+  "hof": [
+    {
+      "name_education": "村上春树（小说家）",
+      "major_event": "文学与音乐跨界的创作代表"
+    },
+    {
+      "name_education": "毕加索（画家）",
+      "major_event": "现代艺术流派开创者"
+    },
+    {
+      "name_education": "周杰伦（音乐人）",
+      "major_event": "融合流行与原创音乐风格"
+    }
+  ]
+},
+{
+  "name": "AJIB｜舞台明星 🎭",
+  "english_name": "Stage Performer",
+  "definition": "具备舞台表现力与情感感染力，适合表演与演艺事业。",
+  "description": "他们热爱观众的注视，擅长通过肢体、声音和情绪来打动别人。未来适合表演、舞蹈、戏剧和流行文化相关领域。",
+  "major": "表演、舞蹈、音乐剧、影视艺术",
+  "college": "国内：中央戏剧学院、北京电影学院、上海戏剧学院；国际：茱莉亚学院、NYU Tisch、伦敦艺术大学",
+  "hof": [
+    {
+      "name_education": "巩俐（演员）",
+      "major_event": "国际影坛上中国电影的代表人物"
+    },
+    {
+      "name_education": "Lady Gaga（歌手/演员）",
+      "major_event": "以舞台感染力席卷全球"
+    },
+    {
+      "name_education": "王一博（演员/歌手）",
+      "major_event": "流行文化与舞台表现兼具的偶像型代表"
+    }
+  ]
+},
+{
+  "name": "SJIR｜视觉设计师 🖼️",
+  "english_name": "Visual Designer",
+  "definition": "对色彩、空间与造型敏锐，擅长用视觉语言传达思想。",
+  "description": "他们对画面和空间感知力强，常在绘画、摄影、建筑设计中展现天赋。未来适合平面设计、工业设计、建筑与视觉传达。",
+  "major": "美术、建筑、工业设计、视觉传达",
+  "college": "国内：中央美院、同济建筑学、清华美院；国际：RISD（罗德岛设计学院）、AA 建筑联盟、帕森斯设计学院",
+  "hof": [
+    {
+      "name_education": "安藤忠雄（建筑师）",
+      "major_event": "自学成才的空间美学大师"
+    },
+    {
+      "name_education": "扎哈·哈迪德（建筑师）",
+      "major_event": "‘解构主义女王’"
+    },
+    {
+      "name_education": "草间弥生（艺术家）",
+      "major_event": "前卫艺术与视觉符号的代表"
+    }
+  ]
+},
+{
+  "name": "SJIB｜文化策展人 📚",
+  "english_name": "Cultural Curator",
+  "definition": "擅长整合与讲述文化，具备组织与传播能力。",
+  "description": "他们喜欢连接历史、艺术与当下语境，通过出版、展览、媒体来传递文化。未来适合走艺术管理、出版传媒、策展方向。",
+  "major": "艺术管理、博物馆学、历史学、出版传媒",
+  "college": "国内：北大历史学、人大新闻、上大文化产业管理；国际：哥大艺术管理、牛津人文、UCL 博物馆学",
+  "hof": [
+    {
+      "name_education": "单霁翔（故宫前院长）",
+      "major_event": "以策展与叙事重塑博物馆体验"
+    },
+    {
+      "name_education": "吴晓波（财经作家）",
+      "major_event": "文化出版与知识传播代表"
+    },
+    {
+      "name_education": "Anne d’Harnoncourt（费城艺术博物馆馆长）",
+      "major_event": "博物馆策展与公共文化推广典范"
+    }
+  ]
+},
+{
+  "name": "ALPR｜运动健将 🏅",
+  "english_name": "Athletic Champion",
+  "definition": "在运动与竞技中展现突出天赋与毅力，具备冲击高水平赛事的潜质。",
+  "description": "他们在速度、力量或耐力方面表现优异，享受竞技和对抗的过程，敢于挑战自我。未来更可能走职业体育或高水平运动员之路。",
+  "major": "运动训练、竞技体育、运动康复、运动科学",
+  "college": "国内：北京体育大学、上海体育学院；国际：斯坦福大学运动科学、悉尼大学运动健康、密歇根大学运动学",
+  "hof": [
+    {
+      "name_education": "姚明（篮球运动员）",
+      "major_event": "中国篮球标志性人物，NBA 全明星"
+    },
+    {
+      "name_education": "孙杨（游泳运动员）",
+      "major_event": "奥运冠军"
+    },
+    {
+      "name_education": "Serena Williams（网球运动员）",
+      "major_event": "23 次大满贯得主"
+    }
+  ]
+},
+{
+  "name": "ALPB｜团队队长 ⚓",
+  "english_name": "Team Captain",
+  "definition": "责任心强，具备带领团队的能力，善于在集体运动中担任核心角色。",
+  "description": "他们在团队项目中有号召力，既能冲锋陷阵，又能照顾队员，常是运动场上的‘精神领袖’。未来适合团队运动、教练和管理类方向。",
+  "major": "体育教育、运动心理学、体育管理、团队训练",
+  "college": "国内：华中师大体育教育、首都体育学院；国际：悉尼大学运动心理学、俄亥俄州立大学体育管理",
+  "hof": [
+    {
+      "name_education": "郎平（女排教练）",
+      "major_event": "中国女排精神象征"
+    },
+    {
+      "name_education": "贝克汉姆（足球运动员）",
+      "major_event": "团队领袖与偶像双重角色"
+    },
+    {
+      "name_education": "C 罗（Cristiano Ronaldo）",
+      "major_event": "足球精神领袖，兼具竞技与领导力"
+    }
+  ]
+},
+{
+  "name": "SLPR｜战术分析员 📊",
+  "english_name": "Tactical Analyst",
+  "definition": "理性冷静，擅长战术分析与数据研究。",
+  "description": "他们可能不是最突出的运动员，但喜欢研究战术打法和比赛数据，善于提出改进意见。未来适合教练、战术研究和体育科技领域。",
+  "major": "运动科学、数据分析、教练学、体育管理",
+  "college": "国内：上海体育学院运动科学、北体运动数据研究；国际：拉夫堡大学体育科学、MIT 数据科学（应用于体育）",
+  "hof": [
+    {
+      "name_education": "瓜迪奥拉（足球教练）",
+      "major_event": "战术大师，重塑球队打法"
+    },
+    {
+      "name_education": "Phil Jackson（NBA 教练）",
+      "major_event": "战术哲学代表"
+    },
+    {
+      "name_education": "张继科（乒乓球运动员）",
+      "major_event": "战术执行力极强"
+    }
+  ]
+},
+{
+  "name": "SLPB｜体育推广人 🏟️",
+  "english_name": "Sports Promoter",
+  "definition": "热爱体育文化，擅长传播与推广赛事。",
+  "description": "他们未必是竞技场上的明星，但热衷于策划赛事、推广体育精神，可能成为体育记者、解说、运营者。",
+  "major": "体育传媒、赛事运营、体育产业管理",
+  "college": "国内：人大新闻+体育产业管理、复旦新闻；国际：哥伦比亚大学体育管理、UCLA 体育传媒",
+  "hof": [
+    {
+      "name_education": "詹俊（足球解说员）",
+      "major_event": "以语言魅力推动足球文化传播"
+    },
+    {
+      "name_education": "姚明（CBA 主席）",
+      "major_event": "推动篮球产业发展"
+    },
+    {
+      "name_education": "David Stern（NBA 前总裁）",
+      "major_event": "体育产业化与推广典范"
+    }
+  ]
+},
+{
+  "name": "AJPR｜竞赛高手 🏆",
+  "english_name": "Olympiad Talent",
+  "definition": "数理逻辑拔尖，擅长解题与挑战，具备在奥赛和高阶科研中脱颖而出的潜质。",
+  "description": "他们喜欢钻研复杂问题，沉浸在数学、物理、信息学等竞赛中。常常能在挑战中展现毅力与天赋。未来适合冲击 STEM 顶尖赛道。",
+  "major": "数学、物理、信息学、计算机科学",
+  "college": "国内：清华姚班、北大数院、复旦数学系；国际：MIT 数学、Caltech 物理、剑桥数学",
+  "hof": [
+    {
+      "name_education": "陶哲轩（数学家）",
+      "major_event": "被誉为‘数学界莫扎特’"
+    },
+    {
+      "name_education": "张益唐（数学家）",
+      "major_event": "数学天才，突破数论难题"
+    },
+    {
+      "name_education": "丘成桐（数学家）",
+      "major_event": "华人数学界代表人物"
+    }
+  ]
+},
+{
+  "name": "AJPB｜工程师苗子 🛠️",
+  "english_name": "Future Engineer",
+  "definition": "动手能力强，喜欢将创意变成实物，具备工程与应用型潜能。",
+  "description": "他们热衷于机械、机器人、编程等实践项目，擅长解决实际问题。未来适合工程、人工智能、应用技术类发展。",
+  "major": "工程、计算机、人工智能、机器人",
+  "college": "国内：浙江大学工科、清华计算机、哈工大；国际：MIT 工程、CMU 机器人、帝国理工计算机",
+  "hof": [
+    {
+      "name_education": "马斯克（企业家）",
+      "major_event": "工程驱动的科技创新典范"
+    },
+    {
+      "name_education": "Dean Kamen（Segway 发明人）",
+      "major_event": "工程创新型代表"
+    },
+    {
+      "name_education": "王煜全（科技评论人）",
+      "major_event": "工程与技术应用的传播者"
+    }
+  ]
+},
+{
+  "name": "SJPR｜科研先锋 🔬",
+  "english_name": "Research Pioneer",
+  "definition": "对科研有持续热情，擅长长期实验与探索。",
+  "description": "他们能在实验室或科研团队中投入大量精力，善于提出假设并进行验证。未来适合基础科研、跨学科实验研究。",
+  "major": "生命科学、化学、材料科学、环境科学",
+  "college": "国内：清华生命科学、北大化学、复旦材料；国际：哈佛生物、牛津化学、斯坦福材料",
+  "hof": [
+    {
+      "name_education": "屠呦呦（药学家）",
+      "major_event": "诺贝尔医学奖获得者"
+    },
+    {
+      "name_education": "居里夫人（物理化学家）",
+      "major_event": "放射性研究开拓者"
+    },
+    {
+      "name_education": "詹姆斯·沃森（分子生物学家）",
+      "major_event": "DNA 双螺旋发现者之一"
+    }
+  ]
+},
+{
+  "name": "SJPB｜科学传播者 📣",
+  "english_name": "Science Communicator",
+  "definition": "理科基础稳健，擅长用浅显易懂的方式解释复杂知识。",
+  "description": "他们热爱讲解科学故事，能够将学术知识转化为公众语言。未来适合科普教育、科学写作与科学传媒。",
+  "major": "科学教育、科普写作、教育传播、传媒",
+  "college": "国内：北师大科普教育、人大新闻传播；国际：UCL Science Communication、康奈尔教育传播",
+  "hof": [
+    {
+      "name_education": "卡尔·萨根（天文学家）",
+      "major_event": "科普影响全球"
+    },
+    {
+      "name_education": "Bill Nye（美国科学传播人）",
+      "major_event": "‘Science Guy’"
+    },
+    {
+      "name_education": "李永乐（科普教师）",
+      "major_event": "中国年轻群体最熟悉的科普代表"
+    }
+  ]
+}
+]

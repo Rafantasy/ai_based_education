@@ -1,8 +1,15 @@
 import json
+import random
 
 # 加载LARS人才画像定义
 with open('./resource/LARS_definition.json', 'r') as f:
     LARS_DEF_DATA = json.load(f)
+
+with open('./resource/TP_definition.json', 'r') as f:
+    TP_DATA = json.load(f)
+
+with open('./resource/talent_potential_values.json', 'r') as f:
+    TP_VALUE_DATA = json.load(f)
 
 class ProfileDesc:
     # L vs S
@@ -57,8 +64,37 @@ def get_profile_desc(enrollment):
     return explain_LS, explain_AR, explain_DG, explain_EB, lars_tag
 
 def get_profile_def(lars_tag):
-    for item in LARS_DEF_DATA:
+    # for item in LARS_DEF_DATA:
+    #     if lars_tag in item['name']:
+    #         return item
+     
+    for item in TP_DATA:
         if lars_tag in item['name']:
             return item
     
-    return {}
+    idx = random.randint(1,16)
+    return TP_DATA[idx]
+
+def get_enrollment_data(tag):
+    dim_list = ['A_S','L_J','I_P','R_B']
+    res = []
+    for i in range(len(dim_list)):
+        key = dim_list[i]
+        dim_info = TP_VALUE_DATA[key]
+        score = random.randint(5,90)
+        tendency = ''
+        if score >= 71:
+            tendency = 'strong-left'
+        elif score >= 55:
+            tendency = 'mild-left'
+        elif score >= 46:
+            tendency = 'balanced'
+        elif score >= 31:
+            tendency = 'mild-right'
+        else:
+            tendency = 'strong-right'
+        
+        tmp_dim = {"name": key, "value": score, "tendency": tendency, "explanation": dim_info[tendency]}
+        res.extend([tmp_dim])
+    
+    return res
