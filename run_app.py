@@ -110,29 +110,17 @@ def produe_growth_advice():
     # step3: 内容生成
     # 最终出格式示例 
     res = get_report(rules)
-    # res = {
-    #     "本科推荐院校": "美本top10",
-    #     "G1": {
-    #         "学年目标": "适应学校环境，打好语文数学基础",
-    #         "推荐资源": "",
-    #         "应完成的项目": "",
-    #         "升学节点提示": "",
-    #         "延续性建议": "",
-    #         "英语进阶目标": "",
-    #         "特别提醒": ""
-    #     },
-    #     "G12": {
-    #         "学年目标": "积极备考",
-    #         "推荐资源": "提前关注各学校招生简章",
-    #         "应完成的项目": "",
-    #         "升学节点提示": "",
-    #         "延续性建议": "",
-    #         "英语进阶目标": "",
-    #         "特别提醒": ""
-    #     }
-    # }
     
-    return Response(json.dumps(res))
+    # 输出格式化
+    keys = sorted(list(res.keys()), key=lambda x:x)
+    res_formated = {}
+    for key in keys:
+        tmp_v = res[key]
+        if key != '本科推荐院校':
+            tmp_v = eval(res[key])
+        res_formated[key] = tmp_v
+
+    return Response(json.dumps(res_formated))
 
 
 def setup_log(log_name):

@@ -4539,3 +4539,102 @@ G12 plan is {
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 995-271-986
+ * Detected change in '/root/code/ai_based_education/compute_score.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Detected change in '/root/code/ai_based_education/compute_score.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Detected change in '/root/code/ai_based_education/compute_score.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Detected change in '/root/code/ai_based_education/compute_score.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Detected change in '/root/code/ai_based_education/compute_score.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Detected change in '/root/code/ai_based_education/compute_score.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Detected change in '/root/code/ai_based_education/compute_score.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/root/code/ai_based_education/run_app.py", line 10, in <module>
+    from main import (
+  File "/root/code/ai_based_education/main.py", line 38, in <module>
+    from compute_score import (
+  File "/root/code/ai_based_education/compute_score.py", line 103
+    def eng_level_classify(req):
+    ^
+IndentationError: expected an indented block
+ * Serving Flask app 'run_app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.25.21.92:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+127.0.0.1 - - [19/Sep/2025 14:48:07] "POST /instant_profile HTTP/1.1" 200 -
+ * Detected change in '/root/code/ai_based_education/test.py', reloading
+input_check_result: False
+tp_evidence: {'Athletic': {'参加冰雪运动（滑冰、滑雪、冰球等）': 5, '参加体操与技巧类（体操、啦啦操、杂技类等）': 5, '参加过区/市级体育比赛': 10}, 'Sedentary': {'练习艺术（绘画 / 乐器 / 唱歌 / 表演等）': 10, '喜欢艺术与人文类（绘画、写作、音乐、表演、文学历史）': 10, '会主动读课外书，但多是自己喜欢的书': 5}, 'Leader': {'喜欢当班干部、组织大家的人': 10, '带大家排练一场节目 / 艺术创作': 10, '找人商量，带大家一起解决问题': 10}, 'Joiner': {'比较害羞，说得不清楚': 3, '偶尔举手': 3}, 'Intuitive': {'爱观察蚂蚁、问科普问题，还会模仿手工教程尝试': 5, '有兴趣，会分析一些': 5}, 'Practical': {'会用网络或 AI 工具查找，并简单整理': 5, '能坚持整理书包、照顾盆栽': 10}, 'Research': {'参加学术类（数学社、英语角、辩论队）': 5, '能完成规定题目的作文，条理基本清楚': 3}, 'Balanced': {'语文,艺术/音乐,数学': 10, '有阶段性训练（1–3 年，间断参与）': 5}}
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Detected change in '/root/code/ai_based_education/test.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+127.0.0.1 - - [19/Sep/2025 14:49:25] "POST /swot HTTP/1.1" 200 -
+ * Detected change in '/root/code/ai_based_education/test.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Detected change in '/root/code/ai_based_education/test.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+127.0.0.1 - - [19/Sep/2025 14:51:22] "POST /growth_advice HTTP/1.1" 200 -
+66.132.153.132 - - [19/Sep/2025 15:00:00] "[33mGET / HTTP/1.1[0m" 404 -
+66.132.153.132 - - [19/Sep/2025 15:00:01] code 505, message Invalid HTTP version (2.0)
+66.132.153.132 - - [19/Sep/2025 15:00:01] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+66.132.153.132 - - [19/Sep/2025 15:00:07] code 505, message Invalid HTTP version (2.0)
+66.132.153.132 - - [19/Sep/2025 15:00:07] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+66.132.153.132 - - [19/Sep/2025 15:00:07] "[33mGET /.well-known/security.txt HTTP/1.1[0m" 404 -
+ * Detected change in '/root/code/ai_based_education/run_app.py', reloading
+input_check_result: False
+begin to generate rules!
+<class 'int'>
+G12 plan is {
+  "学年目标": "本学年目标是帮助大头儿子在学术成绩和体育特长之间找到最佳平衡点，确保核心学科（语文、数学）成绩稳定在A等级，同时通过艺术与人文类兴趣的深化展示个人综合素质，为申请中国大陆顶尖高校提供强有力的支撑。此外，需特别关注体育竞技型学生的特殊需求，确保训练计划与学业安排无缝衔接，以满足目标院校对体育特长生的录取要求。",
+  "推荐资源": "建议使用《中国高考体育特长生备考指南》作为主要参考书目，并结合在线平台如“慕课”上的专项课程提升语文和数学能力；同时，利用学校国际课程体系的优势，参加校内或校外的艺术与人文类工作坊，例如写作比赛、绘画展览等，进一步丰富个人履历。",
+  "应完成的项目": "鼓励学生在接下来的一年内参与至少两项全国性或省级体育赛事，争取获得优异名次并记录相关成绩；同时，完成一篇高质量的人文类研究论文（如文学分析或历史主题），并通过学校指导老师进行修改完善，作为申请材料的一部分提交至目标院校。",
+  "升学节点提示": "本阶段是决定最终升学路径的关键时期，建议家长和学生密切关注中国大陆本科招生政策的变化，特别是针对体育特长生的加分政策及面试要求；同时，在12月前完成所有标化考试（如SAT/ACT）及语言测试（如TOEFL/IELTS），并确保在次年3月前递交所有申请材料。",
+  "延续性建议": "过去几年中，学生已积累了一定的艺术与人文类兴趣基础，这些成果可以在本学年转化为具体作品集或竞赛奖项；此外，体育训练的持续投入也需要保留详细记录，包括参赛经历、荣誉证书以及教练推荐信，为未来大学面试提供有力支持。",
+  "英语进阶目标": "尽管目标院校主要集中在中国大陆，但鉴于国际课程背景，仍需保持较高的英语水平，建议词汇量达到5000以上，语言能力提升至CEFR C1，并在必要时准备TOEFL或IELTS成绩，以备不时之需。",
+  "特别提醒": "由于G12是最后冲刺阶段，请务必制定详尽的时间表，将每月的学习任务、训练计划及申请进度明确标注；家长需定期与导师沟通，确认学生状态是否符合预期；此外，若选择清华大学或北京大学作为目标院校，则需额外留意其体育特长生单独招生政策中的具体细则，避免因信息不对称而错失机会。"
+}
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+ * Serving Flask app 'run_app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.25.21.92:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 995-271-986
+127.0.0.1 - - [19/Sep/2025 15:04:47] "POST /growth_advice HTTP/1.1" 200 -

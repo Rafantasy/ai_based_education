@@ -75,26 +75,20 @@ def get_profile_def(lars_tag):
     idx = random.randint(1,16)
     return TP_DATA[idx]
 
-def get_enrollment_data(tag):
+def get_enrollment_data(tp_tendency, tp_score):
     dim_list = ['A_S','L_J','I_P','R_B']
     res = []
     for i in range(len(dim_list)):
         key = dim_list[i]
-        dim_info = TP_VALUE_DATA[key]
-        score = random.randint(5,90)
-        tendency = ''
-        if score >= 71:
-            tendency = 'strong-left'
-        elif score >= 55:
-            tendency = 'mild-left'
-        elif score >= 46:
-            tendency = 'balanced'
-        elif score >= 31:
-            tendency = 'mild-right'
-        else:
-            tendency = 'strong-right'
-        
-        tmp_dim = {"name": key, "value": score, "tendency": tendency, "explanation": dim_info[tendency]}
+        tendency = tp_tendency.get(key,'')
+        score = tp_score.get(key,'')
+        tmp_dim = {
+            "name": key,
+            "value": score,
+            "tendency": tendency,
+            "explanation": TP_VALUE_DATA[key][tendency]
+        }
         res.extend([tmp_dim])
     
     return res
+

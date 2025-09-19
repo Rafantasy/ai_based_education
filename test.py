@@ -380,8 +380,8 @@ if __name__ == '__main__':
             }
         ]
     }
-    req['student_info']['english_level'] = 'C1'
-    req['student_info']['rate'] = 'B'
+    req['student_info']['english_level'] = 'B2'
+    req['student_info']['rate'] = 'A'
     req['student_info']['subject_interest'] = "艺术与人文类（绘画、写作、音乐、表演、文学历史），语文，数学"
     req['student_info']['profile_type'] = "SLPB｜体育推广人 🏟️"
 
@@ -391,12 +391,12 @@ if __name__ == '__main__':
     # r = requests.post("http://127.0.0.1:5000/open_question", data=json.dumps(req), headers=headers)
     
     # # 人才画像
-    r = requests.post("http://127.0.0.1:5000/instant_profile", data=json.dumps(req), headers=headers)
+    # r = requests.post("http://127.0.0.1:5000/instant_profile", data=json.dumps(req), headers=headers)
     
     # # swot分析
     # r = requests.post("http://127.0.0.1:5000/swot", data=json.dumps(req), headers=headers)
     
     # # 成长建议
-    # r = requests.post("http://127.0.0.1:5000/growth_advice", data=json.dumps(req), headers=headers)
+    r = requests.post("http://127.0.0.1:5000/growth_advice", data=json.dumps(req), headers=headers)
     
     print(json.dumps(r.json(),indent=4,ensure_ascii=False))

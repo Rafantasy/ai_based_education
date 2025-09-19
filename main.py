@@ -22,7 +22,8 @@ from prompt_template import (
     prompt_open_question_summary,
     prompt_lars,
     prompt_subject_interest,
-    prompt_swot
+    prompt_swot,
+    prompt_tp
 )
 
 from profile_desc import (
@@ -37,6 +38,7 @@ from call_llm_model import (
 
 from compute_score import (
     cal_lars_score,
+    cal_TP_score,
     cal_dg_score,
     cal_learning_score,
     rate_classify
@@ -91,6 +93,23 @@ def get_LARS_evidence(req):
     
     return result
 
+def get_TP_evidence(req):
+    eval_result = req.get('eval_result', [])
+    qa_list = []
+    for item in eval_result:
+        q = item['question']
+        ans = ','.join(item['answer'])
+        qa_list.extend(['[题目]:'+q+'\n[答案]:'+ans])
+    qa_list = '\n'.join(qa_list)
+
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": prompt_tp % qa_list},
+    ]
+    result = call_model(messages)
+    
+    return result
+
 def get_subject_interest(req):
     eval_result = req.get('eval_result', [])
     qa_list = []
@@ -108,7 +127,45 @@ def get_subject_interest(req):
     
     return result
 
+
 def get_profile(req):
+    # TP 评价抽取证据
+    tp_evidence = get_TP_evidence(req)
+    tp_evidence = json.loads(tp_evidence.replace("```json",'').replace("```",'').strip())
+    print('tp_evidence:', tp_evidence)
+    tp_score = {}
+    for key in tp_evidence:
+        tmp_score = sum(v for k,v in tp_evidence[key].items())
+        tp_score[key] = tmp_score
+    
+    # 计算TP(Talent Potential)得分和标签
+    tp_tendency, tp_score, tp_tag = cal_TP_score(tp_score)
+    
+    # 得到人才倾向分数和描述
+    enrollment = get_enrollment_data(tp_tendency, tp_score)
+
+    # 获取人才画像所有属性信息
+    profile_def = get_profile_def(tp_tag)
+
+    # 学生感兴趣学科
+    subject_interest = get_subject_interest(req)
+
+    # 学生英语水平及分档
+    eng_level, rate = rate_classify(req)
+    
+    # 拼接输出结果
+    profile = {
+        "profile": profile_def,
+        "enrollment": enrollment,
+        "english_level": eng_level,
+        "rate": rate,
+	"subject_interest": subject_interest
+    }
+
+    return profile
+
+
+def get_profile_old(req):
     # 初始化
     enrollment = {
         "L": 0,
@@ -148,13 +205,8 @@ def get_profile(req):
     # 学生英语水平及分档
     eng_level, rate = rate_classify(req)
 
-    # 计算EB得分
-    cal_learning_score(req, rate, enrollment)
-    
     # 获取人才画像所有属性信息
     profile_def = get_profile_def(lars_tag)
-    
-    enrollment = get_enrollment_data(lars_tag)
     
     # 拼接输出结果
     profile = {
@@ -637,15 +689,18 @@ if __name__ == '__main__':
             }
         ]
     }
-    req['student_info']['english_level'] = 'C1'
-    req['student_info']['rate'] = 'B'
-    req['student_info']['subject_interest'] = "艺术与人文类（绘画、写作、音乐、表演、文学历史），语文，数学"
-    req['student_info']['profile_type'] = "SLPB｜体育推广人 🏟️"
+    # req['student_info']['english_level'] = 'C1'
+    # req['student_info']['rate'] = 'B'
+    # req['student_info']['subject_interest'] = "艺术与人文类（绘画、写作、音乐、表演、文学历史），语文，数学"
+    # req['student_info']['profile_type'] = "SLPB｜体育推广人 🏟️"
     
-    print('begin to generate rules!')
-    # step1: 生成知识库召回规则
-    rules = get_growth_advice_rules(req)
-    tmp = json.dumps(rules,indent=4,ensure_ascii=False)
+    profile = get_profile_new(req)
+    print(json.dumps(profile,indent=4,ensure_ascii=False))
+
+    # print('begin to generate rules!')
+    # # step1: 生成知识库召回规则
+    # rules = get_growth_advice_rules(req)
+    # tmp = json.dumps(rules,indent=4,ensure_ascii=False)
     
     # step2: 知识召回
 
