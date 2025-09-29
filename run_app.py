@@ -18,7 +18,8 @@ from main import (
 from tools.load_resource import (
     load_growth_advice_rule
 )
-from gen_report import get_report
+# from gen_report import get_report
+from gen_report_wo_db import get_report
 
 # global vars
 DB_GROWTH_ADVICE_RULE = None
@@ -40,10 +41,9 @@ def produe_open_question_ans():
         logger.error("please check format of request")
         return res 
     
-    logger.info('input req:', request.json)
-    logger.info('input req type:', type(request.json))
+    req = request.json
+    logger.info(f"open question input req:{req}")
     
-    logger.info('begin call model')
     model_res = get_open_question_summary(request.json)
     
     response_validity = 1 
@@ -65,8 +65,13 @@ def produe_instant_profile():
     else:
         logger.error("please check format of request")
         return res
-    
-    res = get_profile(request.json)
+    req = request.json
+    logger.info(f"instant_profile input req:{req}") 
+    t_start = time.time()
+    res = get_profile(req)
+    time_consumed = time.time()-t_start
+    id = request.json['student_info']['id']
+    logger.info(f"{id}-instant profile generate time:{time_consumed}")
     
     return Response(json.dumps(res))
 
@@ -83,50 +88,71 @@ def produe_swot():
         logger.error("please check format of request")
         return res 
     
+    req = request.json
+    logger.info(f"swot-input req is{req}")
+
+    t_start = time.time() 
     res = {
-        "swot": get_swot(request.json)
+        "swot": get_swot(req)
     }   
+    time_consumed = time.time()-t_start
+    id = request.json['student_info']['id']
+    logger.info(f"{id}-swot generate time:{time_consumed}")
     
     return Response(json.dumps(res))
 
 
 @app.route('/growth_advice', methods=['POST'])
 def produe_growth_advice():
-    if request.json:
-        # 输入内容校验
-        print('input_check_result:',check_input(request.json,'growth_advice'))
-    else:
-        logger.error("please check format of request")
-        return res
+    # if request.json:
+    #     # 输入内容校验
+    #     print('input_check_result:',check_input(request.json,'growth_advice'))
+    # else:
+    #     logger.error("please check format of request")
+    #     return res
     
-    print('begin to generate rules!')
-    # step1: 生成知识库召回规则
-    rules = get_growth_advice_rules(request.json)
-    tmp = json.dumps(rules,indent=4,ensure_ascii=False)
-    logger.info('rules generated:', rules)
-    
-    # step2: 知识召回
+    # print('begin to generate rules!')
+    # # step1: 生成知识库召回规则
+    # t_start = time.time()
+    # rules = get_growth_advice_rules(request.json)
+    # tmp = json.dumps(rules,indent=4,ensure_ascii=False)
+    # # logger.info(f"rules generated:{rules}")
+    # time_consumed = time.time()-t_start
+    # id = request.json['student_info']['id']
+    # logger.info(f"{id}-rules generate time:{time_consumed}")
+    # # step2: 知识召回
 
-    # step3: 内容生成
-    # 最终出格式示例 
-    res = get_report(rules)
+    # # step3: 内容生成
+    # # 最终出格式示例
+    # t_start = time.time()
+    # res = get_report(rules)
+    # time_consumed = time.time()-t_start
+    # logger.info(f"{id}-report generate time:{time_consumed}")
     
+    req = request.json
+    logger.info(f"growth advice-input req is{req}")
+    t_start = time.time()
+    res = get_report(req)
+    time_consumed = time.time()-t_start
+    logger.info(f"{id}-report generate time:{time_consumed}")
+
+    return Response(json.dumps(res)) 
     # 输出格式化
-    keys = sorted(list(res.keys()), key=lambda x:x)
-    res_formated = {}
-    for key in keys:
-        tmp_v = res[key]
-        if key != '本科推荐院校':
-            tmp_v = eval(res[key])
-        res_formated[key] = tmp_v
+    # keys = sorted(list(res.keys()), key=lambda x:x)
+    # res_formated = {}
+    # for key in keys:
+    #     tmp_v = res[key]
+    #     if key != '本科推荐院校':
+    #         tmp_v = eval(res[key])
+    #     res_formated[key] = tmp_v
 
-    return Response(json.dumps(res_formated))
+    # return Response(json.dumps(res_formated))
 
 
 def setup_log(log_name):
     logger = logging.getLogger(log_name)
     log_path = os.path.join('./log/', log_name)
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
     file_handler = TimedRotatingFileHandler(
         filename=log_path, when="MIDNIGHT", interval=1, backupCount=30
     )
@@ -147,7 +173,7 @@ def init_resource():
 
 if __name__ == '__main__':
 
-    logger = setup_log("test_log")
+    logger = setup_log("service_log")
     
     init_resource()
 

@@ -1,26 +1,13 @@
 import json
+import ast
+
 from utils.func_str import common_chars
 
-# 计算LARS得分
-def cal_lars_score(lars_evi, enrollment):
-    # LS
-    if enrollment['L'] == 0 and enrollment['S'] == 0:
-       enrollment['L'] = 50
-       enrollment['S'] = 50
-    else: 
-        enrollment['L'] = int(100*lars_evi['L']/(lars_evi['L']+lars_evi['S']))
-        enrollment['S'] = 100 - enrollment['L']
+import logging
+logger = logging.getLogger("service_log")
 
-    # AR
-    if enrollment['A'] == 0 and enrollment['R'] == 0:
-       enrollment['A'] = 50
-       enrollment['R'] = 50
-    else:
-        enrollment['A'] = int(100*lars_evi['A']/(lars_evi['A']+lars_evi['R']))
-        enrollment['R'] = 100 - enrollment['A']
-    
 # 计算TP得分
-def cal_TP_score(tp_evi):
+def cal_TP_score_old(tp_evi):
     tp_tendency = {
         "A_S": 'balanced',
         "L_J": 'balanced',
@@ -69,6 +56,100 @@ def cal_TP_score(tp_evi):
 
     return tp_tendency, tp_score, tp_tag
 
+
+def cal_TP_score(tp_evi):
+    tp_tendency = {
+        "A_S": 'balanced',
+        "L_J": 'balanced',
+        "I_P": 'balanced',
+        "R_B": 'balanced'
+    }    
+    tp_tag = ''
+    
+    def find_key(target, key_list):
+        for key in key_list:
+            if target in key:
+                return key
+        
+        return ''
+
+    def cal_tp_score(tp_evi):
+        score = {}
+        for dim, evi in tp_evi:
+            # evi = json.loads(evi.replace("```json",'').replace("```",'').strip())
+            evi = ast.literal_eval(evi.replace("```json",'').replace("```",'').strip())
+            evi_str = json.dumps(evi,indent=4,ensure_ascii=False)
+            logger.info(f"*************evi is:{evi_str}")
+            tendency_score = []
+            key_list = list(evi.keys())
+
+            # key = find_key('强', key_list)
+            # tendency_score.extend([sum([int(str(v).replace('分','').strip())for item in evi.get(key, []) for k,v in item.items()])])
+            # key = find_key('中', key_list)
+            # tendency_score.extend([sum([int(str(v).replace('分','').strip())for item in evi.get(key, []) for k,v in item.items()])])
+            # key = find_key('弱', key_list)
+            # tendency_score.extend([sum([int(str(v).replace('分','').strip())for item in evi.get(key, []) for k,v in item.items()])])
+            # if ((tendency_score[0] > tendency_score[1]) and (tendency_score[0] > tendency_score[2])):
+            #     # 明显积极向的维度强
+            #     score[dim] = int(100*tendency_score[0]/(tendency_score[0]+tendency_score[2]+0.0001))
+            # else:
+            #     score[dim] = int(100*tendency_score[0]/(tendency_score[0]+tendency_score[1]+tendency_score[2]+0.0001))
+        
+            key = find_key('强', key_list)
+            tendency_score.append([int(str(v).replace('分','').strip()) for item in evi.get(key, []) for k,v in item.items()])
+            key = find_key('中', key_list)
+            tendency_score.append([int(str(v).replace('分','').strip()) for item in evi.get(key, []) for k,v in item.items()])
+            key = find_key('弱', key_list)
+            tendency_score.append([int(str(v).replace('分','').strip()) for item in evi.get(key, []) for k,v in item.items()])
+            
+            score_1 = (sum(tendency_score[0])+sum(tendency_score[1]))/(len(tendency_score[0])+len(tendency_score[1]))
+            score_2 = sum(tendency_score[2])/len(tendency_score[2])
+            score[dim] = int(100*score_1/(score_1+score_2))
+
+        return score
+    
+    score = cal_tp_score(tp_evi) 
+    tp_score = {
+        "A_S": score.get("A_S"),
+        "L_J": score.get("L_J"),
+        "I_P": score.get("I_P"),
+        "R_B": score.get("R_B")
+    }
+    
+    def score_map(score, dim):
+        tag_left = dim.split('_')[0]
+        tag_right = dim.split('_')[1]
+        if score <= 30:
+            return 'strong-right', tag_right
+        elif score <= 45:
+            return 'mild-right', tag_right
+        elif score <= 54:
+            return 'balanced', tag_right
+        elif score <= 70:
+            return 'mild-left', tag_left
+        else:
+            return 'strong-left', tag_left
+    
+    # A_S
+    tendency,tag = score_map(tp_score['A_S'], 'A_S')
+    tp_tendency['A_S'] = tendency
+    tp_tag += tag
+    # L_J
+    tendency,tag = score_map(tp_score['L_J'], 'L_J')
+    tp_tendency['L_J'] = tendency
+    tp_tag += tag
+    # I_P
+    tendency,tag = score_map(tp_score['I_P'], 'I_P')
+    tp_tendency['I_P'] = tendency
+    tp_tag += tag
+    # R_B
+    tendency,tag = score_map(tp_score['R_B'], 'R_B')
+    tp_tendency['R_B'] = tendency
+    tp_tag += tag
+
+    return tp_tendency, tp_score, tp_tag
+
+
 def cal_dg_score(college_goal_path, enrollment):
     if ['中国大陆本科'] == college_goal_path:
         enrollment['D'] = 100 
@@ -100,7 +181,8 @@ def cal_learning_score(req):
             tmp_q = elem['question']
             tmp_score_rule = elem['score_rule']
             for qa in qa_list:
-                if common_chars(qa['question'],tmp_q)/len(set(tmp_q)) > 0.9:
+                # if common_chars(qa['question'],tmp_q)/len(set(tmp_q)) > 0.9:
+                if common_chars(qa['question'],tmp_q)/len(set(qa['question'])) > 0.9:
                     tmp_value = elem['questions_options'][qa['answer'][0]]
                     score_actual_mark += int(tmp_score_rule.get(tmp_value, 0))
         return score_actual_mark
@@ -150,17 +232,26 @@ def eng_level_classify(req):
     qa_list = req.get('eval_result', [])
     for i in range(len(eng_q_list)):
         for item in qa_list:
-            if common_chars(item['question'],eng_q_list[i]['question'])/len(set(eng_q_list[i]['question'])) > 0.9:
-                eng_ans_list[i] = item['answer'][0]
-                tmp_value = eng_q_list[i]['questions_options'][item['answer'][0]]
-                eng_score_list[i] = int(eng_q_list[i]['score_rule'].get(tmp_value, 0))
+            # if common_chars(item['question'],eng_q_list[i]['question'])/len(set(eng_q_list[i]['question'])) > 0.9:
+            if common_chars(item['question'],eng_q_list[i]['question'])/len(set(item['question'])) > 0.9:
+                if '在阅读理解英文时，通常能理解到什么' in item['question']:
+                    tmp_bank = eng_q_list[i]['question']
+                    logger.info(f"eng bak is{tmp_bank}")
+                    eng_ans_list[i] = item['answer'][0]
+                    tmp_qq = eng_q_list[i]['questions_options']
+                    logger.info(f"eng options is{tmp_qq}")
+                    tmp_aa = item['answer'][0]
+                    logger.info(f"eng aa is{tmp_aa}")
+                    tmp_value = eng_q_list[i]['questions_options'][item['answer'][0]]
+                    eng_score_list[i] = int(eng_q_list[i]['score_rule'].get(tmp_value, 0))
     # 选择题均分
     eng_option_score = sum(eng_score_list)/len(eng_score_list)
 
     eng_exam_result = 0
     flag_not_pass = 0
     for item in qa_list:
-        if common_chars(item['question'],eng_exam_q)/len(set(eng_exam_q)) > 0.9:
+        # if common_chars(item['question'],eng_exam_q)/len(set(eng_exam_q)) > 0.9:
+        if common_chars(item['question'],eng_exam_q)/len(set(item['question'])) > 0.9:
             if '未通过' in item['answer'][0]:
                 flag_not_pass = 1
             tmp_value = eng_exam_q_list[0]['questions_options'][item['answer'][0]]
@@ -178,6 +269,11 @@ def eng_level_classify(req):
     if flag_not_pass:
         eng_raw_score = min(eng_raw_score, 55)-5
     
+    tmp_school_type = req['student_info']['school_type']
+    tmp_grade = req['student_info']['current_grade']
+    print('**************:',tmp_school_type,tmp_grade)
+    logger.info(f"student school_type:{tmp_school_type}") 
+    logger.info(f"student current grade:{tmp_grade}") 
     expect_info = eng_expect_score.get(req['student_info']['school_type']).get(req['student_info']['current_grade'])
     expect_score = expect_info['score']
     expect_level = expect_info['CEFR']
@@ -206,6 +302,6 @@ def eng_level_classify(req):
     else:
         grade_num = int(req['student_info']['current_grade'].split('G')[1])
         if grade_num > 1:
-            eng_final_level = eng_expect_score.get(req['student_info']['school_type']).get("G"+str(grade_num-1))
+            eng_final_level = eng_expect_score.get(req['student_info']['school_type']).get("G"+str(grade_num-1)).get('CEFR','')
 
     return eng_final_score, eng_final_level

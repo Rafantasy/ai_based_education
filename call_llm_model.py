@@ -1,6 +1,11 @@
 import os
 from openai import OpenAI
+import asyncio
+import time
+from datetime import datetime
 
+import logging
+logger = logging.getLogger("service_log")
 
 client = OpenAI(
     # 若没有配置环境变量，请用百炼API Key将下行替换为：api_key="sk-xxx",
@@ -28,3 +33,34 @@ def call_model(msgs):
             result += chunk.choices[0].delta.content
 
     return result
+
+async def async_call_model(talent_msg):
+    loop = asyncio.get_running_loop()
+
+    start_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    logger.info(f"异步调用大模型开始时间{start_time}")
+    print("异步调用大模型开始时间",start_time)
+    
+    talent_dim,msgs = talent_msg
+    model_resp = await loop.run_in_executor(None, call_model, msgs)
+    
+    end_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    logger.info(f"异步调用大模型结束时间{end_time}")
+    print("异步调用大模型结束时间",end_time)
+    
+    return (talent_dim, model_resp)
+    
+async def run_async_tasks(talent_msg_list): 
+    # 初始化任务
+    tasks = [async_call_model(x) for x in talent_msg_list]
+
+    # 执行任务
+    results = await asyncio.gather(*tasks)
+
+    return results
+
+
+if __name__ == '__main__':
+    talent_msg_list = [('A_S',[{'role':'user','content':'体育'}]),('R_B',[{'role':'user','content':'音乐'}])]
+    res = asyncio.run(run_async_tasks(talent_msg_list))
+    print(res)

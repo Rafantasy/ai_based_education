@@ -1,7 +1,7 @@
 {
     "price": "0.01",
     "template_variables": [],
-    "test_paper_name": "SHAI低龄国际人才升学画像测评",
+    "test_paper_name": "SHAI低龄潜能与升学规划测评（升级版）",
     "questions_sections": [
         {
             "activeName": 0,
@@ -10,191 +10,393 @@
             "questions": [
                 {
                     "test_questions_section_id": 1,
-                    "test_questions_section_name": "自我认知与性格描述",
+                    "test_questions_section_name": "性格韧性",
                     "order_number": 1,
-                    "question_hash": "104a43fe451762fc79d1ddf64a0bbdee",
-                    "question_content": "如何描述{{appellation}}的性格？（三个优点/三个缺点）",
-                    "question_type": "B",
-                    "question_attachment_type": "C",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "自信/外向",
-                            "value": "A"
-                        },
-                        {
-                            "label": "安静/内向",
-                            "value": "B"
-                        },
-                        {
-                            "label": "坚持/有韧性",
-                            "value": "C"
-                        },
-                        {
-                            "label": "细心/负责",
-                            "value": "D"
-                        },
-                        {
-                            "label": "有主见/领导力",
-                            "value": "E"
-                        },
-                        {
-                            "label": "冲动/易急",
-                            "value": "F"
-                        },
-                        {
-                            "label": "乐观/开朗",
-                            "value": "G"
-                        },
-                        {
-                            "label": "敏感/情绪化",
-                            "value": "H"
-                        },
-                        {
-                            "label": "容易焦虑",
-                            "value": "I"
-                        },
-                        {
-                            "label": "拖延/犹豫",
-                            "value": "J"
-                        },
-                        {
-                            "label": "合作友好",
-                            "value": "K"
-                        },
-                        {
-                            "label": "注意力分散",
-                            "value": "L"
-                        }
-                    ],
-                    "placeholder": "优点：开朗/自信/善于沟通/有耐心；短板：拖延/敏感/容易紧张/粗心。\n「学生示例：我觉得自己挺开朗的，愿意帮助别人，但有时候太急躁。」\n「家长示例：孩子很有责任心，也比较自律，但遇到新事物会有点紧张。」",
-                    "question_attachment_content": "如果不好描述，请勾选最贴近{SELF}的性格特点（请至少选择3项，至多选择6项）"
-                },
-                {
-                    "test_questions_section_id": 1,
-                    "test_questions_section_name": "冲突处理与人际互动",
-                    "order_number": 2,
-                    "question_hash": "1919dd4043bf29e25f0a941b150e9d2f",
-                    "question_content": "请回忆{{appellation}}最近一次和同学/朋友发生不愉快的事情，描述一下经过。",
-                    "question_type": "B",
-                    "question_attachment_type": "C",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "矛盾原因：沟通误会",
-                            "value": "A"
-                        },
-                        {
-                            "label": "矛盾原因：分工不清",
-                            "value": "B"
-                        },
-                        {
-                            "label": "矛盾原因：被忽视/被排挤",
-                            "value": "C"
-                        },
-                        {
-                            "label": "矛盾原因：竞争/比较",
-                            "value": "D"
-                        },
-                        {
-                            "label": "矛盾原因：规则/纪律问题",
-                            "value": "E"
-                        },
-                        {
-                            "label": "处理方式：主动沟通解释",
-                            "value": "F"
-                        },
-                        {
-                            "label": "处理方式：寻求老师/家长帮助",
-                            "value": "G"
-                        },
-                        {
-                            "label": "处理方式：回避/自己一个人哭",
-                            "value": "H"
-                        },
-                        {
-                            "label": "处理方式：生气或顶撞",
-                            "value": "I"
-                        },
-                        {
-                            "label": "处理方式：打架",
-                            "value": "J"
-                        },
-                        {
-                            "label": "结果：矛盾解决了",
-                            "value": "K"
-                        },
-                        {
-                            "label": "结果：没有解决",
-                            "value": "L"
-                        },
-                        {
-                            "label": "结果：冲突加剧，矛盾加深",
-                            "value": "M"
-                        }
-                    ],
-                    "placeholder": "事件：发生了什么、为什么不愉快；处理：孩子/家长采取了什么措施（沟通/解释/求助/回避）；结果：是否改善，下次会怎么改进。\n学生示例：「上次和同学争论某某事情时我有点生气，但后来主动沟通，最后和好了。」\n家长示例：「孩子和同学吵架后，我提醒他要先冷静，再和对方交流，孩子后来学会了表达。」",
-                    "question_attachment_content": "如果不方便完整描述，请快速勾选最符合{{appellation}}情况的选项（事件+处理+结果）"
-                },
-                {
-                    "test_questions_section_id": 1,
-                    "test_questions_section_name": "成就动机&自我效能感",
-                    "order_number": 3,
-                    "question_hash": "3ab6232396d36c7bfa1402c17f1cfc86",
-                    "question_content": "{{appellation}}做过的最有成就感的一件事是什么？为什么？",
-                    "question_type": "B",
-                    "question_attachment_type": "A",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "成功完成了一件困难的事",
-                            "value": "A"
-                        },
-                        {
-                            "label": "得到了老师/家长的认可",
-                            "value": "B"
-                        },
-                        {
-                            "label": "赢得了同学的喜欢或关注",
-                            "value": "C"
-                        },
-                        {
-                            "label": "学会了新技能",
-                            "value": "D"
-                        }
-                    ],
-                    "placeholder": "学习成绩｜体育比赛｜艺术创作｜帮助别人\n学生示例：「我觉得最有成就感的是去年参加学校的科技小发明比赛，我和同学们一起做了一个环保垃圾桶。虽然过程中遇到很多问题，但是最后作品得了二等奖。我觉得特别有成就感，因为这是我自己坚持下来的成果，还学会了新的知识。」\n家长示例：「我觉得孩子最有成就感的事情是他第一次在学校演讲比赛中拿奖。平时他比较内向，但那次为了准备演讲，他每天在家都练习。最后能在台上完整地讲下来，并且得到掌声和老师的肯定，他回来跟我说自己‘终于敢站在大家面前了’，我感觉他很自豪。」",
-                    "question_attachment_content": "你觉得这件事让{{appellation}}有成就感，主要是因为："
-                },
-                {
-                    "test_questions_section_id": 1,
-                    "test_questions_section_name": "情绪调节与压力反应",
-                    "order_number": 4,
-                    "question_hash": "2d8a3c9cb0a4ec80de4279f2355979df",
-                    "question_content": "当{{appellation}}在考试、比赛或测评中表现不理想时，通常会怎么做？",
+                    "question_hash": "ea492c18640055c78436fb60f0b7307b",
+                    "question_content": "当{{appellation}}遇到困难时，更常见的反应是？",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "调整心态继续努力",
+                            "label": "主动想办法解决",
                             "value": "A"
                         },
                         {
-                            "label": "复盘问题后再开始",
+                            "label": "寻求老师/家长帮助",
                             "value": "B"
                         },
                         {
-                            "label": "很难释怀，总担心下次失败",
+                            "label": "容易放弃",
                             "value": "C"
                         },
                         {
-                            "label": "紧张到睡不着或明显影响日常生活",
+                            "label": "先拖一拖再说",
                             "value": "D"
                         }
                     ],
                     "placeholder": null,
                     "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 1,
+                    "test_questions_section_name": "团队角色",
+                    "order_number": 2,
+                    "question_hash": "8f7a993cdbbc46d8068ab93acb7cd58d",
+                    "question_content": "{{appellation}}在和同伴合作时，更像是？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "主动组织者",
+                            "value": "A"
+                        },
+                        {
+                            "label": "团队执行者",
+                            "value": "B"
+                        },
+                        {
+                            "label": "随大流",
+                            "value": "C"
+                        },
+                        {
+                            "label": "不太参与",
+                            "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 1,
+                    "test_questions_section_name": "社交表达",
+                    "order_number": 3,
+                    "question_hash": "ee415be007f0517c1c172fe801df92a6",
+                    "question_content": "在公众场合，{{appellation}}更可能？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "踊跃发言",
+                            "value": "A"
+                        },
+                        {
+                            "label": "被点到才说",
+                            "value": "B"
+                        },
+                        {
+                            "label": "不太愿意发言",
+                            "value": "C"
+                        },
+                        {
+                            "label": "紧张沉默",
+                            "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 1,
+                    "test_questions_section_name": "情绪调节",
+                    "order_number": 4,
+                    "question_hash": "91c86f27bbf98decb2f760a0e8b490ff",
+                    "question_content": "当{{appellation}}面对批评时，更可能？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "反思并改进",
+                            "value": "A"
+                        },
+                        {
+                            "label": "表面接受但心里别扭",
+                            "value": "B"
+                        },
+                        {
+                            "label": "容易情绪化",
+                            "value": "C"
+                        },
+                        {
+                            "label": "当作没听见",
+                            "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 1,
+                    "test_questions_section_name": "毅力",
+                    "order_number": 5,
+                    "question_hash": "2210c30cbe19d1d82798518f6a555876",
+                    "question_content": "{{appellation}}是否容易坚持完成一件事？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "总是坚持到底",
+                            "value": "A"
+                        },
+                        {
+                            "label": "大多数能坚持",
+                            "value": "B"
+                        },
+                        {
+                            "label": "偶尔半途而废",
+                            "value": "C"
+                        },
+                        {
+                            "label": "很难坚持",
+                            "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 1,
+                    "test_questions_section_name": "适应力",
+                    "order_number": 6,
+                    "question_hash": "229d3aea05704bbad69b91554be74690",
+                    "question_content": "在陌生环境，{{appellation}}的适应速度是？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "很快适应",
+                            "value": "A"
+                        },
+                        {
+                            "label": "需要一些时间",
+                            "value": "B"
+                        },
+                        {
+                            "label": "较慢",
+                            "value": "C"
+                        },
+                        {
+                            "label": "很抗拒",
+                            "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 1,
+                    "test_questions_section_name": "团队角色",
+                    "order_number": 7,
+                    "question_hash": "4610c5dd732910ffb51a72e8105f6d7e",
+                    "question_content": "{{appellation}}在团队中更像？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "领导型",
+                            "value": "A"
+                        },
+                        {
+                            "label": "执行型",
+                            "value": "B"
+                        },
+                        {
+                            "label": "支持型",
+                            "value": "C"
+                        },
+                        {
+                            "label": "旁观型",
+                            "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 1,
+                    "test_questions_section_name": "自律习惯",
+                    "order_number": 8,
+                    "question_hash": "4097334d87f4ba4a108885cf03ffc7f8",
+                    "question_content": "在生活习惯上，{{appellation}}更像？",
+                    "question_type": "C",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "自律规律",
+                            "value": "A"
+                        },
+                        {
+                            "label": "偶尔需要提醒",
+                            "value": "B"
+                        },
+                        {
+                            "label": "经常拖延",
+                            "value": "C"
+                        },
+                        {
+                            "label": "依赖父母督促",
+                            "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 1,
+                    "test_questions_section_name": "自我认知（优势）",
+                    "order_number": 9,
+                    "question_hash": "8b98f75b3bf0303bc534bcecb6895389",
+                    "question_content": "{{appellation}}最大的 3 个性格优点是？（请选择 3 个）",
+                    "question_type": "C",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "乐观开朗",
+                            "value": "A"
+                        },
+                        {
+                            "label": "自信勇敢",
+                            "value": "B"
+                        },
+                        {
+                            "label": "善良助人",
+                            "value": "C"
+                        },
+                        {
+                            "label": "自律认真",
+                            "value": "D"
+                        },
+                        {
+                            "label": "有责任心",
+                            "value": "E"
+                        },
+                        {
+                            "label": "反应灵敏",
+                            "value": "F"
+                        },
+                        {
+                            "label": "创意多",
+                            "value": "G"
+                        },
+                        {
+                            "label": "坚持不懈",
+                            "value": "H"
+                        },
+                        {
+                            "label": "冷静稳重",
+                            "value": "I"
+                        },
+                        {
+                            "label": "善于倾听",
+                            "value": "J"
+                        },
+                        {
+                            "label": "细腻细心",
+                            "value": "K"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 1,
+                    "test_questions_section_name": "自我认知（短板）",
+                    "order_number": 10,
+                    "question_hash": "9e5e8a0c00bf065a36340dc3b47e3b3c",
+                    "question_content": "{{appellation}}最需要改的 3 个性格缺点是？（请选择 3 个）",
+                    "question_type": "C",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "急躁",
+                            "value": "A"
+                        },
+                        {
+                            "label": "害羞",
+                            "value": "B"
+                        },
+                        {
+                            "label": "爱顶嘴",
+                            "value": "C"
+                        },
+                        {
+                            "label": "固执",
+                            "value": "D"
+                        },
+                        {
+                            "label": "依赖",
+                            "value": "E"
+                        },
+                        {
+                            "label": "犟脾气",
+                            "value": "F"
+                        },
+                        {
+                            "label": "容易放弃",
+                            "value": "G"
+                        },
+                        {
+                            "label": "爱生气",
+                            "value": "H"
+                        },
+                        {
+                            "label": "内向",
+                            "value": "I"
+                        },
+                        {
+                            "label": "不合群",
+                            "value": "J"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 1,
+                    "test_questions_section_name": "成就动机",
+                    "order_number": 11,
+                    "question_hash": "3205251a2e0f1f93f862ee1581427c02",
+                    "question_content": "请分享一件让{{appellation}}最有成就感的事情。",
+                    "question_type": "B",
+                    "question_attachment_type": "C",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "在学习上得到过老师/同学的表扬",
+                            "value": "A"
+                        },
+                        {
+                            "label": "在学科竞赛/体育比赛/活动中取得成绩",
+                            "value": "B"
+                        },
+                        {
+                            "label": "在艺术或兴趣活动中有作品展示/作品被认可",
+                            "value": "C"
+                        },
+                        {
+                            "label": "在帮助他人或集体中感受到价值",
+                            "value": "D"
+                        },
+                        {
+                            "label": "在家庭中完成一件小事（如做饭、整理房间）被认可",
+                            "value": "E"
+                        },
+                        {
+                            "label": "目前还没有特别觉得成就感的事情",
+                            "value": "F"
+                        }
+                    ],
+                    "placeholder": "✨ 再小的成就也闪闪发光！无论是学业、兴趣还是生活中的小瞬间。如考到好成绩、被老师表扬、完成一篇作文、画了一幅画、演出成功、完成一个模型、帮忙做家务、学会做菜、照顾弟弟妹妹、帮助同学、集体活动里有贡献。",
+                    "question_attachment_content": "如果一时想不出具体的事情，可以选择以下情境，哪个情境最可能让{{appellation}}获得成就感："
                 }
             ]
         },
@@ -205,201 +407,313 @@
             "questions": [
                 {
                     "test_questions_section_id": 2,
-                    "test_questions_section_name": "学习态度&校内表现",
+                    "test_questions_section_name": "学科水平",
                     "order_number": 1,
-                    "question_hash": "cf73b07c3c3cba9f48b055b0b4220366",
-                    "question_content": "学校老师是如何评价{{appellation}}的校内表现和学习态度的？",
-                    "question_type": "B",
-                    "question_attachment_type": "C",
+                    "question_hash": "bde388c23d2f3147d3472aaf271287bc",
+                    "question_content": "{{appellation}}平时成绩大致在哪个水平？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "总是专注",
+                            "label": "班级前10%",
                             "value": "A"
                         },
                         {
-                            "label": "大多专注",
+                            "label": "班级前30%",
                             "value": "B"
                         },
                         {
-                            "label": "偶尔走神",
+                            "label": "中等水平",
                             "value": "C"
                         },
                         {
-                            "label": "经常分心",
+                            "label": "偏下水平",
                             "value": "D"
-                        },
-                        {
-                            "label": "经常举手",
-                            "value": "E"
-                        },
-                        {
-                            "label": "偶尔举手",
-                            "value": "F"
-                        },
-                        {
-                            "label": "被点才说",
-                            "value": "G"
-                        },
-                        {
-                            "label": "不愿发言",
-                            "value": "H"
-                        },
-                        {
-                            "label": "作业按时且整洁",
-                            "value": "I"
-                        },
-                        {
-                            "label": "作业提醒后完成",
-                            "value": "J"
-                        },
-                        {
-                            "label": "作业拖到最后",
-                            "value": "K"
-                        },
-                        {
-                            "label": "作业常常不交",
-                            "value": "L"
-                        },
-                        {
-                            "label": "乐于和同学合作",
-                            "value": "M"
-                        },
-                        {
-                            "label": "能倾听轮流发言",
-                            "value": "N"
-                        },
-                        {
-                            "label": "经常打断别人发言",
-                            "value": "O"
-                        },
-                        {
-                            "label": "违反课堂纪律",
-                            "value": "P"
-                        },
-                        {
-                            "label": "笔记会记要点/错题本",
-                            "value": "Q"
-                        },
-                        {
-                            "label": "基本有记笔记的习惯",
-                            "value": "R"
-                        },
-                        {
-                            "label": "很少记笔记",
-                            "value": "S"
-                        },
-                        {
-                            "label": "按时到课/带齐用品",
-                            "value": "T"
-                        },
-                        {
-                            "label": "偶尔忘记带学习用品",
-                            "value": "U"
-                        },
-                        {
-                            "label": "受挫能调整",
-                            "value": "V"
-                        },
-                        {
-                            "label": "受挫需要安慰后继续",
-                            "value": "W"
-                        },
-                        {
-                            "label": "受挫易放弃",
-                            "value": "X"
                         }
                     ],
-                    "placeholder": "老师常说我/孩子在课上「〔专注/积极举手/乐于合作〕」，在〔语文/数学/科学〕课最明显。\n作业「〔按时完成且整洁/提醒后完成〕」，最近得到的评价是「〔认真/需要更细心〕」。\n改进点是「〔发言前先倾听/减少走神/带齐学习用品〕」，我们准备「〔每天检查清单/设置作业提醒〕」。",
-                    "question_attachment_content": "快速勾选符合{{appellation}}校内表现和学习态度的选项（选3–6个）"
+                    "placeholder": null,
+                    "question_attachment_content": null
                 },
                 {
                     "test_questions_section_id": 2,
-                    "test_questions_section_name": "学科兴趣&学术竞争力",
+                    "test_questions_section_name": "学科兴趣",
                     "order_number": 2,
-                    "question_hash": "cb7b73434c675412a190d1479761614f",
-                    "question_content": "{{appellation}}最喜欢的学科是哪一个？为什么喜欢？有参加过学科竞赛吗？是什么竞赛？有拿到奖项吗？",
-                    "question_type": "B",
+                    "question_hash": "c7a7446b4dcdcd6bdf2f4954795d4d76",
+                    "question_content": "{{appellation}}最喜欢的学科是？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "数学/理科",
+                            "value": "A"
+                        },
+                        {
+                            "label": "语文/文科",
+                            "value": "B"
+                        },
+                        {
+                            "label": "英语/外语",
+                            "value": "C"
+                        },
+                        {
+                            "label": "艺术/体育类",
+                            "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 2,
+                    "test_questions_section_name": "偏科情况",
+                    "order_number": 3,
+                    "question_hash": "589a62d6c0c12acb3a138b5fba7c867b",
+                    "question_content": "{{appellation}}是否存在“偏科”？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "基本均衡",
+                            "value": "A"
+                        },
+                        {
+                            "label": "数理强、文科弱",
+                            "value": "B"
+                        },
+                        {
+                            "label": "文科强、数理弱",
+                            "value": "C"
+                        },
+                        {
+                            "label": "英语突出/其他弱",
+                            "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 2,
+                    "test_questions_section_name": "学业稳定度",
+                    "order_number": 4,
+                    "question_hash": "0e2685e094207e6aaf3e1b416297c3a7",
+                    "question_content": "最近一次重要考试，{{appellation}}的表现是？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "超出预期",
+                            "value": "A"
+                        },
+                        {
+                            "label": "正常发挥",
+                            "value": "B"
+                        },
+                        {
+                            "label": "小幅下降",
+                            "value": "C"
+                        },
+                        {
+                            "label": "明显退步",
+                            "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 2,
+                    "test_questions_section_name": "补习情况",
+                    "order_number": 5,
+                    "question_hash": "ca980389baf4ccdffef7beea2f4c94ae",
+                    "question_content": "{{appellation}}参加了多少学科补习班？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "没有学科补习班",
+                            "value": "A"
+                        },
+                        {
+                            "label": "1 个（学科补习班/家教）",
+                            "value": "B"
+                        },
+                        {
+                            "label": "2 个（学科补习班/家教）",
+                            "value": "C"
+                        },
+                        {
+                            "label": "3–4 个（学科补习班/家教）",
+                            "value": "D"
+                        },
+                        {
+                            "label": "5 个及以上（学科补习班/家教",
+                            "value": "E"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 2,
+                    "test_questions_section_name": "目标感",
+                    "order_number": 6,
+                    "question_hash": "3c7634224be5fbc816016a9c2680c07b",
+                    "question_content": "{{appellation}}对自己未来3–5年的学习目标有想法吗？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "很清楚，知道要做到什么（比如考好成绩、学会新本领）",
+                            "value": "A"
+                        },
+                        {
+                            "label": "有点想法，大概知道方向",
+                            "value": "B"
+                        },
+                        {
+                            "label": "不太清楚，需要老师或爸妈提醒",
+                            "value": "C"
+                        },
+                        {
+                            "label": "完全没想过",
+                            "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 2,
+                    "test_questions_section_name": "作业态度",
+                    "order_number": 7,
+                    "question_hash": "b4d7733e70e561f68f88f887a05f391a",
+                    "question_content": "完成作业时，{{appellation}}的态度是？（可多选）",
+                    "question_type": "C",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "主动完成，不用催",
+                            "value": "A"
+                        },
+                        {
+                            "label": "能完成，但要提醒",
+                            "value": "B"
+                        },
+                        {
+                            "label": "经常拖到最后",
+                            "value": "C"
+                        },
+                        {
+                            "label": "马虎完成，想快点结束",
+                            "value": "D"
+                        },
+                        {
+                            "label": "一边写一边分心",
+                            "value": "E"
+                        },
+                        {
+                            "label": "抱怨多，不想写",
+                            "value": "F"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 2,
+                    "test_questions_section_name": "老师评价（优点）",
+                    "order_number": 8,
+                    "question_hash": "c0420cad7de15dab328b402b3ef771c5",
+                    "question_content": "老师平时评价{{appellation}}的学习有哪些优点？（最多3个）",
+                    "question_type": "C",
                     "question_attachment_type": "C",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "语文",
+                            "label": "上课专心",
                             "value": "A"
                         },
                         {
-                            "label": "数学",
+                            "label": "作业认真",
                             "value": "B"
                         },
                         {
-                            "label": "英语",
+                            "label": "思维灵活",
                             "value": "C"
                         },
                         {
-                            "label": "科学/信息技术",
+                            "label": "乐于发言",
                             "value": "D"
                         },
                         {
-                            "label": "历史/地理",
+                            "label": "成绩稳定",
                             "value": "E"
                         },
                         {
-                            "label": "艺术/音乐",
+                            "label": "进步明显",
                             "value": "F"
                         },
                         {
-                            "label": "体育",
+                            "label": "爱提问题",
                             "value": "G"
                         },
                         {
-                            "label": "经济/商科",
+                            "label": "喜欢阅读",
                             "value": "H"
-                        },
-                        {
-                            "label": "参加过竞赛但是没获奖",
-                            "value": "I"
-                        },
-                        {
-                            "label": "有获奖（校级/区级/省级以上）",
-                            "value": "J"
-                        },
-                        {
-                            "label": "无参赛经历",
-                            "value": "K"
                         }
                     ],
-                    "placeholder": "学科：语文/数学/英语/科学/艺术；优势：成绩突出/兴趣浓厚/获奖/阅读量大。\n学生示例：「我特别喜欢数学，经常能提前学会新的知识点」\n家长示例：「孩子在英语上表现好，词汇量大，也喜欢看英文原版书。」",
-                    "question_attachment_content": "如果不好完整描述，请快速勾选符合{{appellation}}的情况（学科 + 竞赛 + 奖项）"
+                    "placeholder": "🌱 老师的评价就像一面镜子，能映照出{{appellation}}在课堂里的样子。请回忆一下，老师平时是如何形容{{appellation}}的学习表现的？",
+                    "question_attachment_content": "如果一时记不清具体评价，可以选择以下几类老师评价{{appellation}}常用的反馈："
                 },
                 {
                     "test_questions_section_id": 2,
-                    "test_questions_section_name": "学科成绩与进步轨迹",
-                    "order_number": 3,
-                    "question_hash": "cd94a8057d38e90eb232878646b6ad62",
-                    "question_content": "{{appellation}}最近一次的学习成绩怎么样？（月考/期中/期末）",
-                    "question_type": "A",
+                    "test_questions_section_name": "老师评价（短板）",
+                    "order_number": 9,
+                    "question_hash": "829bb1f4a2ff905d930d9f299c029d7f",
+                    "question_content": "老师常提醒{{appellation}}哪些方面需要改进？（最多3个）",
+                    "question_type": "C",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "几乎全A（90分以上/满分100）",
+                            "label": "上课分心",
                             "value": "A"
                         },
                         {
-                            "label": "偶尔会有B或C（80分左右/满分100）",
+                            "label": "作业拖拉",
                             "value": "B"
                         },
                         {
-                            "label": "有D或不及格的学科",
+                            "label": "粗心大意",
                             "value": "C"
                         },
                         {
-                            "label": "有一半的学科在及格线附近",
+                            "label": "发言不多",
                             "value": "D"
                         },
                         {
-                            "label": "全都不及格",
+                            "label": "成绩不稳",
                             "value": "E"
+                        },
+                        {
+                            "label": "缺少耐心",
+                            "value": "F"
+                        },
+                        {
+                            "label": "不爱阅读",
+                            "value": "G"
+                        },
+                        {
+                            "label": "不问问题",
+                            "value": "H"
                         }
                     ],
                     "placeholder": null,
@@ -407,62 +721,32 @@
                 },
                 {
                     "test_questions_section_id": 2,
-                    "test_questions_section_name": "学科成绩表现",
-                    "order_number": 4,
-                    "question_hash": "59852195373a083c1a7602f1192f5574",
-                    "question_content": "{{appellation}}平时成绩在班里排名区段",
+                    "test_questions_section_name": "英语能力",
+                    "order_number": 10,
+                    "question_hash": "42fc28d488c1ce78b8d2c666c1719210",
+                    "question_content": "{{appellation}}在阅读理解英文时，通常能理解到什么程度？",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "前5名",
+                            "label": "只能读短句，生词就停下",
                             "value": "A"
                         },
                         {
-                            "label": "中上",
+                            "label": "能读小短文（100词），大概知道意思",
                             "value": "B"
                         },
                         {
-                            "label": "中等",
+                            "label": "能读中篇（300词），查生词能懂大意",
                             "value": "C"
                         },
                         {
-                            "label": "中下",
-                            "value": "D"
-                        }
-                    ],
-                    "placeholder": null,
-                    "question_attachment_content": null
-                },
-                {
-                    "test_questions_section_id": 2,
-                    "test_questions_section_name": "学习闭环与复盘习惯",
-                    "order_number": 5,
-                    "question_hash": "c171c58839352969eb30d745bc2e3c3d",
-                    "question_content": "{{appellation}}平时会主动预习和复习吗？",
-                    "question_type": "A",
-                    "question_attachment_type": "A",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "会，非常主动",
-                            "value": "A"
-                        },
-                        {
-                            "label": "经常会主动",
-                            "value": "B"
-                        },
-                        {
-                            "label": "偶尔会主动",
-                            "value": "C"
-                        },
-                        {
-                            "label": "需要家长/老师监督才会做",
+                            "label": "能读较长（600词），能推断和简单判断",
                             "value": "D"
                         },
                         {
-                            "label": "不会",
+                            "label": "能读很长（1000+词），能抓住重点和观点",
                             "value": "E"
                         }
                     ],
@@ -472,65 +756,31 @@
                 {
                     "test_questions_section_id": 2,
                     "test_questions_section_name": "英语能力",
-                    "order_number": 6,
-                    "question_hash": "d0f3827cef00298c8231a2ac6aeee762",
-                    "question_content": "{{appellation}}在阅读英文材料时，通常能理解到什么程度？",
-                    "question_type": "A",
-                    "question_attachment_type": "A",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "只能读很短句子（如 I like …），生词多就读不下去。",
-                            "value": "A"
-                        },
-                        {
-                            "label": "能读100–150词的小短文，抓到事实信息（如时间/地点/人物）。",
-                            "value": "B"
-                        },
-                        {
-                            "label": "能读250–400词文章，查少量生词也能明白大意，并读懂时间表/海报。",
-                            "value": "C"
-                        },
-                        {
-                            "label": "能读600–800词说明/新闻，理解转折/让步（however/although）并进行简单推断。",
-                            "value": "D"
-                        },
-                        {
-                            "label": "能读1000词以上学术/评论文，跟上抽象观点并做要点摘述。",
-                            "value": "E"
-                        }
-                    ],
-                    "placeholder": null,
-                    "question_attachment_content": null
-                },
-                {
-                    "test_questions_section_id": 2,
-                    "test_questions_section_name": "英语能力",
-                    "order_number": 7,
-                    "question_hash": "90d7057f7756a07c90af8f63783ad5e5",
+                    "order_number": 11,
+                    "question_hash": "bc22305cda20b3ffd9b2a2e3f49edae4",
                     "question_content": "{{appellation}}在日常英文交流中，一般能做到哪种程度？",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "能回答非常简单的问题（名字、喜好），需要慢速重复。",
+                            "label": "只能回答简单问题，要别人慢慢说",
                             "value": "A"
                         },
                         {
-                            "label": "可在熟悉话题上简短交流（学校/兴趣），能问路、点餐。",
+                            "label": "能聊熟悉话题几句（学校、兴趣、点餐）",
                             "value": "B"
                         },
                         {
-                            "label": "能完成功能性交流（打电话约时间、解释计划），能用过去时/将来时表达完整的句子。",
+                            "label": "能完成日常交流（打电话、约时间）",
                             "value": "C"
                         },
                         {
-                            "label": "能连贯地描述经历/观点，参与简单辩论，大体听懂常速英语。",
+                            "label": "能描述经历和观点，听懂正常语速",
                             "value": "D"
                         },
                         {
-                            "label": "能即兴讲2分钟有结构的观点，听懂不同口音/摘要要点并自如互动。",
+                            "label": "能连续说2分钟，有条理互动自然",
                             "value": "E"
                         }
                     ],
@@ -540,31 +790,31 @@
                 {
                     "test_questions_section_id": 2,
                     "test_questions_section_name": "英语能力",
-                    "order_number": 8,
-                    "question_hash": "40ac6d2b484b43cf490277dbfe9b1855",
-                    "question_content": "{{appellation}}在英文写作和语法方面，通常能完成到什么水平？",
+                    "order_number": 12,
+                    "question_hash": "d2887e629264300a00c9dbeb43a17b23",
+                    "question_content": "{{appellation}}写英文时，能写到什么程度？",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "写词组/短句（自我介绍、清单），语法依赖模板。",
+                            "label": "只能写短句或词组",
                             "value": "A"
                         },
                         {
-                            "label": "写5–7句连贯段落（现在/一般过去时），能写请假条、日记。",
+                            "label": "能写一小段（5–7句）",
                             "value": "B"
                         },
                         {
-                            "label": "写120–180词结构清晰的短文/邮件（有开头—展开—结尾），能使用连词与基本时态。",
+                            "label": "能写120–180词的作文/邮件",
                             "value": "C"
                         },
                         {
-                            "label": "写200–250词带论证的短文，基本正确使用从句/被动/让步等结构。",
+                            "label": "能写200–250词的文章",
                             "value": "D"
                         },
                         {
-                            "label": "写300词以上论证充分的文章，能改写/概括资料并保持风格一致。",
+                            "label": "能自主创作300词以上的文章",
                             "value": "E"
                         }
                     ],
@@ -574,19 +824,19 @@
                 {
                     "test_questions_section_id": 2,
                     "test_questions_section_name": "英语能力",
-                    "order_number": 9,
-                    "question_hash": "0a819d56bfd6a82655fb5497c7a450f9",
+                    "order_number": 13,
+                    "question_hash": "be617b5b977c8a14f40e6f88b1539da5",
                     "question_content": "{{appellation}}是否参加过以下英语考试？请选择最近一次且成绩最高的一项。",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "KET 未通过",
+                            "label": " KET 未通过",
                             "value": "A"
                         },
                         {
-                            "label": "KET Pass ",
+                            "label": "KET Pass",
                             "value": "B"
                         },
                         {
@@ -626,7 +876,7 @@
                             "value": "K"
                         },
                         {
-                            "label": "雅思IELTS<5.5 ",
+                            "label": "雅思IELTS<5.5",
                             "value": "L"
                         },
                         {
@@ -658,7 +908,7 @@
                             "value": "S"
                         },
                         {
-                            "label": "其他/为参加",
+                            "label": "其他/未参加",
                             "value": "T"
                         }
                     ],
@@ -674,99 +924,59 @@
             "questions": [
                 {
                     "test_questions_section_id": 3,
-                    "test_questions_section_name": "学习效率",
+                    "test_questions_section_name": "学习习惯",
                     "order_number": 1,
-                    "question_hash": "5637e9f6fb88acae05e84cb54cdfacdb",
-                    "question_content": "{{appellation}}有多少个学科补习班？有哪些？补习的内容是校内相关还是额外拓展？参加了多久？有明显效果吗？/对{{appellation}}有帮助吗？",
-                    "question_type": "B",
-                    "question_attachment_type": "C",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "没有参加过补习班",
-                            "value": "A"
-                        },
-                        {
-                            "label": "参加过 1–2 个，主要是校内课程同步",
-                            "value": "B"
-                        },
-                        {
-                            "label": "参加过 1–2 个，主要是额外拓展（如奥数/竞赛/英语口语）",
-                            "value": "C"
-                        },
-                        {
-                            "label": "长期参加 3 个及以上，涵盖校内+拓展",
-                            "value": "D"
-                        },
-                        {
-                            "label": "有参加，但效果不明显/没有持续",
-                            "value": "E"
-                        },
-                        {
-                            "label": "有参加，并且效果明显，对学习帮助很大",
-                            "value": "F"
-                        },
-                        {
-                            "label": "语文（写作/阅读理解）",
-                            "value": "G"
-                        },
-                        {
-                            "label": "数学（校内同步/奥数/竞赛）",
-                            "value": "H"
-                        },
-                        {
-                            "label": "英语（口语/阅读/写作/标化考试）",
-                            "value": "I"
-                        },
-                        {
-                            "label": "科学（物理/化学/生物/综合科学）",
-                            "value": "J"
-                        },
-                        {
-                            "label": "社会科学（历史/地理/政治）",
-                            "value": "K"
-                        },
-                        {
-                            "label": " 艺术类（绘画/音乐/舞蹈）",
-                            "value": "L"
-                        },
-                        {
-                            "label": "体育类（专项训练）",
-                            "value": "M"
-                        }
-                    ],
-                    "placeholder": "科目：语文 / 数学 / 英语 / 物理 / 化学 …  \n频率：每周几次 / 时长 / 是否一对一\n内容：校内同步巩固 / 考试提分 / 国际课程 / 兴趣拓展\n感受：是否有效果 / 是否感到负担 / 有无帮助\n学生示例：「我现在上了 2 个补习班，一个是数学，每周两次，主要是复习校内内容；另一个是英语口语，算是额外拓展，我觉得英语课挺有趣的。」\n家长示例：「孩子现在一周上 3 门补习：语文、数学、奥数。都补了一年了。前两门是同步补习，奥数是额外拓展，感觉孩子在奥数方面兴趣比较浓厚，但整体负担稍微有些大。成绩上没看到提升。」",
-                    "question_attachment_content": "{{appellation}}目前是否参加过学科补习班？主要情况是？"
-                },
-                {
-                    "test_questions_section_id": 3,
-                    "test_questions_section_name": "阅读能力",
-                    "order_number": 2,
-                    "question_hash": "fcd351946b61914b88a83093fa9caaca",
-                    "question_content": "{{appellation}}平时会不会主动去读课外书？通常会选择哪些类型的书？",
+                    "question_hash": "1893d89627fce6c9503d3d1be941f5cf",
+                    "question_content": "{{appellation}}是否会主动预习/复习？",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "经常主动阅读很多不同类别的书",
+                            "label": "总是主动",
                             "value": "A"
                         },
                         {
-                            "label": "会主动读，但多是自己喜欢的书",
+                            "label": "经常主动",
                             "value": "B"
                         },
                         {
-                            "label": "偶尔在老师或家长推荐下阅读",
+                            "label": "偶尔才会",
                             "value": "C"
                         },
                         {
-                            "label": "只读漫画书",
+                            "label": "需要提醒",
                             "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 3,
+                    "test_questions_section_name": "专注力",
+                    "order_number": 2,
+                    "question_hash": "f2c206cf0d7b58651c6d95ada133c4f4",
+                    "question_content": "学习时，{{appellation}}的专注程度是？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "总是专注",
+                            "value": "A"
                         },
                         {
-                            "label": "基本不主动读书",
-                            "value": "E"
+                            "label": "大多数能专注",
+                            "value": "B"
+                        },
+                        {
+                            "label": "偶尔分心",
+                            "value": "C"
+                        },
+                        {
+                            "label": "经常分心",
+                            "value": "D"
                         }
                     ],
                     "placeholder": null,
@@ -776,30 +986,30 @@
                     "test_questions_section_id": 3,
                     "test_questions_section_name": "写作能力",
                     "order_number": 3,
-                    "question_hash": "7baeb0ff1a5db23b7685f7de46d09d32",
-                    "question_content": "用一句话来描述{{appellation}}的写作水平，更接近哪种？",
+                    "question_hash": "93c7392d5d5b353078c77e5f606dd021",
+                    "question_content": "写语文作文时，{{appellation}}的表现如何？",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "只能写简单句子或流水账式的日记，内容单调，字数常常不够。",
+                            "label": "老师常当范文，写得特别好",
                             "value": "A"
                         },
                         {
-                            "label": "能完成规定题目的作文，条理基本清楚，但常依赖模板，细节少。",
+                            "label": "写得清楚，意思能说明白",
                             "value": "B"
                         },
                         {
-                            "label": "能写完整的记叙文/说明文，结构较清晰，有一定描写或观点。",
+                            "label": "能写完，但话不多",
                             "value": "C"
                         },
                         {
-                            "label": "能写 600–800 字作文，逻辑完整，能展开人物/情节/观点，有较强的文采。",
+                            "label": "有时会写跑题",
                             "value": "D"
                         },
                         {
-                            "label": "能进行创意写作或议论文创作（>800 字），能自如表达思想，文风鲜明，常在班级/校级作文中表现突出。",
+                            "label": "很难写，要别人提醒",
                             "value": "E"
                         }
                     ],
@@ -808,28 +1018,28 @@
                 },
                 {
                     "test_questions_section_id": 3,
-                    "test_questions_section_name": "逻辑思维能力",
+                    "test_questions_section_name": "数理思维",
                     "order_number": 4,
-                    "question_hash": "303d60c9ce98048ec0115ac678ff3f85",
-                    "question_content": "{{appellation}}在玩推理游戏或遇到复杂问题时，会不会主动一步步分析并寻找解决办法？",
+                    "question_hash": "93ee49c4427e010a0a597daba4d3a01b",
+                    "question_content": "{{appellation}}数学成绩表现更常是？",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "非常喜欢推理和分析，经常坚持完成",
+                            "label": "经常在 90% 以上（优秀）",
                             "value": "A"
                         },
                         {
-                            "label": "有兴趣，会分析一些",
+                            "label": "多数在 75%–89%（良好）",
                             "value": "B"
                         },
                         {
-                            "label": "偶尔会尝试，但多半依赖别人",
+                            "label": "多数在 60%–74%（及格）",
                             "value": "C"
                         },
                         {
-                            "label": "不太喜欢分析问题，经常放弃",
+                            "label": "经常低于 60%（不及格）",
                             "value": "D"
                         }
                     ],
@@ -838,28 +1048,28 @@
                 },
                 {
                     "test_questions_section_id": 3,
-                    "test_questions_section_name": "表达与沟通能力",
+                    "test_questions_section_name": "检查习惯",
                     "order_number": 5,
-                    "question_hash": "121626ec991d993fac34d36f7c33559a",
-                    "question_content": "在课堂或和别人交流时，{{appellation}}会不会主动表达自己的看法？别人能不能听懂？",
+                    "question_hash": "f61cd8b14897e418dec5f6000992d22e",
+                    "question_content": "做题时，{{appellation}}是否会检查？",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "经常主动发言，表达清晰，大多数人能理解",
+                            "label": "总是检查",
                             "value": "A"
                         },
                         {
-                            "label": "偶尔会表达，部分人能听懂",
+                            "label": "经常检查",
                             "value": "B"
                         },
                         {
-                            "label": "比较害羞，说得不清楚",
+                            "label": "偶尔检查",
                             "value": "C"
                         },
                         {
-                            "label": "基本不愿发言",
+                            "label": "基本不检查",
                             "value": "D"
                         }
                     ],
@@ -868,119 +1078,37 @@
                 },
                 {
                     "test_questions_section_id": 3,
-                    "test_questions_section_name": "信息检索与整理能力",
+                    "test_questions_section_name": "时间管理",
                     "order_number": 6,
-                    "question_hash": "fc37a45e208bde5efacb0f95c2fc8687",
-                    "question_content": "当遇到不懂的问题时，{{appellation}}会怎么找答案？找到后会不会整理学习资料？",
-                    "question_type": "A",
+                    "question_hash": "fe6eceeb1f8c0c2a1af70a26640b8cf4",
+                    "question_content": "{{appellation}}的时间管理习惯是？",
+                    "question_type": "C",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "会先查书、看课堂笔记，找到后还会整理归类",
+                            "label": "能规划并执行",
                             "value": "A"
                         },
                         {
-                            "label": "会用网络或 AI 工具查找，并简单整理",
+                            "label": "有计划但执行差",
                             "value": "B"
                         },
                         {
-                            "label": "大多数时候只会问同学或家长，不太整理",
+                            "label": "基本没有规划",
                             "value": "C"
                         },
                         {
-                            "label": "很少主动查找或整理，经常用抖音等社交媒体搜集信息",
+                            "label": "依赖他人安排",
                             "value": "D"
-                        }
-                    ],
-                    "placeholder": null,
-                    "question_attachment_content": null
-                },
-                {
-                    "test_questions_section_id": 3,
-                    "test_questions_section_name": "记忆力",
-                    "order_number": 7,
-                    "question_hash": "1af1ef4e9614ffcf97464c6d9729944a",
-                    "question_content": "{{appellation}}在学习新知识后，通常能记住多久？记得牢不牢？",
-                    "question_type": "A",
-                    "question_attachment_type": "A",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "学过的东西很快记住，也能长期记得",
-                            "value": "A"
                         },
                         {
-                            "label": "需要多复习几次，能记住大部分",
-                            "value": "B"
+                            "label": "经常拖延",
+                            "value": "E"
                         },
                         {
-                            "label": "记住一部分，但容易忘",
-                            "value": "C"
-                        },
-                        {
-                            "label": "很快就忘记，大多记不住",
-                            "value": "D"
-                        }
-                    ],
-                    "placeholder": null,
-                    "question_attachment_content": null
-                },
-                {
-                    "test_questions_section_id": 3,
-                    "test_questions_section_name": "计算能力",
-                    "order_number": 8,
-                    "question_hash": "a5a1bcafcef929d611eb3484a1437ee8",
-                    "question_content": "{{appellation}}在做数学题时，计算是否准确？学过的知识是否能灵活应用到生活里？",
-                    "question_type": "A",
-                    "question_attachment_type": "A",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "基本不出错，还能用到生活中的问题",
-                            "value": "A"
-                        },
-                        {
-                            "label": "偶尔出错，大部分能应用",
-                            "value": "B"
-                        },
-                        {
-                            "label": "经常出错，生活应用有限",
-                            "value": "C"
-                        },
-                        {
-                            "label": "数学计算或应用有困难",
-                            "value": "D"
-                        }
-                    ],
-                    "placeholder": null,
-                    "question_attachment_content": null
-                },
-                {
-                    "test_questions_section_id": 3,
-                    "test_questions_section_name": "自我管理能力",
-                    "order_number": 9,
-                    "question_hash": "6541340244c553432f9f1f64626a3f27",
-                    "question_content": "{{appellation}}在每天学习和专注方面情况如何？时间管理和专注力表现怎样？会有厌学和沉迷游戏/短视频的情况吗？",
-                    "question_type": "A",
-                    "question_attachment_type": "A",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "有计划，专注稳定，不受干扰，几乎不打游戏也不刷短视频",
-                            "value": "A"
-                        },
-                        {
-                            "label": "大多按计划，偶尔分心能调整，游戏和短时间时间每天1小时左右",
-                            "value": "B"
-                        },
-                        {
-                            "label": "缺乏计划，常拖延，易分心，游戏和短视频时间每天2小时以上",
-                            "value": "C"
-                        },
-                        {
-                            "label": "无计划，讨厌学习，游戏和短视频时间每天3小时以上",
-                            "value": "D"
+                            "label": "没有时间观念",
+                            "value": "F"
                         }
                     ],
                     "placeholder": null,
@@ -995,154 +1123,118 @@
             "questions": [
                 {
                     "test_questions_section_id": 4,
-                    "test_questions_section_name": "兴趣倾向与动机",
+                    "test_questions_section_name": "协作力",
                     "order_number": 1,
-                    "question_hash": "7b04116fcdb48312675d1fbbdc60a5d7",
-                    "question_content": "空闲时间{{appellation}}最喜欢做什么？原因是什么？",
-                    "question_type": "B",
+                    "question_hash": "4ff1c8c85ad2423f452f7fa5320990f8",
+                    "question_content": "{{appellation}}在和小伙伴相处时，更常见的表现是？",
+                    "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "阅读书籍 / 看有趣的学习资料",
+                            "label": "带头小领导，喜欢组织大家",
                             "value": "A"
                         },
                         {
-                            "label": "运动 / 户外活动",
+                            "label": "认真做事情，是个好帮手",
                             "value": "B"
                         },
                         {
-                            "label": "练习艺术（绘画 / 乐器 / 唱歌 / 表演等）",
+                            "label": "跟着大家，别人怎么做就跟着做",
                             "value": "C"
                         },
                         {
-                            "label": "和朋友社交（聊天 / 玩耍 / 打球等）",
+                            "label": "不太参与，自己一个人玩",
                             "value": "D"
-                        },
-                        {
-                            "label": "玩游戏 / 刷手机",
-                            "value": "E"
-                        },
-                        {
-                            "label": "看电视 / 动画片 / 网络视频",
-                            "value": "F"
-                        },
-                        {
-                            "label": "做手工 / 科学实验 / 拼装类活动",
-                            "value": "G"
-                        },
-                        {
-                            "label": "逛街",
-                            "value": "H"
                         }
                     ],
-                    "placeholder": "类型：体育/艺术/文学/科技/社交/...；原因：兴趣、成就感、模仿、未来理想。\n",
-                    "question_attachment_content": "如果要选一项{{appellation}}空闲时间最常做的事情，会是？"
+                    "placeholder": null,
+                    "question_attachment_content": null
                 },
                 {
                     "test_questions_section_id": 4,
-                    "test_questions_section_name": "领导力与合作力",
+                    "test_questions_section_name": "公共表达",
                     "order_number": 2,
-                    "question_hash": "38767e82ba35f00551a8e85b1a85ef5b",
-                    "question_content": "如果有一个机会，可以让{{appellation}}带领同学完成一件事，{{appellation}}会选择什么？会怎么做？",
-                    "question_type": "B",
+                    "question_hash": "b0baf7bf0cb572fa13c0dbbee2eec143",
+                    "question_content": "{{appellation}}在公众场合发言时，更像？",
+                    "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "组织一场体育比赛",
+                            "label": "在公共场合自信大方，全场焦点",
                             "value": "A"
                         },
                         {
-                            "label": "带大家排练一场节目 / 艺术创作",
+                            "label": "在老师点名下发言，内容清楚",
                             "value": "B"
                         },
                         {
-                            "label": "组织一次公益活动或班级事务",
+                            "label": "在人多时声音轻小，略显害羞",
                             "value": "C"
                         },
                         {
-                            "label": "设计并完成一个科学实验 / 技术小发明",
+                            "label": "在公众场合紧张慌乱，说不出来",
                             "value": "D"
-                        },
-                        {
-                            "label": "带领大家准备一场学科竞赛 / 学习小组",
-                            "value": "E"
-                        },
-                        {
-                            "label": "策划一次班级旅行或游戏活动",
-                            "value": "F"
                         }
                     ],
-                    "placeholder": "👉 孩子回答提示（学生端）：\n“可以想象一下你带着同学们去做一件事，你会带大家做什么？比如：做实验、打篮球、排练节目、组织活动等。”\n👉 父母回答提示（家长端）：\n“请描述一下孩子在带领同学完成任务时，最常选择的活动方向或表现方式。”",
-                    "question_attachment_content": "如果有一个机会，可以让{{appellation}}带领同学完成一件事，{{appellation}}最可能选择什么？"
+                    "placeholder": null,
+                    "question_attachment_content": null
                 },
                 {
                     "test_questions_section_id": 4,
-                    "test_questions_section_name": "时间管理与偏好",
+                    "test_questions_section_name": "创造力",
                     "order_number": 3,
-                    "question_hash": "74ebb4a85ee74c214c41394e87646a6c",
-                    "question_content": "{{appellation}}周六周日的时间都是如何安排的？可以从早到晚描述一下",
-                    "question_type": "B",
-                    "question_attachment_type": "C",
+                    "question_hash": "672680eb4c9f69d2d2a851b3611d6995",
+                    "question_content": "当遇到需要创新的作业时，{{appellation}}会？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "文化课补习（数学/语文/英语等）",
+                            "label": "点子多，喜欢尝试不同方法",
                             "value": "A"
                         },
                         {
-                            "label": "兴趣班（钢琴、舞蹈、美术、编程等）",
+                            "label": "按照老师的提示操作",
                             "value": "B"
                         },
                         {
-                            "label": "体育运动（游泳、篮球、足球等）",
+                            "label": "模仿他人做法",
                             "value": "C"
                         },
                         {
-                            "label": "自主学习（写作业、阅读、复习预习）",
+                            "label": "不喜欢创新",
                             "value": "D"
-                        },
-                        {
-                            "label": "娱乐休闲（打游戏、刷手机、看电视、逛街等）",
-                            "value": "E"
-                        },
-                        {
-                            "label": "家庭活动（陪伴父母、外出游玩、家庭聚会）",
-                            "value": "F"
-                        },
-                        {
-                            "label": "社交活动（约同学/朋友玩，参加集体活动）",
-                            "value": "G"
                         }
                     ],
-                    "placeholder": "学生示例：「“周六上午有数学补习，下午练钢琴，晚上写作业”；“周末我一般会打球，和朋友出去玩”；“有时候会整天待在家里打游戏或刷手机”；“我喜欢周末读书，有时候会写小作文”」\n家长示例：「“孩子的周末比较紧凑，上午补课，下午练体育，晚上写作业”；“我们会安排一部分家庭活动，比如一起外出”；“有时孩子周末会比较放松，玩手机或看电视的时间多一些”；“总体来说，学习和娱乐都有，但时间管理还需要我们督促”」",
-                    "question_attachment_content": "如果要大致概括{{appellation}}周末的安排，以下哪几类最符合？（可多选）"
+                    "placeholder": null,
+                    "question_attachment_content": null
                 },
                 {
                     "test_questions_section_id": 4,
-                    "test_questions_section_name": "角色偏好与行为特征",
+                    "test_questions_section_name": "解决问题能力",
                     "order_number": 4,
-                    "question_hash": "33e7a829414a128fd98b212c331fab3e",
-                    "question_content": "在班级里，{{appellation}}更像：",
+                    "question_hash": "e9883ac959f093fbf74bbe200faee0c8",
+                    "question_content": "当面对复杂问题时，{{appellation}}更常？",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "喜欢钻研题目或技术问题的人",
+                            "label": "主动分析，找到逻辑关系",
                             "value": "A"
                         },
                         {
-                            "label": "喜欢当班干部、组织大家的人",
+                            "label": "尝试一步步推理",
                             "value": "B"
                         },
                         {
-                            "label": "跟随别人完成任务",
+                            "label": "依赖直觉或别人帮忙",
                             "value": "C"
                         },
                         {
-                            "label": "不太积极",
+                            "label": "容易放弃",
                             "value": "D"
                         }
                     ],
@@ -1151,33 +1243,29 @@
                 },
                 {
                     "test_questions_section_id": 4,
-                    "test_questions_section_name": "竞赛与活动偏好",
+                    "test_questions_section_name": "社会认知",
                     "order_number": 5,
-                    "question_hash": "7a36f21060e42b319a8de44680d25b6f",
-                    "question_content": "如果有一场比赛，{{appellation}}更想：",
+                    "question_hash": "3a97f3a6cfefb3d29f65c428f5dcf897",
+                    "question_content": "{{appellation}}平时会不会关心新闻或身边发生的大事？",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "参加机器人/数学/科技竞赛",
+                            "label": "很关心，经常主动和别人讨论",
                             "value": "A"
                         },
                         {
-                            "label": "参加演讲/辩论/策划类活动",
+                            "label": "偶尔会听一听或看看",
                             "value": "B"
                         },
                         {
-                            "label": "参加运动比赛",
+                            "label": "一般不主动，别人说了才知道",
                             "value": "C"
                         },
                         {
-                            "label": "参加艺术比赛",
+                            "label": "完全不关心，不了解",
                             "value": "D"
-                        },
-                        {
-                            "label": "不参加",
-                            "value": "E"
                         }
                     ],
                     "placeholder": null,
@@ -1185,28 +1273,28 @@
                 },
                 {
                     "test_questions_section_id": 4,
-                    "test_questions_section_name": "问题解决与合作能力",
+                    "test_questions_section_name": "探索力",
                     "order_number": 6,
-                    "question_hash": "82e71488c559dc5f5f6114d446de26aa",
-                    "question_content": "{{appellation}}遇到问题时，更常见的做法是：",
+                    "question_hash": "49ca689ccbf24c8fa753ac36afd9e25b",
+                    "question_content": "{{appellation}}是否参加过学科类实践/社会公益活动？",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "自己动手研究解决",
+                            "label": "多次参与并积极投入",
                             "value": "A"
                         },
                         {
-                            "label": "找人商量，带大家一起解决",
+                            "label": "偶尔参加过",
                             "value": "B"
                         },
                         {
-                            "label": "问老师家长",
+                            "label": "有过短暂尝试",
                             "value": "C"
                         },
                         {
-                            "label": "放弃",
+                            "label": "从未参与",
                             "value": "D"
                         }
                     ],
@@ -1215,87 +1303,29 @@
                 },
                 {
                     "test_questions_section_id": 4,
-                    "test_questions_section_name": "兴趣领域与探索动力",
+                    "test_questions_section_name": "学术竞争力",
                     "order_number": 7,
-                    "question_hash": "0f1b654e9bc480fa2e3c49e71705d0e1",
-                    "question_content": "{{appellation}}对哪类内容更感兴趣？",
+                    "question_hash": "1c0ebd192228b54f55d44dfe17427130",
+                    "question_content": "{{appellation}}是否参加过学科类竞赛/学术探究活动？",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "科学与探索类（实验、数学、科技、发明创造）",
+                            "label": "多次并获奖",
                             "value": "A"
                         },
                         {
-                            "label": "艺术与人文类（绘画、写作、音乐、表演、文学历史）",
+                            "label": "参加过几次",
                             "value": "B"
                         },
                         {
-                            "label": "社交与表达类（演讲、辩论、社团活动、公益、领导组织） ",
+                            "label": "有过尝试",
                             "value": "C"
                         },
                         {
-                            "label": "运动与挑战类（球类、竞技、户外探险、体能挑战） ",
+                            "label": "没有",
                             "value": "D"
-                        },
-                        {
-                            "label": "都不感兴趣",
-                            "value": "E"
-                        }
-                    ],
-                    "placeholder": null,
-                    "question_attachment_content": null
-                },
-                {
-                    "test_questions_section_id": 4,
-                    "test_questions_section_name": "学科兴趣倾向 + 表达/沟通方式",
-                    "order_number": 8,
-                    "question_hash": "5f1765af5184fc93c80714950a7a1cc7",
-                    "question_content": "假如让{{appellation}}当“小老师”，最想讲的内容是：",
-                    "question_type": "A",
-                    "question_attachment_type": "A",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "讲一道自己最喜欢的数学题或科学实验",
-                            "value": "A"
-                        },
-                        {
-                            "label": "讲一段有趣的历史故事或文学片段",
-                            "value": "B"
-                        },
-                        {
-                            "label": "教大家一首歌、画一幅画或表演一个节目",
-                            "value": "C"
-                        },
-                        {
-                            "label": "带领同学们做一场小游戏或运动练习",
-                            "value": "D"
-                        },
-                        {
-                            "label": "给大家讲一篇英文阅读或单词小课堂",
-                            "value": "E"
-                        },
-                        {
-                            "label": "分享一次自己解决问题的经验或小窍门",
-                            "value": "F"
-                        },
-                        {
-                            "label": "做一个主题演讲或辩论小课堂",
-                            "value": "G"
-                        },
-                        {
-                            "label": "组织同学们完成一次小组合作或角色扮演",
-                            "value": "H"
-                        },
-                        {
-                            "label": "讲一个财经/时事/科技新闻并分析",
-                            "value": "I"
-                        },
-                        {
-                            "label": "自由发挥，讲自己最感兴趣的主题",
-                            "value": "J"
                         }
                     ],
                     "placeholder": null,
@@ -1310,220 +1340,28 @@
             "questions": [
                 {
                     "test_questions_section_id": 5,
-                    "test_questions_section_name": "体育爱好与坚持",
+                    "test_questions_section_name": "体育艺术",
                     "order_number": 1,
-                    "question_hash": "7fbc7bdaf14d5cb2c698597c8c458c1a",
-                    "question_content": "{{appellation}}有长期坚持的体育运动吗？坚持了多久了？每星期投入的时间是多久？",
-                    "question_type": "B",
-                    "question_attachment_type": "C",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "球类运动（篮球、足球、排球、网球、乒乓球、羽毛球等）",
-                            "value": "A"
-                        },
-                        {
-                            "label": "田径与跑跳类（短跑、长跑、跳远、跨栏等）",
-                            "value": "B"
-                        },
-                        {
-                            "label": "水上运动（游泳、划船、帆船等）",
-                            "value": "C"
-                        },
-                        {
-                            "label": "冰雪运动（滑冰、滑雪、冰球等）",
-                            "value": "D"
-                        },
-                        {
-                            "label": "武术与格斗类（武术、跆拳道、空手道、柔道、拳击等）",
-                            "value": "E"
-                        },
-                        {
-                            "label": "体操与技巧类（体操、啦啦操、杂技类等）",
-                            "value": "F"
-                        },
-                        {
-                            "label": "舞蹈与表演类（芭蕾、街舞、拉丁舞、民族舞等）",
-                            "value": "G"
-                        },
-                        {
-                            "label": "健身与综合运动（瑜伽、普拉提、健身房训练等）",
-                            "value": "H"
-                        },
-                        {
-                            "label": " 极限与户外类（攀岩、滑板、自行车、冲浪等）",
-                            "value": "I"
-                        }
-                    ],
-                    "placeholder": "父母示例：「孩子从小学二年级开始学游泳，已经坚持3年，每周上2次课，每次1小时。」\n学生示例：「没有固定运动，但偶尔去骑车或跑步。」",
-                    "question_attachment_content": "如果不好描述，请选择最接近的情况（可多选运动类型 + 坚持程度）："
-                },
-                {
-                    "test_questions_section_id": 5,
-                    "test_questions_section_name": "兴趣偏好与校园参与",
-                    "order_number": 2,
-                    "question_hash": "c4b0333bf69fd320a89baafd71e05c99",
-                    "question_content": "在校有参加社团吗？有没有什么活动？为什么参加？",
-                    "question_type": "B",
-                    "question_attachment_type": "C",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "体育类（篮球、足球、羽毛球、游泳）",
-                            "value": "A"
-                        },
-                        {
-                            "label": "艺术类（绘画、舞蹈、合唱、器乐）",
-                            "value": "B"
-                        },
-                        {
-                            "label": "文学类（写作、演讲、读书会）",
-                            "value": "C"
-                        },
-                        {
-                            "label": "科技类（机器人、编程、科学实验）",
-                            "value": "D"
-                        },
-                        {
-                            "label": "学术类（数学社、英语角、辩论队）",
-                            "value": "E"
-                        },
-                        {
-                            "label": "公益类（志愿服务、环保行动）",
-                            "value": "F"
-                        },
-                        {
-                            "label": "领导力类（学生会、组织管理）",
-                            "value": "G"
-                        },
-                        {
-                            "label": "国际文化类（模拟联合国、跨文化交流）",
-                            "value": "H"
-                        },
-                        {
-                            "label": "游戏兴趣类（棋类、电竞）",
-                            "value": "I"
-                        },
-                        {
-                            "label": "其他",
-                            "value": "J"
-                        }
-                    ],
-                    "placeholder": "学生示例：「“我其实没有参加过社团，但如果有，我会想选演讲社团，可以练习表达”」\n家长示例：「孩子在学校报了舞蹈社团，每周一次，主要是培养兴趣」",
-                    "question_attachment_content": "如果学校有社团活动，你更愿意参加以下哪些？（最多选3个）"
-                },
-                {
-                    "test_questions_section_id": 5,
-                    "test_questions_section_name": "体育训练与专业化发展",
-                    "order_number": 3,
-                    "question_hash": "b9db62306301fc44e5b0c5ea2546e196",
-                    "question_content": "孩子的体育爱好有专业教练指导吗？有获过奖吗？哪些奖项可以列举一下",
-                    "question_type": "B",
-                    "question_attachment_type": "C",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "有专业教练长期指导（每周 ≥2 次）",
-                            "value": "A"
-                        },
-                        {
-                            "label": "有专业教练阶段性指导（偶尔培训/短期集训）",
-                            "value": "B"
-                        },
-                        {
-                            "label": "无教练，主要靠兴趣自学",
-                            "value": "C"
-                        },
-                        {
-                            "label": "参加过校内体育比赛",
-                            "value": "D"
-                        },
-                        {
-                            "label": "参加过区/市级体育比赛",
-                            "value": "E"
-                        },
-                        {
-                            "label": "参加过省级/国家级体育比赛",
-                            "value": "F"
-                        },
-                        {
-                            "label": "获得过校级以上奖项",
-                            "value": "G"
-                        },
-                        {
-                            "label": "纯兴趣爱好，没有系统训练",
-                            "value": "H"
-                        }
-                    ],
-                    "placeholder": "学生示例：「“我有教练，每周会去打网球两次”“上次学校运动会我拿了 100 米第二名”“平时就是打篮球玩玩，没有专门训练”“我参加过游泳比赛，拿过区里三等奖”」\n家长示例：「“孩子有专业教练指导，每周训练 3 次”“曾经参加过市里的游泳比赛，拿过奖”“目前只是兴趣培养，没有专业规划”“孩子比较有潜力，教练也建议继续深造”」",
-                    "question_attachment_content": "关于{{appellation}}的体育爱好情况，以下哪些符合？（可多选）"
-                },
-                {
-                    "test_questions_section_id": 5,
-                    "test_questions_section_name": "艺术创作与投入度",
-                    "order_number": 4,
-                    "question_hash": "93f1bda7637a26a9c5b7b183e69d234c",
-                    "question_content": "{{appellation}}有长期坚持的艺术爱好吗？坚持了多久？最喜欢的艺术活动是什么？",
-                    "question_type": "B",
-                    "question_attachment_type": "C",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "有长期艺术训练（≥3 年，坚持每周至少 1 次）",
-                            "value": "A"
-                        },
-                        {
-                            "label": " 有阶段性训练（1–3 年，间断参与）",
-                            "value": "B"
-                        },
-                        {
-                            "label": "兴趣体验为主（上过短期班/课外班）",
-                            "value": "C"
-                        },
-                        {
-                            "label": "完全自学，纯兴趣爱好",
-                            "value": "D"
-                        },
-                        {
-                            "label": "有专业老师长期指导",
-                            "value": "E"
-                        },
-                        {
-                            "label": "曾参加过校内艺术展示/比赛",
-                            "value": "F"
-                        },
-                        {
-                            "label": "曾参加过市级/省级/国家级艺术比赛",
-                            "value": "G"
-                        }
-                    ],
-                    "placeholder": "学生示例：「“我从 5 岁开始学钢琴，现在已经弹了 5 年”；“喜欢画画，上过两年美术班”；“我就是平时喜欢唱歌，没专门学过”；“最近在学街舞，参加过一次校内表演”」\n家长示例：「“孩子从小坚持画画，已经 4 年了，有专业老师指导”；“之前学过一段时间小提琴，但后来停掉了”；“兴趣比较广泛，尝试过钢琴和绘画，但没有长期坚持”； “最近刚参加了区里的书法比赛，还得了三等奖”」",
-                    "question_attachment_content": "关于{{appellation}}的艺术兴趣和坚持情况，以下哪些符合？"
-                },
-                {
-                    "test_questions_section_id": 5,
-                    "test_questions_section_name": "艺术比赛与舞台经验",
-                    "order_number": 5,
-                    "question_hash": "d9a1435ed09499e3a1c9c9d912d22ec2",
-                    "question_content": "{{appellation}}是否经常参加艺术类展示或比赛？",
+                    "question_hash": "059d9786837bd886009c6b6e99331b52",
+                    "question_content": "{{appellation}}是否喜欢体育运动？",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "总是",
+                            "label": "非常喜欢（每天/每周固定）",
                             "value": "A"
                         },
                         {
-                            "label": "经常",
+                            "label": "偶尔喜欢（看心情）",
                             "value": "B"
                         },
                         {
-                            "label": "偶尔",
+                            "label": "只有体育课才运动",
                             "value": "C"
                         },
                         {
-                            "label": "几乎没有",
+                            "label": "基本不喜欢运动",
                             "value": "D"
                         }
                     ],
@@ -1532,28 +1370,156 @@
                 },
                 {
                     "test_questions_section_id": 5,
-                    "test_questions_section_name": "表达与表现欲",
-                    "order_number": 6,
-                    "question_hash": "5743a32a6d9d9fe00a5114d59d0f5416",
-                    "question_content": "{{appellation}}是否喜欢通过文学/艺术/表演等方式表达思想或情感？",
+                    "test_questions_section_name": "体育艺术",
+                    "order_number": 2,
+                    "question_hash": "e244edbb0f5bf1f8c4d4cfdc2d6dd4ed",
+                    "question_content": "{{appellation}}是否有长期参与某项运动的专业训练？",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "非常喜欢",
+                            "label": "有（超过5年，固定项目/俱乐部）",
                             "value": "A"
                         },
                         {
-                            "label": "比较喜欢",
+                            "label": "有（超过2年，固定项目/教练）",
                             "value": "B"
                         },
                         {
-                            "label": "偶尔",
+                            "label": "有（1年左右）",
                             "value": "C"
                         },
                         {
-                            "label": "不喜欢",
+                            "label": "有坚持运动，但是没有专业教练",
+                            "value": "D"
+                        },
+                        {
+                            "label": "没有长期坚持",
+                            "value": "E"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 5,
+                    "test_questions_section_name": "体育艺术",
+                    "order_number": 3,
+                    "question_hash": "a93e0bcdd060c3b7473133685123f5d0",
+                    "question_content": "{{appellation}}是否参加过体育比赛或获得奖项？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "有国家/省级以上奖项",
+                            "value": "A"
+                        },
+                        {
+                            "label": "有市级/校级奖项",
+                            "value": "B"
+                        },
+                        {
+                            "label": "有机构/俱乐部颁发的奖项",
+                            "value": "C"
+                        },
+                        {
+                            "label": "只参加过比赛，无奖项",
+                            "value": "D"
+                        },
+                        {
+                            "label": "没有参加过",
+                            "value": "E"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 5,
+                    "test_questions_section_name": "体育艺术",
+                    "order_number": 4,
+                    "question_hash": "02e2cf9ec397b6d992d9815e151f43cc",
+                    "question_content": "{{appellation}}在艺术（音乐/美术/舞蹈/表演等）方面的兴趣如何？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "非常浓厚（主动练习/创作）",
+                            "value": "A"
+                        },
+                        {
+                            "label": "兴趣强烈（很喜欢上台表演）",
+                            "value": "B"
+                        },
+                        {
+                            "label": "偶尔参与",
+                            "value": "C"
+                        },
+                        {
+                            "label": "没兴趣",
+                            "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 5,
+                    "test_questions_section_name": "体育艺术",
+                    "order_number": 5,
+                    "question_hash": "76bae5f482f9d167457290672d3cdb88",
+                    "question_content": "{{appellation}}是否有长期学习/训练艺术类项目？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "有（超过3年，持续学习）",
+                            "value": "A"
+                        },
+                        {
+                            "label": "有（1–2年）",
+                            "value": "B"
+                        },
+                        {
+                            "label": "有短期体验",
+                            "value": "C"
+                        },
+                        {
+                            "label": "没有系统学习",
+                            "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 5,
+                    "test_questions_section_name": "体育艺术",
+                    "order_number": 6,
+                    "question_hash": "0c1901a0e2703ee3706748f73f8cfb2b",
+                    "question_content": "{{appellation}}是否获得过艺术类（音乐/美术/舞蹈/戏剧等）奖项/证书？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "国家级/省级",
+                            "value": "A"
+                        },
+                        {
+                            "label": "市级/校级",
+                            "value": "B"
+                        },
+                        {
+                            "label": "培训机构/兴趣班颁发",
+                            "value": "C"
+                        },
+                        {
+                            "label": "没有",
                             "value": "D"
                         }
                     ],
@@ -1569,174 +1535,214 @@
             "questions": [
                 {
                     "test_questions_section_id": 6,
-                    "test_questions_section_name": "教育期待",
+                    "test_questions_section_name": "家庭陪伴",
                     "order_number": 1,
-                    "question_hash": "f2a6d2e1bc65cef80fddf2b0883174a5",
-                    "question_content": "爸爸妈妈对{{appellation}}的学习和成长有什么期待？{{appellation}}对未来有什么样的想法或期望？",
-                    "question_type": "B",
-                    "question_attachment_type": "C",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "提高成绩 / 进入重点学校",
-                            "value": "A"
-                        },
-                        {
-                            "label": "加强英语 / 出国留学",
-                            "value": "B"
-                        },
-                        {
-                            "label": "参加竞赛 / 获得奖项",
-                            "value": "C"
-                        },
-                        {
-                            "label": " 培养兴趣特长（艺术/体育/科研）",
-                            "value": "D"
-                        },
-                        {
-                            "label": "培养责任感 / 独立性",
-                            "value": "E"
-                        },
-                        {
-                            "label": "管理时间 / 提升自律",
-                            "value": "F"
-                        },
-                        {
-                            "label": "成为有领导力/影响力的人",
-                            "value": "G"
-                        },
-                        {
-                            "label": "身心健康 / 快乐成长",
-                            "value": "H"
-                        }
-                    ],
-                    "placeholder": "学业方向：考好成绩、出国留学、进入重点大学、保持学习兴趣\n品格方向：自信、独立、善良、有责任感\n兴趣方向：坚持一项运动/艺术/科研兴趣，健康成长\n未来期待：做科学家/医生/老师/艺术家/企业家，或者“还不确定",
-                    "question_attachment_content": "如果不好完整描述，请勾选最符合期待的方向（可选 2–4 项）"
-                },
-                {
-                    "test_questions_section_id": 6,
-                    "test_questions_section_name": "亲子关系与陪伴",
-                    "order_number": 2,
-                    "question_hash": "2c888f7436c296296532165c14bedbf4",
-                    "question_content": "{{appellation}}和父母的关系怎么样？平时会不会经常陪伴、交流或一起活动？/会因为什么事情发生冲突？",
-                    "question_type": "B",
-                    "question_attachment_type": "C",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "经常聊天/陪伴",
-                            "value": "A"
-                        },
-                        {
-                            "label": "一起学习/运动",
-                            "value": "B"
-                        },
-                        {
-                            "label": "一起娱乐/旅游",
-                            "value": "C"
-                        },
-                        {
-                            "label": "遇事能沟通",
-                            "value": "D"
-                        },
-                        {
-                            "label": "偶尔交流，时间有限",
-                            "value": "E"
-                        },
-                        {
-                            "label": "沟通需要改进",
-                            "value": "F"
-                        },
-                        {
-                            "label": "矛盾原因：学业/作业",
-                            "value": "G"
-                        },
-                        {
-                            "label": "矛盾原因：使用电子产品/游戏",
-                            "value": "H"
-                        },
-                        {
-                            "label": "矛盾原因：作息/生活习惯",
-                            "value": "I"
-                        },
-                        {
-                            "label": "矛盾原因：家务/责任分工",
-                            "value": "J"
-                        },
-                        {
-                            "label": "矛盾原因： 交友/兴趣选择",
-                            "value": "K"
-                        }
-                    ],
-                    "placeholder": "关系类型：亲近、友好、支持、严格、疏远\n陪伴形式：一起吃饭、读书、运动、旅行、聊天、辅导作业\n交流频率：经常、偶尔、很少\n孩子/家长感受：温暖、信任、有压力、不够交流",
-                    "question_attachment_content": "如果不好完整描述，请勾选最符合{SELF}家庭关系的情况"
-                },
-                {
-                    "test_questions_section_id": 6,
-                    "test_questions_section_name": "家庭期待",
-                    "order_number": 3,
-                    "question_hash": "639ae6660c2d55be4405763f11c0d155",
-                    "question_content": "如果有魔法，可以改变孩子身上/父母身上的一个地方，你希望改变什么？",
-                    "question_type": "B",
-                    "question_attachment_type": "A",
-                    "correct_answer": null,
-                    "questions_options": [
-                        {
-                            "label": "孩子的学习习惯（更自律、专注、效率高）",
-                            "value": "A"
-                        },
-                        {
-                            "label": "孩子的性格特质（更自信、勇敢、善于表达）",
-                            "value": "B"
-                        },
-                        {
-                            "label": "孩子的兴趣与坚持（能长期坚持一项爱好/特长）",
-                            "value": "C"
-                        },
-                        {
-                            "label": "父母的陪伴与沟通（父母能更多陪伴、少一些责备）",
-                            "value": "D"
-                        },
-                        {
-                            "label": "家庭氛围（更温暖、支持、少一些焦虑或冲突）",
-                            "value": "E"
-                        }
-                    ],
-                    "placeholder": "学习：希望自己更聪明/更快写完作业/考试更好\n性格：希望自己更勇敢/更自信/更开朗\n兴趣：希望自己能坚持喜欢的事（画画、球类、游戏、写作）\n父母：希望爸爸妈妈少管一点/更理解我/多陪我玩\n家庭：希望家里不吵架/更开心/像朋友一样相处",
-                    "question_attachment_content": "如果可以改变一件事，你更希望改变的是："
-                },
-                {
-                    "test_questions_section_id": 6,
-                    "test_questions_section_name": "家庭教育完整性",
-                    "order_number": 4,
-                    "question_hash": "460fe2d35b091205ebd56828facad06c",
-                    "question_content": "平时是谁主要陪伴孩子和参与孩子教育？",
+                    "question_hash": "1a65543b2fe299e09a47f4117dfa8de8",
+                    "question_content": "父母是否经常陪伴{{appellation}}？",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": "爸爸",
+                            "label": "经常陪伴",
                             "value": "A"
                         },
                         {
-                            "label": "妈妈",
+                            "label": "偶尔陪伴",
                             "value": "B"
                         },
                         {
-                            "label": "祖辈或亲戚",
+                            "label": "很少陪伴",
                             "value": "C"
                         },
                         {
-                            "label": "父母双方",
+                            "label": "几乎不陪伴",
+                            "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 6,
+                    "test_questions_section_name": "亲子沟通",
+                    "order_number": 2,
+                    "question_hash": "a8109df5fb48cfb3145ec175bb1f6626",
+                    "question_content": "{{appellation}}与父母的沟通频率是？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "每天都会聊（1次以上）",
+                            "value": "A"
+                        },
+                        {
+                            "label": "一周聊3–5次",
+                            "value": "B"
+                        },
+                        {
+                            "label": "一周聊1–2次",
+                            "value": "C"
+                        },
+                        {
+                            "label": "一个月聊几次",
                             "value": "D"
                         },
                         {
-                            "label": "家庭教师",
+                            "label": "几乎不怎么聊",
+                            "value": "E"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 6,
+                    "test_questions_section_name": "孩子期望",
+                    "order_number": 3,
+                    "question_hash": "527efdcd62f96895d04323f17b947a02",
+                    "question_content": "{{appellation}}自己对未来最大的期待是？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "考入理想学校",
+                            "value": "A"
+                        },
+                        {
+                            "label": "做喜欢的事",
+                            "value": "B"
+                        },
+                        {
+                            "label": "追求安稳生活",
+                            "value": "C"
+                        },
+                        {
+                            "label": "还不确定",
+                            "value": "D"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 6,
+                    "test_questions_section_name": "家长期望",
+                    "order_number": 4,
+                    "question_hash": "3e43b72396e73f85880c2d7dfcbfe255",
+                    "question_content": "父母对{{appellation}}未来的最大期望是？（最多选3项）",
+                    "question_type": "C",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "学习成绩好，考上名校",
+                            "value": "A"
+                        },
+                        {
+                            "label": "综合发展，德智体美全面",
+                            "value": "B"
+                        },
+                        {
+                            "label": "健康快乐，心态阳光",
+                            "value": "C"
+                        },
+                        {
+                            "label": "出国留学，开阔眼界",
+                            "value": "D"
+                        },
+                        {
+                            "label": "有稳定工作（如公务员/教师/医生）",
                             "value": "E"
                         },
                         {
-                            "label": "独立",
+                            "label": "成为领导者，带团队",
+                            "value": "F"
+                        },
+                        {
+                            "label": "会做生意，赚钱有本事",
+                            "value": "G"
+                        },
+                        {
+                            "label": "接班/传承家业",
+                            "value": "H"
+                        }
+                    ],
+                    "placeholder": null,
+                    "question_attachment_content": null
+                },
+                {
+                    "test_questions_section_id": 6,
+                    "test_questions_section_name": "孩子未来愿景",
+                    "order_number": 5,
+                    "question_hash": "eda9a55935fa8d923dcacad681295c00",
+                    "question_content": "{{appellation}}有什么梦想吗？",
+                    "question_type": "B",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "科学家 / 工程师",
+                            "value": "A"
+                        },
+                        {
+                            "label": "医生 / 老师",
+                            "value": "B"
+                        },
+                        {
+                            "label": "艺术家 / 设计师 / 演员",
+                            "value": "C"
+                        },
+                        {
+                            "label": "企业家 / 领袖",
+                            "value": "D"
+                        },
+                        {
+                            "label": "运动员 / 探险家",
+                            "value": "E"
+                        },
+                        {
+                            "label": "还不确定，将来再慢慢探索",
+                            "value": "F"
+                        }
+                    ],
+                    "placeholder": "将来最想做什么工作？（比如：科学家、老师、医生、画家、运动员、演员……）\n想去哪里学习或生活？（比如：北京、上海、国外……）\n最希望自己长大后有什么样的生活？（比如：快乐、自由、有钱、有名气、帮助别人……）",
+                    "question_attachment_content": "如果{{appellation}}一时说不清未来的样子，可以先从“想做的职业”来选择："
+                },
+                {
+                    "test_questions_section_id": 6,
+                    "test_questions_section_name": "潜力意向",
+                    "order_number": 6,
+                    "question_hash": "ab49f42bf5db7821dd17d050b7743314",
+                    "question_content": "如果给未来的{{appellation}}一个“魔法选择”，最希望拥有的能力是？",
+                    "question_type": "A",
+                    "question_attachment_type": "A",
+                    "correct_answer": null,
+                    "questions_options": [
+                        {
+                            "label": "学习超强（上课一学就会）",
+                            "value": "A"
+                        },
+                        {
+                            "label": "运动超强（跑得快、球打得好）",
+                            "value": "B"
+                        },
+                        {
+                            "label": "艺术超强（画画、唱歌、表演厉害）",
+                            "value": "C"
+                        },
+                        {
+                            "label": "创造发明（能造出新东西）",
+                            "value": "D"
+                        },
+                        {
+                            "label": "说话有力量（能带动大家、很有影响力）",
+                            "value": "E"
+                        },
+                        {
+                            "label": "有魔法一样（想要啥都有、能帮助别人）",
                             "value": "F"
                         }
                     ],

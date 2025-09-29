@@ -1,4 +1,7 @@
 import pandas as pd
+import sys
+sys.path.append('/root/code/ai_based_education')
+
 from utils.func_str import str2list
 from pathlib import Path
 
@@ -77,3 +80,11 @@ db_A档&B档升学路径对标本科要求知识库""".split('\n')
     df3 = df2.explode('适用年级')
 
     return df3
+
+if __name__ == '__main__':
+    res = load_growth_advice_rule()
+    print(res.columns)
+    print(res['输出子模块（可以大模型自行判断）'].unique())
+    # a = res[(res['人才画像']=='社会公众影响型') & (res['输出子模块（可以大模型自行判断）']=='本科推荐学校列表')]
+    a = res[(res['输出子模块（可以大模型自行判断）']=='本科推荐学校列表')]
+    print(a[a['人才画像'].str.contains('社会公众影响型')])

@@ -4,10 +4,16 @@ from main import get_growth_advice_rules
 import pandas as pd
 import json
 
+import logging
+logger = logging.getLogger("service_log")
+
+import time
+
 get_target_university_recommendation_prompt = '''
 请结合以下学生信息和相关信息，生成一份目标大学的推荐列表，最多不超过5所：
 ### 要求如下
-- 只给出学校的列表即可
+- 【目标院校】：依据升学目标与学生画像推荐5所目标高校，A档或B档建议区别展示
+- 给出目标院校列表，A档或B档建议区别展示
 
 ### 学生信息
 {background}
@@ -16,23 +22,67 @@ get_target_university_recommendation_prompt = '''
 {related_info}
 '''
 
-get_current_grade_plan_prompt = '''
-请结合以下学生信息和相关信息，生成一份符合当前年级的规划json：
-### 要求如下
-- 一定要选取仅符合「当前规划年级」的活动来给出建议
-- 最终建议的结构应包含以下各项，每项一段话，不能给出列表
-如：
+get_current_grade_plan_prompt = '''你现在是一名资深的低龄升学规划专家，熟悉全球本科升学路径（中国大陆本科、港澳台本科、美本、英联邦本科、双轨）和低龄教育规律。你的任务是为家长提供一份“可以直接施工”的规划方案。
+
+⚠️ 输出必须像顾问和家长沟通，有温度、有逻辑、能执行。禁止复述抽象逻辑，禁止空泛表达（如“你可以了解 IB/AL/AP”），必须根据学生情况和升学路径选择直接给出明确的择校体系推荐（如“建议选择 IB 国际学校”），并说明理由和行动路径。
+
+【输入来源】
+- 学生信息
+- 目标学校
+- 之前的规划
+- 下一年参考知识库
+- 建议规划内容
+
+请严格遵循以下输出要求：
+
+1. **角色定位**
+- 以“专家顾问”的身份直接对家长说话，语气专业、有温度、可执行。
+- 避免使用过多专业术语或AI/模型逻辑解释。
+
+2. **规划逻辑**
+- 以终为始：从孩子未来本科目标倒推，结合当前年级/年龄特性分解路径。
+- 从兴趣起点（一本书、一个社团、一次尝试）逐步延展到夏校、竞赛、科研、实习。
+- 最终形成孩子的独特 **signature**（影响力、利他性、个人故事）。
+
+3. 执行逻辑
+- 必须按照既定的“升学路径规则库”自动推导 → 输出明确的择校体系选择（如 IB / A-Level / AP / 公立重点高中），并说明理由。
+- 成长建议必须结合 SWOT 分析：  
+   - **优势**：写出如何放大  
+   - **劣势**：写出如何补强  
+   - **机会**：写出如何利用  
+   - **威胁**：必须转化为 1–2 条具体应对方法（如“心理韧性低 → 情绪日记法 + 体育释放活动”）  
+   ⚠️ 禁止只写“心理需要调试”。
+4. 所有考试/竞赛/夏校/科研推荐必须包含：  
+   - 年级适合度  
+   - 最低目标 vs 理想目标  
+   - 达成路径（如“每周 2 次训练 → 校级选拔 → 区级/国家级”）
+5. 升学与择校建议必须包含时间节点提示（如秋季看校、寒假夏校、G11 文书准备等）。
+6. 输出内容必须符合孩子的年级和年龄特性，确保落地可执行。
+
+--------------------------------------------------
+【表达风格】
+- 专业 × 通俗 × 有温度。
+- 建议要像顾问跟家长说话，而不是写学术报告。
+- 每条建议要有画面感和执行感，让家长看完能立刻行动。
+
+--------------------------------------------------
+【输出目标】
+为家长提供一份 **结构清晰、路径明确、结合孩子个性化特征、落地可行、「当前规划年级」可执行的升学与成长路径指南**。
+--------------------------------------------------
+【输出格式】
+必须包含以下各个部分，”每项一段话，不能给出列表“，输出json格式，如：
 ```json{{
-  "学年目标": "本学年目标是帮助学生在科学素养方面打下更扎实基础，初步建立生物学方向的学科兴趣，同时提升科研意识与问题思维能力。",
-  "推荐资源": "推荐学生使用《DK自然科学图解百科》(青少年生物探秘课程)，并参与MOOC平台上的生物启蒙课程；使用“科学探究小实验”工具箱进行家庭实验项目。",
-  "应完成的项目": "鼓励学生参加“全国青少年科技创新大赛(初阶)”或“生物小课题研究营”，开展一个小型植物观察记录项目，初步训练数据记录与假设思维，贴合未来STEM方向申请逻辑。",
-  "升学节点提示": "本阶段建议家长与学生共同了解国际课程体系(如IB/AP/A-Level)，并考虑在7年级起申请过渡至国际课程体系的初中项目；同时开始规划初中阶段竞赛路径。",
-  "延续性建议": "上一学年的英文绘本阅读和自然拼读基础可在本年延伸为自然科学类分级读物阅读；建议记录本年完成的生物观察项目成果，为G7阶段科研项目打基础。",
-  "英语进阶目标": "在英语方面，建议词汇量达到2500，语言能力提升至CEFR B1，为未来的TOEFL考试打好语言基础。",
-  "特别提醒": "若该升学路径存在时间关键点(如国际体系转换节点、课程体系切换、标化考试规划时间等)，请列出提醒事项；可适配家长建议，强调系统性准备。"
+  "学年目标": "本学年目标是帮助学生在科学素养方面打下更扎实基础……",
+  "推荐资源": "推荐学生使用《DK自然科学图解百科》……",
+  "应完成的项目": "鼓励学生参加“全国青少年科技创新大赛(初阶)”或“生物小课题研究营”，……",
+  "升学节点提示": "本阶段建议家长与学生共同了解国际课程体系(如IB/AP/A-Level)，……",
+  "延续性建议": "上一学年的英文绘本阅读和自然拼读基础可在本年延伸为自然科学类分级读物阅……",
+  "英语进阶目标": "在英语方面，建议词汇量达到2500，语言能力提升……",
+  "特别提醒": "若该升学路径存在时间关键……"
 }}```
-- 「只针对当前：{current_grade0}年级」，结合学生信息和目标院校给出**接下来一年**的学年规划。
-- 和之前年级的规划内容要「具体」、「可执行」、有「延续性」，但是「不要重复」
+
+
+请记住：你的目标是帮助家长获得一份 **结构清晰、落地可行、「当前规划年级」可执行的升学与成长路径指南**，而不是写抽象的规划逻辑。
 
 ### 学生信息
 {background}
@@ -50,8 +100,45 @@ get_current_grade_plan_prompt = '''
 {reference_plan}
 
 ### 当前规划年级
-{current_grade}
-'''
+{current_grade}'''
+
+# get_current_grade_plan_prompt = '''
+# 请结合以下学生信息和相关信息，生成一份符合当前年级的规划json：
+# ### 要求如下
+# - 一定要选取仅符合「当前规划年级」的活动来给出建议,「只针对当前：{current_grade0}年级」，结合学生信息和目标院校给出**接下来一年**的学年规划。
+# - 最终建议的结构应包含以下各项，每项一段话，不能给出列表
+# 如：
+# ```json{{
+#   "学年目标": "本学年目标是帮助学生在科学素养方面打下更扎实基础，初步建立生物学方向的学科兴趣，同时提升科研意识与问题思维能力。",
+#   "推荐资源": "推荐学生使用《DK自然科学图解百科》(青少年生物探秘课程)，并参与MOOC平台上的生物启蒙课程；使用“科学探究小实验”工具箱进行家庭实验项目。",
+#   "应完成的项目": "鼓励学生参加“全国青少年科技创新大赛(初阶)”或“生物小课题研究营”，开展一个小型植物观察记录项目，初步训练数据记录与假设思维，贴合未来STEM方向申请逻辑。",
+#   "升学节点提示": "本阶段建议家长与学生共同了解国际课程体系(如IB/AP/A-Level)，并考虑在7年级起申请过渡至国际课程体系的初中项目；同时开始规划初中阶段竞赛路径。",
+#   "延续性建议": "上一学年的英文绘本阅读和自然拼读基础可在本年延伸为自然科学类分级读物阅读；建议记录本年完成的生物观察项目成果，为G7阶段科研项目打基础。",
+#   "英语进阶目标": "在英语方面，建议词汇量达到2500，语言能力提升至CEFR B1，为未来的TOEFL考试打好语言基础。",
+#   "特别提醒": "若该升学路径存在时间关键点(如国际体系转换节点、课程体系切换、标化考试规划时间等)，请列出提醒事项；可适配家长建议，强调系统性准备。"
+# }}```
+# - 和之前年级的规划内容要「具体」、「可执行」、有「延续性」，但是「不要重复」
+# - 建议和措施要具体，
+
+
+# ### 学生信息
+# {background}
+
+# ### 目标学校
+# {target_universsity}
+
+# ### 之前的规划
+# {former_plan}
+
+# ### 参考知识库
+# {reference_data}
+
+# ### 建议规划内容
+# {reference_plan}
+
+# ### 当前规划年级
+# {current_grade}
+# '''
 
 
 class RagDatabase():
@@ -172,13 +259,27 @@ def get_final_res(get_plan_prompt):
     final_res = matches[0]
     return final_res
 
+def get_prev_plan(former_plan,current_grade,grade_list):
+    """获取前一年级的升学规划"""
+    prev_plan = {
+        "本科推荐院校": former_plan.get("本科推荐院校", '')
+    }
+    
+    cur_idx = grade_list.index(current_grade)
+    if cur_idx > 0:
+        prev_grade = grade_list[cur_idx-1]
+        prev_plan[prev_grade] = former_plan.get(prev_grade, '')
+    
+    return prev_plan
+
 def get_report(res):
     background = get_background(res)
     db = RagDatabase()
     related_info = db.get_university_recommendation(res['profile_type'])
     university_recommend = request_model(get_target_university_recommendation_prompt.format(background=background, related_info=related_info))
 
-    grade_list = res['recall_rules']['grade_list'].keys()
+    grade_list = list(res['recall_rules']['grade_list'].keys())
+    grade_list.sort(key=lambda x:int(x.split('G')[1]))
 
     db_name_full_list = [
         'db_【画像知识库】',
@@ -201,11 +302,24 @@ def get_report(res):
 
         reference_data = db.get_current_databse(current_db_list, current_grade)
 
-        get_plan_prompt = get_current_grade_plan_prompt.format(current_grade0=current_grade, background=background, target_universsity=university_recommend, former_plan=former_plan, reference_data=reference_data, reference_plan=reference_plan, current_grade=current_grade)
+        # get_plan_prompt = get_current_grade_plan_prompt.format(current_grade0=current_grade, background=background, target_universsity=university_recommend, former_plan=former_plan, reference_data=reference_data, reference_plan=reference_plan, current_grade=current_grade)
+    
+        # 20250923: former_plan修改为只用前一个年级(by 拉凡)
+        start_time = time.time()
+        
+        prev_plan = get_prev_plan(former_plan,current_grade,grade_list)
+        get_plan_prompt = get_current_grade_plan_prompt.format(current_grade0=current_grade, background=background, target_universsity=university_recommend, former_plan=prev_plan, reference_data=reference_data, reference_plan=reference_plan, current_grade=current_grade)
+        # logger.info(f"****plan_prompt****\n{get_plan_prompt}")
         current_plan = get_final_res(get_plan_prompt)
-        former_plan[current_grade] = current_plan
+        
+        # former_plan[current_grade] = current_plan
+        former_plan[current_grade] = eval(current_plan)
+        
         # print(f"{current_grade} plan is {json.dumps(former_plan,indent=4,ensure_ascii=False)}")
         print(f"{current_grade} plan is {current_plan}")
+
+        gen_time = time.time() - start_time
+        logger.info(f"plan generate time:{gen_time}s")
     
     return former_plan
 
