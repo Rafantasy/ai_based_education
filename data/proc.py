@@ -63,11 +63,16 @@ def eval_result(idx):
 
     def find_dim(q_content):
         tmp_q = q_content.replace("{{appellation}}",'').strip()
+        if '完成作业时，的态度是？' in tmp_q:
+            tmp_q = '完成作业时，的态度是？'
+        if '的时间管理习惯是？' in tmp_q:
+            tmp_q = '的时间管理习惯是？'
         for key in Q_BANK:
             q_list = Q_BANK[key]
             for item in q_list:
                 if tmp_q.strip() == item['question'].strip():
                     return key
+        print(tmp_q)
         return ''
 
     eval_result = [] 

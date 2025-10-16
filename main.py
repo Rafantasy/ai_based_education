@@ -1,3 +1,5 @@
+# -*- encoding:utf-8 -*-
+
 import pandas as pd
 import json
 import sys
@@ -20,6 +22,7 @@ from prompt_template import (
     prompt_open_question_summary,
     prompt_subject_interest,
     prompt_swot,
+    prompt_instant_report,
     prompt_tp
 )
 
@@ -45,6 +48,11 @@ import time
 import logging
 logger = logging.getLogger("service_log")
 
+def handle_grade(req):
+    if ('K' in req['student_info']['current_grade']) or ('k' in req['student_info']['current_grade']):
+        req['student_info']['current_grade'] = 'G1'
+    
+    return req
 
 def check_input(req, name):
     """输入参数校验"""
@@ -64,10 +72,11 @@ def get_open_question_summary(req):
         return {'response_validity':0, 'summary': ''}
     
     dim = eval_result[0]['question_section_name']
-    qa_pair = '问题：' + eval_result[0]['question'] + '\n' + '回答：' + ','.join(eval_result[0]['answer'])
+    # qa_pair = '问题：' + eval_result[0]['question'] + '\n' + '回答：' + ','.join(eval_result[0]['answer'])
+    qa_pair = '问题：' + eval_result[0]['question'] + '\n' + '回答：' + eval_result[0]['answer']
     
     prompt = prompt_open_question_summary % (dim, qa_pair)
-
+    print('open question:', prompt)
     messages=[
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": prompt},
@@ -78,6 +87,18 @@ def get_open_question_summary(req):
     return result
 
 
+def test_summary(req):
+    req = handle_grade(req)
+    logger.info(f"open question input req:{req}")
+    model_res = get_open_question_summary(req)
+    print(model_res)
+    
+    response_validity = 1 
+    if len(model_res['潜力亮点']) == 0 and len(model_res['问题点']) == 0:
+        response_validity = 0 
+    
+    return {'response_validity':response_validity, 'potential_highlights':model_res['潜力亮点'], 'defect':model_res['问题点']}
+ 
 def get_TP_evidence(req):
     eval_result = req.get('eval_result', [])
     qa_list = []
@@ -92,8 +113,10 @@ def get_TP_evidence(req):
     talent_dim_list = ['A_S', 'L_J', 'I_P', 'R_B']
     talent_msg_list = []
     for dim in talent_dim_list:
+        print('input dim:', dim, ' Grade', req.get('student_info',{}).get('current_grade',''))
         res_def, res_score = load_evidence(dim, req.get('student_info',{}).get('current_grade',''))
 
+        print('input prompt:', prompt_tp % (res_def, res_score, qa_list))
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": prompt_tp % (res_def, res_score, qa_list)},
@@ -151,13 +174,17 @@ def get_profile(req):
     # 学生英语水平及分档
     eng_level, rate = rate_classify(req)
     
+    # 过渡页内容生成
+    instant_report = prod_instant_report(req,subject_interest,profile_def['name'],eng_level)
+
     # 拼接输出结果
     profile = {
         "profile": profile_def,
         "enrollment": enrollment,
         "english_level": eng_level,
         "rate": rate,
-	"subject_interest": subject_interest
+	"subject_interest": subject_interest,
+        "instant_report": instant_report
     }
 
     return profile
@@ -205,7 +232,77 @@ def get_swot(req):
     }
     return res
 
+
+
+def prod_instant_report(req,subject_interest,profile_type,english_level):
+    # 生成学生背景信息
+    student_info = req.get('student_info',{})
+    basic_info = '\n'.join(
+        [
+            '性别:' + student_info.get('gender',''),
+            '学校类型:' + student_info.get('school_type',''),
+            '当前年级:' + student_info.get('current_grade',''),
+            '所在城市:' + student_info.get('city_location',''),
+            '目标升学路径:' + ','.join(student_info.get('college_goal_path',[])),
+            '兴趣学科:' + subject_interest,
+            '人才画像:' + profile_type,
+            '画像描述:' + get_profile_def(profile_type).get('description',''),
+            '英语水平:' + english_level
+        ]
+    )
+
+    # 构造评测结果
+    eval_result = req.get('eval_result', [])
+    qa_list = []
+    for item in eval_result:
+        q = item['question']
+        ans = ','.join(item['answer'])
+        qa_list.extend(['[题目]:'+q+'\n[答案]:'+ans])
+    qa_list = '\n'.join(qa_list)
+
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": prompt_instant_report % (basic_info, qa_list)},
+    ]
+    result = call_model(messages)
     
+    return result
+
+    
+def get_instant_report(req):
+    # 生成学生背景信息
+    student_info = req.get('student_info',{})
+    basic_info = '\n'.join(
+        [
+            '性别:' + student_info.get('gender',''),
+            '学校类型:' + student_info.get('school_type',''),
+            '当前年级:' + student_info.get('current_grade',''),
+            '所在城市:' + student_info.get('city_location',''),
+            '目标升学路径:' + ','.join(student_info.get('college_goal_path',[])),
+            '兴趣学科:' + student_info.get('subject_interest',''),
+            '人才画像:' + student_info.get('profile_type',''),
+            '画像描述:' + get_profile_def(student_info.get('profile_type','')).get('description',''),
+            '英语水平:' + student_info.get('english_level','')
+        ]
+    )
+
+    # 构造评测结果
+    eval_result = req.get('eval_result', [])
+    qa_list = []
+    for item in eval_result:
+        q = item['question']
+        ans = ','.join(item['answer'])
+        qa_list.extend(['[题目]:'+q+'\n[答案]:'+ans])
+    qa_list = '\n'.join(qa_list)
+
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": prompt_instant_report % (basic_info, qa_list)},
+    ]
+    result = call_model(messages)
+    
+    return result
+
 def get_growth_advice_rules(req):
     """生成成长规划生成规则"""
 
@@ -267,10 +364,10 @@ def get_growth_advice_rules(req):
     return res
 
 if __name__ == '__main__':
-    
-    profile = get_profile_new(req)
-    print(json.dumps(profile,indent=4,ensure_ascii=False))
-
+    # profile = get_profile(req)
+    # print(json.dumps(profile,indent=4,ensure_ascii=False))
+    req = {'student_info': {'name': '小周', 'gender': '女', 'school_type': '私立', 'current_grade': 'G10', 'city_location': '北屯市', 'college_goal_path': ['英联邦本科'], 'id': 'cebc85a5-9ddb-11f0-86aa-0242ac120003'}, 'eval_result': [{'question_section_name': '成就动机', 'question_type': 2, 'question': '请分享一件让孩子最有成就感的事情。', 'answer': '英语'}]}
+    test_summary(req)
     # print('begin to generate rules!')
     # # step1: 生成知识库召回规则
     # rules = get_growth_advice_rules(req)

@@ -593,8 +593,8 @@
                     "test_questions_section_id": 2,
                     "test_questions_section_name": "作业态度",
                     "order_number": 7,
-                    "question_hash": "b4d7733e70e561f68f88f887a05f391a",
-                    "question_content": "完成作业时，{{appellation}}的态度是？（可多选）",
+                    "question_hash": "68ba60ae6d7b241e157863c2ed3b5dff",
+                    "question_content": "完成作业时，{{appellation}}的态度是？",
                     "question_type": "C",
                     "question_attachment_type": "A",
                     "correct_answer": null,
@@ -825,86 +825,86 @@
                     "test_questions_section_id": 2,
                     "test_questions_section_name": "英语能力",
                     "order_number": 13,
-                    "question_hash": "be617b5b977c8a14f40e6f88b1539da5",
+                    "question_hash": "a21df7f7fde95580a8258cc063b9af9d",
                     "question_content": "{{appellation}}是否参加过以下英语考试？请选择最近一次且成绩最高的一项。",
                     "question_type": "A",
                     "question_attachment_type": "A",
                     "correct_answer": null,
                     "questions_options": [
                         {
-                            "label": " KET 未通过",
+                            "label": "剑桥英语一级（KET）未通过",
                             "value": "A"
                         },
                         {
-                            "label": "KET Pass",
+                            "label": "剑桥英语一级（KET）及格（Pass）",
                             "value": "B"
                         },
                         {
-                            "label": "KET Merit",
+                            "label": "剑桥英语一级（KET）良好（Merit）",
                             "value": "C"
                         },
                         {
-                            "label": "KET Distinction",
+                            "label": "剑桥英语一级（KET）优秀（Distinction）",
                             "value": "D"
                         },
                         {
-                            "label": "PET 未通过",
+                            "label": "剑桥英语二级（PET）未通过",
                             "value": "E"
                         },
                         {
-                            "label": "PET Pass",
+                            "label": "剑桥英语二级（PET）及格（Pass）",
                             "value": "F"
                         },
                         {
-                            "label": "PET Merit",
+                            "label": "剑桥英语二级（PET）良好（Merit）",
                             "value": "G"
                         },
                         {
-                            "label": "PET Distinction",
+                            "label": "剑桥英语二级（PET）优秀（Distinction）",
                             "value": "H"
                         },
                         {
-                            "label": "FCE Grade C",
+                            "label": "剑桥英语三级（FCE）C等级（Grade C）",
                             "value": "I"
                         },
                         {
-                            "label": "FCE Grade B",
+                            "label": "剑桥英语三级（FCE）B等级（Grade B）",
                             "value": "J"
                         },
                         {
-                            "label": "FCE Grade A",
+                            "label": "剑桥英语三级（FCE）A等级（Grade A）",
                             "value": "K"
                         },
                         {
-                            "label": "雅思IELTS<5.5",
+                            "label": "雅思成绩 < 5.5（IELTS < 5.5）",
                             "value": "L"
                         },
                         {
-                            "label": "雅思IELTS 5.5–6.0",
+                            "label": "雅思成绩 5.5–6.0（IELTS 5.5–6.0）",
                             "value": "M"
                         },
                         {
-                            "label": "雅思IELTS 6.5-7.0",
+                            "label": "雅思成绩 6.5–7.0（IELTS 6.5–7.0）",
                             "value": "N"
                         },
                         {
-                            "label": "雅思IELTS≥7.5",
+                            "label": "雅思成绩≥7.5（IELTS≥7.5）",
                             "value": "O"
                         },
                         {
-                            "label": "托福TOEFL iBT<60",
+                            "label": "托福成绩<60（TOEFL iBT<60）",
                             "value": "P"
                         },
                         {
-                            "label": "托福TOEFL iBT 60–79",
+                            "label": "托福成绩60-79（TOEFL iBT 60–79）",
                             "value": "Q"
                         },
                         {
-                            "label": "托福TOEFL iBT 80-99",
+                            "label": "托福成绩80-99（TOEFL iBT 80-99）",
                             "value": "R"
                         },
                         {
-                            "label": "托福TOEFL iBT ≥100",
+                            "label": "托福成绩≥100（TOEFL iBT ≥100）",
                             "value": "S"
                         },
                         {

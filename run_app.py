@@ -12,7 +12,9 @@ from main import (
     get_growth_advice_rules,
     get_open_question_summary,
     get_swot,
-    get_profile
+    get_instant_report,
+    get_profile,
+    handle_grade
 )
 
 from tools.load_resource import (
@@ -31,6 +33,7 @@ sys.path.append(os.getcwd())
 # route
 @app.route('/open_question', methods=['POST'])
 def produe_open_question_ans():
+    logger = logging.getLogger("service_log")
     res = defaultdict()
  
     if request.json:
@@ -41,21 +44,22 @@ def produe_open_question_ans():
         logger.error("please check format of request")
         return res 
     
-    req = request.json
-    logger.info(f"open question input req:{req}")
     
-    model_res = get_open_question_summary(request.json)
+    req = handle_grade(request.json)
+    logger.info(f"open question input req:{req}")
+    model_res = get_open_question_summary(req)
     
     response_validity = 1 
     if len(model_res['潜力亮点']) == 0 and len(model_res['问题点']) == 0:
         response_validity = 0 
         
-    return {'response_validity':response_validity, 'potential_highlights':model_res['潜力亮点'], 'defect':model_res['问题点']}
+    result = {'response_validity':response_validity, 'potential_highlights':model_res['潜力亮点'], 'defect':model_res['问题点']}
  
-    return Response(json.dumps(res))
+    return Response(json.dumps(result))
 
 @app.route('/instant_profile', methods=['POST'])
 def produe_instant_profile():
+    logger = logging.getLogger("service_log")
     res = defaultdict()
 
     if request.json:
@@ -65,7 +69,7 @@ def produe_instant_profile():
     else:
         logger.error("please check format of request")
         return res
-    req = request.json
+    req = handle_grade(request.json)
     logger.info(f"instant_profile input req:{req}") 
     t_start = time.time()
     res = get_profile(req)
@@ -78,6 +82,7 @@ def produe_instant_profile():
  
 @app.route('/swot', methods=['POST'])
 def produe_swot():
+    logger = logging.getLogger("service_log")
     res = defaultdict()
  
     if request.json:
@@ -88,7 +93,7 @@ def produe_swot():
         logger.error("please check format of request")
         return res 
     
-    req = request.json
+    req = handle_grade(request.json)
     logger.info(f"swot-input req is{req}")
 
     t_start = time.time() 
@@ -102,8 +107,36 @@ def produe_swot():
     return Response(json.dumps(res))
 
 
+@app.route('/instant_report', methods=['POST'])
+def produe_instant_report():
+    logger = logging.getLogger("service_log")
+    res = defaultdict()
+ 
+    if request.json:
+        jsonstr = request.json
+        # 输入内容校验
+        # print('input_check_result:',check_input(request.json,'swot'))
+    else:
+        logger.error("please check format of request")
+        return res 
+    
+    req = handle_grade(request.json)
+    logger.info(f"instant_report-input req is{req}")
+
+    t_start = time.time() 
+    res = {
+        "instant_report": get_instant_report(req)
+    }   
+    time_consumed = time.time()-t_start
+    id = request.json['student_info']['id']
+    logger.info(f"{id}-instant_report generate time:{time_consumed}")
+    
+    return Response(json.dumps(res))
+
+
 @app.route('/growth_advice', methods=['POST'])
 def produe_growth_advice():
+    logger = logging.getLogger("service_log")
     # if request.json:
     #     # 输入内容校验
     #     print('input_check_result:',check_input(request.json,'growth_advice'))
@@ -129,7 +162,7 @@ def produe_growth_advice():
     # time_consumed = time.time()-t_start
     # logger.info(f"{id}-report generate time:{time_consumed}")
     
-    req = request.json
+    req = handle_grade(request.json)
     logger.info(f"growth advice-input req is{req}")
     t_start = time.time()
     res = get_report(req)
@@ -170,6 +203,11 @@ def setup_log(log_name):
 def init_resource():
     global DB_GROWTH_ADVICE_RULE
     DB_GROWTH_ADVICE_RULE = load_growth_advice_rule()
+
+
+def init_app():
+    logger = setup_log("service_log")
+    init_resource()
 
 if __name__ == '__main__':
 

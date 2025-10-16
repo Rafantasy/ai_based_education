@@ -1,0 +1,1493 @@
+[2025-10-11 14:49:33,768] [953154] [INFO] - run_app.produe_open_question_ans (run_app.py:47) - open question input req:{'student_info': {'name': 'Maggie', 'gender': '女', 'school_type': '私立', 'current_grade': 'G1', 'city_location': '深圳市', 'college_goal_path': ['中国大陆本科'], 'id': '43b8fe07-a66e-11f0-978e-0242ac120003'}, 'eval_result': [{'question_section_name': '成就动机', 'question_type': 2, 'question': '请分享一件让孩子最有成就感的事情。', 'answer': '他参加了一个展'}]}
+[2025-10-11 14:50:39,008] [953154] [INFO] - run_app.produe_open_question_ans (run_app.py:47) - open question input req:{'student_info': {'name': 'Maggie', 'gender': '女', 'school_type': '私立', 'current_grade': 'G1', 'city_location': '深圳市', 'college_goal_path': ['中国大陆本科'], 'id': '43b8fe07-a66e-11f0-978e-0242ac120003'}, 'eval_result': [{'question_section_name': '孩子未来愿景', 'question_type': 2, 'question': '孩子有什么梦想吗？', 'answer': '他梦想成为一名医生'}]}
+[2025-10-11 14:50:45,335] [953154] [INFO] - run_app.produe_instant_profile (run_app.py:70) - instant_profile input req:{'student_info': {'name': 'Maggie', 'gender': '女', 'school_type': '私立', 'current_grade': 'G1', 'city_location': '深圳市', 'college_goal_path': ['中国大陆本科'], 'id': '43b8fe07-a66e-11f0-978e-0242ac120003'}, 'eval_result': [{'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否喜欢体育运动？', 'answer': ['非常喜欢（每天/每周固定）']}, {'question_section_name': '专注力', 'question_type': 1, 'question': '学习时，孩子的专注程度是？', 'answer': ['总是专注']}, {'question_section_name': '写作能力', 'question_type': 1, 'question': '写语文作文时，孩子的表现如何？', 'answer': ['老师常当范文，写得特别好']}, {'question_section_name': '数理思维', 'question_type': 1, 'question': '孩子数学成绩表现更常是？', 'answer': ['经常在 90% 以上（优秀）']}, {'question_section_name': '检查习惯', 'question_type': 1, 'question': '做题时，孩子是否会检查？', 'answer': ['总是检查']}, {'question_section_name': '时间管理', 'question_type': 1, 'question': '孩子的时间管理习惯是？', 'answer': ['能规划并执行', '有计划但执行差', '基本没有规划']}, {'question_section_name': '协作力', 'question_type': 1, 'question': '孩子在和小伙伴相处时，更常见的表现是？', 'answer': ['带头小领导，喜欢组织大家']}, {'question_section_name': '公共表达', 'question_type': 1, 'question': '孩子在公众场合发言时，更像？', 'answer': ['在公共场合自信大方，全场焦点']}, {'question_section_name': '创造力', 'question_type': 1, 'question': '当遇到需要创新的作业时，孩子会？', 'answer': ['点子多，喜欢尝试不同方法']}, {'question_section_name': '解决问题能力', 'question_type': 1, 'question': '当面对复杂问题时，孩子更常？', 'answer': ['主动分析，找到逻辑关系']}, {'question_section_name': '社会认知', 'question_type': 1, 'question': '孩子平时会不会关心新闻或身边发生的大事？', 'answer': ['很关心，经常主动和别人讨论']}, {'question_section_name': '探索力', 'question_type': 1, 'question': '孩子是否参加过学科类实践/社会公益活动？', 'answer': ['多次参与并积极投入']}, {'question_section_name': '学术竞争力', 'question_type': 1, 'question': '孩子是否参加过学科类竞赛/学术探究活动？', 'answer': ['多次并获奖']}, {'question_section_name': '学习习惯', 'question_type': 1, 'question': '孩子是否会主动预习/复习？', 'answer': ['经常主动']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否有长期参与某项运动的专业训练？', 'answer': ['有（超过5年，固定项目/俱乐部）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否参加过体育比赛或获得奖项？', 'answer': ['有国家/省级以上奖项']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子在艺术（音乐/美术/舞蹈/表演等）方面的兴趣如何？', 'answer': ['非常浓厚（主动练习/创作）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否有长期学习/训练艺术类项目？', 'answer': ['有（超过3年，持续学习）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否获得过艺术类（音乐/美术/舞蹈/戏剧等）奖项/证书？', 'answer': ['国家级/省级']}, {'question_section_name': '家庭陪伴', 'question_type': 1, 'question': '父母是否经常陪伴孩子？', 'answer': ['经常陪伴']}, {'question_section_name': '亲子沟通', 'question_type': 1, 'question': '孩子与父母的沟通频率是？', 'answer': ['每天都会聊（1次以上）']}, {'question_section_name': '孩子期望', 'question_type': 1, 'question': '孩子自己对未来最大的期待是？', 'answer': ['考入理想学校']}, {'question_section_name': '家长期望', 'question_type': 1, 'question': '父母对孩子未来的最大期望是？（最多选3项）', 'answer': ['学习成绩好，考上名校', '综合发展，德智体美全面', '健康快乐，心态阳光']}, {'question_section_name': '孩子未来愿景', 'question_type': 2, 'question': '孩子有什么梦想吗？', 'answer': ['他梦想成为一名医生']}, {'question_section_name': '潜力意向', 'question_type': 1, 'question': '如果给未来的孩子一个“魔法选择”，最希望拥有的能力是？', 'answer': ['创造发明（能造出新东西）']}, {'question_section_name': '学科兴趣', 'question_type': 1, 'question': '孩子最喜欢的学科是？', 'answer': ['数学/理科']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '孩子在和同伴合作时，更像是？', 'answer': ['主动组织者']}, {'question_section_name': '社交表达', 'question_type': 1, 'question': '在公众场合，孩子更可能？', 'answer': ['踊跃发言']}, {'question_section_name': '情绪调节', 'question_type': 1, 'question': '当孩子面对批评时，更可能？', 'answer': ['反思并改进']}, {'question_section_name': '毅力', 'question_type': 1, 'question': '孩子是否容易坚持完成一件事？', 'answer': ['大多数能坚持']}, {'question_section_name': '适应力', 'question_type': 1, 'question': '在陌生环境，孩子的适应速度是？', 'answer': ['需要一些时间']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '孩子在团队中更像？', 'answer': ['执行型']}, {'question_section_name': '自律习惯', 'question_type': 1, 'question': '在生活习惯上，孩子更像？', 'answer': ['偶尔需要提醒', '经常拖延']}, {'question_section_name': '自我认知（优势）', 'question_type': 1, 'question': '孩子最大的 3 个性格优点是？（请选择 3 个）', 'answer': ['自信勇敢', '善良助人', '自律认真']}, {'question_section_name': '自我认知（短板）', 'question_type': 1, 'question': '孩子最需要改的 3 个性格缺点是？（请选择 3 个）', 'answer': ['爱顶嘴', '固执', '依赖']}, {'question_section_name': '成就动机', 'question_type': 1, 'question': '如果一时想不出具体的事情，可以选择以下情境，哪个情境最可能让孩子获得成就感：', 'answer': ['在艺术或兴趣活动中有作品展示/作品被认可']}, {'question_section_name': '学科水平', 'question_type': 1, 'question': '孩子平时成绩大致在哪个水平？', 'answer': ['班级前30%']}, {'question_section_name': '性格韧性', 'question_type': 1, 'question': '当孩子遇到困难时，更常见的反应是？', 'answer': ['主动想办法解决']}, {'question_section_name': '偏科情况', 'question_type': 1, 'question': '孩子是否存在“偏科”？', 'answer': ['基本均衡']}, {'question_section_name': '学业稳定度', 'question_type': 1, 'question': '最近一次重要考试，孩子的表现是？', 'answer': ['超出预期']}, {'question_section_name': '补习情况', 'question_type': 1, 'question': '孩子参加了多少学科补习班？', 'answer': ['没有学科补习班']}, {'question_section_name': '目标感', 'question_type': 1, 'question': '孩子对自己未来3–5年的学习目标有想法吗？', 'answer': ['很清楚，知道要做到什么（比如考好成绩、学会新本领）']}, {'question_section_name': '作业态度', 'question_type': 1, 'question': '完成作业时，孩子的态度是？', 'answer': ['主动完成，不用催', '能完成，但要提醒', '经常拖到最后']}, {'question_section_name': '老师评价（优点）', 'question_type': 1, 'question': '老师平时评价孩子的学习有哪些优点？（最多3个）', 'answer': ['思维灵活', '作业认真', '乐于发言']}, {'question_section_name': '老师评价（短板）', 'question_type': 1, 'question': '老师常提醒孩子哪些方面需要改进？（最多3个）', 'answer': ['作业拖拉', '粗心大意', '发言不多']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子在阅读理解英文时，通常能理解到什么程度？', 'answer': ['能读小短文（100词），大概知道意思']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子在日常英文交流中，一般能做到哪种程度？', 'answer': ['能聊熟悉话题几句（学校、兴趣、点餐）']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子写英文时，能写到什么程度？', 'answer': ['能写一小段（5–7句）']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子是否参加过以下英语考试？请选择最近一次且成绩最高的一项。', 'answer': ['剑桥英语一级（KET）及格（Pass）']}]}
+[2025-10-11 14:50:45,410] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:42) - 异步调用大模型开始时间2025-10-11 14:50:45
+[2025-10-11 14:50:45,412] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:42) - 异步调用大模型开始时间2025-10-11 14:50:45
+[2025-10-11 14:50:45,413] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:42) - 异步调用大模型开始时间2025-10-11 14:50:45
+[2025-10-11 14:50:45,414] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:42) - 异步调用大模型开始时间2025-10-11 14:50:45
+[2025-10-11 14:50:50,336] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:49) - 异步调用大模型结束时间2025-10-11 14:50:50
+[2025-10-11 14:50:50,374] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:49) - 异步调用大模型结束时间2025-10-11 14:50:50
+[2025-10-11 14:50:50,657] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:49) - 异步调用大模型结束时间2025-10-11 14:50:50
+[2025-10-11 14:50:52,274] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:49) - 异步调用大模型结束时间2025-10-11 14:50:52
+[2025-10-11 14:50:52,274] [953154] [INFO] - main.get_TP_evidence (main.py:129) - tp_evidence extract:6.938687562942505
+[2025-10-11 14:50:52,274] [953154] [INFO] - compute_score.cal_tp_score (compute_score.py:84) - *************evi is:{
+    "体育突出型-强": [
+        {
+            "每周固定训练2年以上": "100"
+        },
+        {
+            "兴趣班持续，获得过奖项": "100"
+        },
+        {
+            "担任校队成员": "20"
+        },
+        {
+            "每周固定训练2年以上": "100"
+        },
+        {
+            "兴趣班持续，获得过奖项": "100"
+        },
+        {
+            "担任校队成员": "20"
+        }
+    ],
+    "体育突出型-中": [
+        {
+            "参加过校队，但不稳定": "20"
+        },
+        {
+            "兴趣班1年，有时请假": "20"
+        },
+        {
+            "比赛偶尔有奖": "100"
+        },
+        {
+            "参加过校队，但不稳定": "20"
+        },
+        {
+            "兴趣班1年，有时请假": "20"
+        },
+        {
+            "比赛偶尔有奖": "100"
+        }
+    ],
+    "体育一般型-弱": [
+        {
+            "随便玩玩，不爱运动": "20"
+        },
+        {
+            "家长说孩子不喜欢体育": "20"
+        },
+        {
+            "运动断断续续，没有持续": "20"
+        },
+        {
+            "随便玩玩，不爱运动": "20"
+        },
+        {
+            "家长说孩子不喜欢体育": "20"
+        },
+        {
+            "运动断断续续，没有持续": "20"
+        }
+    ]
+}
+[2025-10-11 14:50:52,275] [953154] [INFO] - compute_score.cal_tp_score (compute_score.py:84) - *************evi is:{
+    "领导型-强": [
+        {
+            "担任班长/组长": 20
+        },
+        {
+            "主持校内活动": 20
+        },
+        {
+            "主动发言、组织队伍": 100
+        },
+        {
+            "担任班长/组长": 20
+        },
+        {
+            "主持校内活动": 20
+        },
+        {
+            "主动发言、组织队伍": 100
+        }
+    ],
+    "领导型-中": [
+        {
+            "小组长，偶尔发言": 60
+        },
+        {
+            "带头参与班级活动": 100
+        },
+        {
+            "负责部分任务": 60
+        },
+        {
+            "小组长，偶尔发言": 60
+        },
+        {
+            "带头参与班级活动": 100
+        },
+        {
+            "负责部分任务": 60
+        }
+    ],
+    "协作执行型-弱": [
+        {
+            "喜欢听老师安排": 20
+        },
+        {
+            "完成分配任务": 60
+        },
+        {
+            "习惯做跟随者": 20
+        },
+        {
+            "喜欢听老师安排": 20
+        },
+        {
+            "完成分配任务": 60
+        },
+        {
+            "习惯做跟随者": 20
+        }
+    ]
+}
+[2025-10-11 14:50:52,275] [953154] [INFO] - compute_score.cal_tp_score (compute_score.py:84) - *************evi is:{
+    "艺术/人文突出型-强": [
+        {
+            "喜欢画画唱歌": 100
+        },
+        {
+            "参加过艺术表演": 100
+        },
+        {
+            "课余时间写小故事": 60
+        },
+        {
+            "喜欢画画唱歌": 100
+        },
+        {
+            "参加过艺术表演": 100
+        },
+        {
+            "课余时间写小故事": 60
+        }
+    ],
+    "艺术/人文突出型-中": [
+        {
+            "兴趣班刚开始": 20
+        },
+        {
+            "有时画画，有时弹琴": 20
+        },
+        {
+            "作品零散": 20
+        },
+        {
+            "兴趣班刚开始": 20
+        },
+        {
+            "有时画画，有时弹琴": 20
+        },
+        {
+            "作品零散": 20
+        }
+    ],
+    "艺术一般/偏实用型-弱": [
+        {
+            "喜欢拼装乐高": 60
+        },
+        {
+            "能独立解决小问题": 100
+        },
+        {
+            "偏好动手做实验": 60
+        },
+        {
+            "喜欢拼装乐高": 60
+        },
+        {
+            "能独立解决小问题": 100
+        },
+        {
+            "偏好动手做实验": 60
+        }
+    ]
+}
+[2025-10-11 14:50:52,275] [953154] [INFO] - compute_score.cal_tp_score (compute_score.py:84) - *************evi is:{
+    "理工思维突出型-强": [
+        {
+            "数学成绩突出": "100"
+        },
+        {
+            "参加过信息学竞赛": "60"
+        },
+        {
+            "科学实验表现优秀": "60"
+        },
+        {
+            "数学成绩突出": "100"
+        },
+        {
+            "参加过信息学竞赛": "60"
+        },
+        {
+            "科学实验表现优秀": "60"
+        }
+    ],
+    "理工思维突出型-中": [
+        {
+            "理科成绩中等": "20"
+        },
+        {
+            "做过小实验": "60"
+        },
+        {
+            "偶尔参加科技活动": "60"
+        },
+        {
+            "理科成绩中等": "20"
+        },
+        {
+            "做过小实验": "60"
+        },
+        {
+            "偶尔参加科技活动": "60"
+        }
+    ],
+    "理工思维一般型-弱": [
+        {
+            "明确表示不喜欢数学": "20"
+        },
+        {
+            "理科薄弱": "20"
+        },
+        {
+            "对实验没兴趣": "20"
+        },
+        {
+            "明确表示不喜欢数学": "20"
+        },
+        {
+            "理科薄弱": "20"
+        },
+        {
+            "对实验没兴趣": "20"
+        }
+    ]
+}
+[2025-10-11 14:50:52,965] [953154] [INFO] - compute_score.cal_dim_score (compute_score.py:231) - 学业表现**question-孩子对自己未来3–5年的学习目标有想法吗？**score-100
+[2025-10-11 14:50:52,966] [953154] [INFO] - compute_score.multi_select_score (compute_score.py:180) - **multi-select-question-老师平时评价孩子的学习有哪些优点？（最多3个）**option-思维灵活**score-10
+[2025-10-11 14:50:52,966] [953154] [INFO] - compute_score.multi_select_score (compute_score.py:180) - **multi-select-question-老师平时评价孩子的学习有哪些优点？（最多3个）**option-作业认真**score-10
+[2025-10-11 14:50:52,966] [953154] [INFO] - compute_score.multi_select_score (compute_score.py:180) - **multi-select-question-老师平时评价孩子的学习有哪些优点？（最多3个）**option-乐于发言**score-10
+[2025-10-11 14:50:52,966] [953154] [INFO] - compute_score.cal_dim_score (compute_score.py:238) - **multi-select-question-老师平时评价孩子的学习有哪些优点？（最多3个）**sum_score-130
+[2025-10-11 14:50:52,966] [953154] [INFO] - compute_score.multi_select_score (compute_score.py:180) - **multi-select-question-老师常提醒孩子哪些方面需要改进？（最多3个）**option-作业拖拉**score--10
+[2025-10-11 14:50:52,966] [953154] [INFO] - compute_score.multi_select_score (compute_score.py:180) - **multi-select-question-老师常提醒孩子哪些方面需要改进？（最多3个）**option-粗心大意**score--10
+[2025-10-11 14:50:52,966] [953154] [INFO] - compute_score.multi_select_score (compute_score.py:180) - **multi-select-question-老师常提醒孩子哪些方面需要改进？（最多3个）**option-发言不多**score--10
+[2025-10-11 14:50:52,966] [953154] [INFO] - compute_score.cal_dim_score (compute_score.py:238) - **multi-select-question-老师常提醒孩子哪些方面需要改进？（最多3个）**sum_score-100
+[2025-10-11 14:50:52,967] [953154] [INFO] - compute_score.rate_classify (compute_score.py:260) - 加权总分:54.65**学业表现分数:99,学能表现分数:0,英语分数:50
+[2025-10-11 14:50:52,967] [953154] [INFO] - run_app.produe_instant_profile (run_app.py:75) - 43b8fe07-a66e-11f0-978e-0242ac120003-instant profile generate time:7.631704807281494
+[2025-10-11 14:50:52,980] [953154] [INFO] - run_app.produe_swot (run_app.py:93) - swot-input req is{'student_info': {'name': 'Maggie', 'gender': '女', 'school_type': '私立', 'current_grade': 'G1', 'city_location': '深圳市', 'college_goal_path': ['中国大陆本科'], 'id': '43b8fe07-a66e-11f0-978e-0242ac120003', 'subject_interest': '数学,理科', 'profile_type': 'ALPR｜工程师Engineer🏗️⚙️📈', 'english_level': '', 'rate': 'B'}, 'eval_result': [{'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否喜欢体育运动？', 'answer': ['非常喜欢（每天/每周固定）']}, {'question_section_name': '专注力', 'question_type': 1, 'question': '学习时，孩子的专注程度是？', 'answer': ['总是专注']}, {'question_section_name': '写作能力', 'question_type': 1, 'question': '写语文作文时，孩子的表现如何？', 'answer': ['老师常当范文，写得特别好']}, {'question_section_name': '数理思维', 'question_type': 1, 'question': '孩子数学成绩表现更常是？', 'answer': ['经常在 90% 以上（优秀）']}, {'question_section_name': '检查习惯', 'question_type': 1, 'question': '做题时，孩子是否会检查？', 'answer': ['总是检查']}, {'question_section_name': '时间管理', 'question_type': 1, 'question': '孩子的时间管理习惯是？', 'answer': ['能规划并执行', '有计划但执行差', '基本没有规划']}, {'question_section_name': '协作力', 'question_type': 1, 'question': '孩子在和小伙伴相处时，更常见的表现是？', 'answer': ['带头小领导，喜欢组织大家']}, {'question_section_name': '公共表达', 'question_type': 1, 'question': '孩子在公众场合发言时，更像？', 'answer': ['在公共场合自信大方，全场焦点']}, {'question_section_name': '创造力', 'question_type': 1, 'question': '当遇到需要创新的作业时，孩子会？', 'answer': ['点子多，喜欢尝试不同方法']}, {'question_section_name': '解决问题能力', 'question_type': 1, 'question': '当面对复杂问题时，孩子更常？', 'answer': ['主动分析，找到逻辑关系']}, {'question_section_name': '社会认知', 'question_type': 1, 'question': '孩子平时会不会关心新闻或身边发生的大事？', 'answer': ['很关心，经常主动和别人讨论']}, {'question_section_name': '探索力', 'question_type': 1, 'question': '孩子是否参加过学科类实践/社会公益活动？', 'answer': ['多次参与并积极投入']}, {'question_section_name': '学术竞争力', 'question_type': 1, 'question': '孩子是否参加过学科类竞赛/学术探究活动？', 'answer': ['多次并获奖']}, {'question_section_name': '学习习惯', 'question_type': 1, 'question': '孩子是否会主动预习/复习？', 'answer': ['经常主动']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否有长期参与某项运动的专业训练？', 'answer': ['有（超过5年，固定项目/俱乐部）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否参加过体育比赛或获得奖项？', 'answer': ['有国家/省级以上奖项']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子在艺术（音乐/美术/舞蹈/表演等）方面的兴趣如何？', 'answer': ['非常浓厚（主动练习/创作）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否有长期学习/训练艺术类项目？', 'answer': ['有（超过3年，持续学习）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否获得过艺术类（音乐/美术/舞蹈/戏剧等）奖项/证书？', 'answer': ['国家级/省级']}, {'question_section_name': '家庭陪伴', 'question_type': 1, 'question': '父母是否经常陪伴孩子？', 'answer': ['经常陪伴']}, {'question_section_name': '亲子沟通', 'question_type': 1, 'question': '孩子与父母的沟通频率是？', 'answer': ['每天都会聊（1次以上）']}, {'question_section_name': '孩子期望', 'question_type': 1, 'question': '孩子自己对未来最大的期待是？', 'answer': ['考入理想学校']}, {'question_section_name': '家长期望', 'question_type': 1, 'question': '父母对孩子未来的最大期望是？（最多选3项）', 'answer': ['学习成绩好，考上名校', '综合发展，德智体美全面', '健康快乐，心态阳光']}, {'question_section_name': '孩子未来愿景', 'question_type': 2, 'question': '孩子有什么梦想吗？', 'answer': ['他梦想成为一名医生']}, {'question_section_name': '潜力意向', 'question_type': 1, 'question': '如果给未来的孩子一个“魔法选择”，最希望拥有的能力是？', 'answer': ['创造发明（能造出新东西）']}, {'question_section_name': '学科兴趣', 'question_type': 1, 'question': '孩子最喜欢的学科是？', 'answer': ['数学/理科']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '孩子在和同伴合作时，更像是？', 'answer': ['主动组织者']}, {'question_section_name': '社交表达', 'question_type': 1, 'question': '在公众场合，孩子更可能？', 'answer': ['踊跃发言']}, {'question_section_name': '情绪调节', 'question_type': 1, 'question': '当孩子面对批评时，更可能？', 'answer': ['反思并改进']}, {'question_section_name': '毅力', 'question_type': 1, 'question': '孩子是否容易坚持完成一件事？', 'answer': ['大多数能坚持']}, {'question_section_name': '适应力', 'question_type': 1, 'question': '在陌生环境，孩子的适应速度是？', 'answer': ['需要一些时间']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '孩子在团队中更像？', 'answer': ['执行型']}, {'question_section_name': '自律习惯', 'question_type': 1, 'question': '在生活习惯上，孩子更像？', 'answer': ['偶尔需要提醒', '经常拖延']}, {'question_section_name': '自我认知（优势）', 'question_type': 1, 'question': '孩子最大的 3 个性格优点是？（请选择 3 个）', 'answer': ['自信勇敢', '善良助人', '自律认真']}, {'question_section_name': '自我认知（短板）', 'question_type': 1, 'question': '孩子最需要改的 3 个性格缺点是？（请选择 3 个）', 'answer': ['爱顶嘴', '固执', '依赖']}, {'question_section_name': '成就动机', 'question_type': 1, 'question': '如果一时想不出具体的事情，可以选择以下情境，哪个情境最可能让孩子获得成就感：', 'answer': ['在艺术或兴趣活动中有作品展示/作品被认可']}, {'question_section_name': '学科水平', 'question_type': 1, 'question': '孩子平时成绩大致在哪个水平？', 'answer': ['班级前30%']}, {'question_section_name': '性格韧性', 'question_type': 1, 'question': '当孩子遇到困难时，更常见的反应是？', 'answer': ['主动想办法解决']}, {'question_section_name': '偏科情况', 'question_type': 1, 'question': '孩子是否存在“偏科”？', 'answer': ['基本均衡']}, {'question_section_name': '学业稳定度', 'question_type': 1, 'question': '最近一次重要考试，孩子的表现是？', 'answer': ['超出预期']}, {'question_section_name': '补习情况', 'question_type': 1, 'question': '孩子参加了多少学科补习班？', 'answer': ['没有学科补习班']}, {'question_section_name': '目标感', 'question_type': 1, 'question': '孩子对自己未来3–5年的学习目标有想法吗？', 'answer': ['很清楚，知道要做到什么（比如考好成绩、学会新本领）']}, {'question_section_name': '作业态度', 'question_type': 1, 'question': '完成作业时，孩子的态度是？', 'answer': ['主动完成，不用催', '能完成，但要提醒', '经常拖到最后']}, {'question_section_name': '老师评价（优点）', 'question_type': 1, 'question': '老师平时评价孩子的学习有哪些优点？（最多3个）', 'answer': ['思维灵活', '作业认真', '乐于发言']}, {'question_section_name': '老师评价（短板）', 'question_type': 1, 'question': '老师常提醒孩子哪些方面需要改进？（最多3个）', 'answer': ['作业拖拉', '粗心大意', '发言不多']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子在阅读理解英文时，通常能理解到什么程度？', 'answer': ['能读小短文（100词），大概知道意思']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子在日常英文交流中，一般能做到哪种程度？', 'answer': ['能聊熟悉话题几句（学校、兴趣、点餐）']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子写英文时，能写到什么程度？', 'answer': ['能写一小段（5–7句）']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子是否参加过以下英语考试？请选择最近一次且成绩最高的一项。', 'answer': ['剑桥英语一级（KET）及格（Pass）']}]}
+[2025-10-11 14:50:53,194] [953154] [INFO] - run_app.produe_growth_advice (run_app.py:134) - growth advice-input req is{'student_info': {'name': 'Maggie', 'gender': '女', 'school_type': '私立', 'current_grade': 'G1', 'city_location': '深圳市', 'college_goal_path': ['中国大陆本科'], 'id': '43b8fe07-a66e-11f0-978e-0242ac120003', 'subject_interest': '数学,理科', 'profile_type': 'ALPR｜工程师Engineer🏗️⚙️📈', 'english_level': '', 'rate': 'B'}, 'eval_result': [{'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否喜欢体育运动？', 'answer': ['非常喜欢（每天/每周固定）']}, {'question_section_name': '专注力', 'question_type': 1, 'question': '学习时，孩子的专注程度是？', 'answer': ['总是专注']}, {'question_section_name': '写作能力', 'question_type': 1, 'question': '写语文作文时，孩子的表现如何？', 'answer': ['老师常当范文，写得特别好']}, {'question_section_name': '数理思维', 'question_type': 1, 'question': '孩子数学成绩表现更常是？', 'answer': ['经常在 90% 以上（优秀）']}, {'question_section_name': '检查习惯', 'question_type': 1, 'question': '做题时，孩子是否会检查？', 'answer': ['总是检查']}, {'question_section_name': '时间管理', 'question_type': 1, 'question': '孩子的时间管理习惯是？', 'answer': ['能规划并执行', '有计划但执行差', '基本没有规划']}, {'question_section_name': '协作力', 'question_type': 1, 'question': '孩子在和小伙伴相处时，更常见的表现是？', 'answer': ['带头小领导，喜欢组织大家']}, {'question_section_name': '公共表达', 'question_type': 1, 'question': '孩子在公众场合发言时，更像？', 'answer': ['在公共场合自信大方，全场焦点']}, {'question_section_name': '创造力', 'question_type': 1, 'question': '当遇到需要创新的作业时，孩子会？', 'answer': ['点子多，喜欢尝试不同方法']}, {'question_section_name': '解决问题能力', 'question_type': 1, 'question': '当面对复杂问题时，孩子更常？', 'answer': ['主动分析，找到逻辑关系']}, {'question_section_name': '社会认知', 'question_type': 1, 'question': '孩子平时会不会关心新闻或身边发生的大事？', 'answer': ['很关心，经常主动和别人讨论']}, {'question_section_name': '探索力', 'question_type': 1, 'question': '孩子是否参加过学科类实践/社会公益活动？', 'answer': ['多次参与并积极投入']}, {'question_section_name': '学术竞争力', 'question_type': 1, 'question': '孩子是否参加过学科类竞赛/学术探究活动？', 'answer': ['多次并获奖']}, {'question_section_name': '学习习惯', 'question_type': 1, 'question': '孩子是否会主动预习/复习？', 'answer': ['经常主动']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否有长期参与某项运动的专业训练？', 'answer': ['有（超过5年，固定项目/俱乐部）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否参加过体育比赛或获得奖项？', 'answer': ['有国家/省级以上奖项']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子在艺术（音乐/美术/舞蹈/表演等）方面的兴趣如何？', 'answer': ['非常浓厚（主动练习/创作）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否有长期学习/训练艺术类项目？', 'answer': ['有（超过3年，持续学习）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否获得过艺术类（音乐/美术/舞蹈/戏剧等）奖项/证书？', 'answer': ['国家级/省级']}, {'question_section_name': '家庭陪伴', 'question_type': 1, 'question': '父母是否经常陪伴孩子？', 'answer': ['经常陪伴']}, {'question_section_name': '亲子沟通', 'question_type': 1, 'question': '孩子与父母的沟通频率是？', 'answer': ['每天都会聊（1次以上）']}, {'question_section_name': '孩子期望', 'question_type': 1, 'question': '孩子自己对未来最大的期待是？', 'answer': ['考入理想学校']}, {'question_section_name': '家长期望', 'question_type': 1, 'question': '父母对孩子未来的最大期望是？（最多选3项）', 'answer': ['学习成绩好，考上名校', '综合发展，德智体美全面', '健康快乐，心态阳光']}, {'question_section_name': '孩子未来愿景', 'question_type': 2, 'question': '孩子有什么梦想吗？', 'answer': ['他梦想成为一名医生']}, {'question_section_name': '潜力意向', 'question_type': 1, 'question': '如果给未来的孩子一个“魔法选择”，最希望拥有的能力是？', 'answer': ['创造发明（能造出新东西）']}, {'question_section_name': '学科兴趣', 'question_type': 1, 'question': '孩子最喜欢的学科是？', 'answer': ['数学/理科']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '孩子在和同伴合作时，更像是？', 'answer': ['主动组织者']}, {'question_section_name': '社交表达', 'question_type': 1, 'question': '在公众场合，孩子更可能？', 'answer': ['踊跃发言']}, {'question_section_name': '情绪调节', 'question_type': 1, 'question': '当孩子面对批评时，更可能？', 'answer': ['反思并改进']}, {'question_section_name': '毅力', 'question_type': 1, 'question': '孩子是否容易坚持完成一件事？', 'answer': ['大多数能坚持']}, {'question_section_name': '适应力', 'question_type': 1, 'question': '在陌生环境，孩子的适应速度是？', 'answer': ['需要一些时间']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '孩子在团队中更像？', 'answer': ['执行型']}, {'question_section_name': '自律习惯', 'question_type': 1, 'question': '在生活习惯上，孩子更像？', 'answer': ['偶尔需要提醒', '经常拖延']}, {'question_section_name': '自我认知（优势）', 'question_type': 1, 'question': '孩子最大的 3 个性格优点是？（请选择 3 个）', 'answer': ['自信勇敢', '善良助人', '自律认真']}, {'question_section_name': '自我认知（短板）', 'question_type': 1, 'question': '孩子最需要改的 3 个性格缺点是？（请选择 3 个）', 'answer': ['爱顶嘴', '固执', '依赖']}, {'question_section_name': '成就动机', 'question_type': 1, 'question': '如果一时想不出具体的事情，可以选择以下情境，哪个情境最可能让孩子获得成就感：', 'answer': ['在艺术或兴趣活动中有作品展示/作品被认可']}, {'question_section_name': '学科水平', 'question_type': 1, 'question': '孩子平时成绩大致在哪个水平？', 'answer': ['班级前30%']}, {'question_section_name': '性格韧性', 'question_type': 1, 'question': '当孩子遇到困难时，更常见的反应是？', 'answer': ['主动想办法解决']}, {'question_section_name': '偏科情况', 'question_type': 1, 'question': '孩子是否存在“偏科”？', 'answer': ['基本均衡']}, {'question_section_name': '学业稳定度', 'question_type': 1, 'question': '最近一次重要考试，孩子的表现是？', 'answer': ['超出预期']}, {'question_section_name': '补习情况', 'question_type': 1, 'question': '孩子参加了多少学科补习班？', 'answer': ['没有学科补习班']}, {'question_section_name': '目标感', 'question_type': 1, 'question': '孩子对自己未来3–5年的学习目标有想法吗？', 'answer': ['很清楚，知道要做到什么（比如考好成绩、学会新本领）']}, {'question_section_name': '作业态度', 'question_type': 1, 'question': '完成作业时，孩子的态度是？', 'answer': ['主动完成，不用催', '能完成，但要提醒', '经常拖到最后']}, {'question_section_name': '老师评价（优点）', 'question_type': 1, 'question': '老师平时评价孩子的学习有哪些优点？（最多3个）', 'answer': ['思维灵活', '作业认真', '乐于发言']}, {'question_section_name': '老师评价（短板）', 'question_type': 1, 'question': '老师常提醒孩子哪些方面需要改进？（最多3个）', 'answer': ['作业拖拉', '粗心大意', '发言不多']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子在阅读理解英文时，通常能理解到什么程度？', 'answer': ['能读小短文（100词），大概知道意思']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子在日常英文交流中，一般能做到哪种程度？', 'answer': ['能聊熟悉话题几句（学校、兴趣、点餐）']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子写英文时，能写到什么程度？', 'answer': ['能写一小段（5–7句）']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子是否参加过以下英语考试？请选择最近一次且成绩最高的一项。', 'answer': ['剑桥英语一级（KET）及格（Pass）']}]}
+[2025-10-11 14:50:53,194] [953154] [INFO] - gen_report_wo_db.get_instant_report (gen_report_wo_db.py:193) - instant report prompt is:# 角色
+你是一个经验丰富的教育专家，对学生的各种评估维度都理解深刻，且十分擅长低龄升学建议。
+
+# 任务
+你的任务是根据学生基本信息，以及学生评测问答结果，生成一份给家长的升学建议。
+
+# 升学建议包含：
+*    **✍️ SHAI人才官评语**：一句话说明学生的现状，以及基于现状，怎么达到对应的人才画像要求。
+*    **📊 资源与精力分配**：告诉家长为了达到目标，需要在哪方面投入精力，并且给出大致的精力分配占比。
+*    **🏫 目标院校池**：根据学生的分档以及目标升学路径，给出5所建议的目标本科院校，并给出推荐理由。
+
+# 生成规则
+1. 生成的内容总字数不能超过150字。
+2. 学生分档信息适用说明：
+   - 如果是“A档”，则推荐符合**目标升学路径**的top类学校；
+   - 如果是“B档”，则推荐符合**目标升学路径**的普通类学校；
+3. 语言简洁，面向家长，避免专业术语。
+
+# 输出格式
+请以json格式输出你的分析结果，模板如下：
+{
+   "✍️ SHAI人才官评语": "xx"
+   "📊 资源与精力分配": "xx"
+   "🏫 目标院校池": "xx"
+}
+
+# 学生基本信息
+性别:女
+学校类型:私立
+当前年级:G1
+所在城市:深圳市
+目标升学路径:中国大陆本科
+兴趣学科:数学,理科
+人才画像:ALPR｜工程师Engineer🏗️⚙️📈
+画像描述:体育见长，执行力强，理工思维突出，擅长把科研与想法转化为实物或项目成果。既能钻研技术，又能带领团队完成落地，是‘工程+转化’的双能型人才。
+英语水平:
+
+# 学生评测问答结果
+[题目]:孩子是否喜欢体育运动？
+[答案]:非常喜欢（每天/每周固定）
+[题目]:学习时，孩子的专注程度是？
+[答案]:总是专注
+[题目]:写语文作文时，孩子的表现如何？
+[答案]:老师常当范文，写得特别好
+[题目]:孩子数学成绩表现更常是？
+[答案]:经常在 90% 以上（优秀）
+[题目]:做题时，孩子是否会检查？
+[答案]:总是检查
+[题目]:孩子的时间管理习惯是？
+[答案]:能规划并执行,有计划但执行差,基本没有规划
+[题目]:孩子在和小伙伴相处时，更常见的表现是？
+[答案]:带头小领导，喜欢组织大家
+[题目]:孩子在公众场合发言时，更像？
+[答案]:在公共场合自信大方，全场焦点
+[题目]:当遇到需要创新的作业时，孩子会？
+[答案]:点子多，喜欢尝试不同方法
+[题目]:当面对复杂问题时，孩子更常？
+[答案]:主动分析，找到逻辑关系
+[题目]:孩子平时会不会关心新闻或身边发生的大事？
+[答案]:很关心，经常主动和别人讨论
+[题目]:孩子是否参加过学科类实践/社会公益活动？
+[答案]:多次参与并积极投入
+[题目]:孩子是否参加过学科类竞赛/学术探究活动？
+[答案]:多次并获奖
+[题目]:孩子是否会主动预习/复习？
+[答案]:经常主动
+[题目]:孩子是否有长期参与某项运动的专业训练？
+[答案]:有（超过5年，固定项目/俱乐部）
+[题目]:孩子是否参加过体育比赛或获得奖项？
+[答案]:有国家/省级以上奖项
+[题目]:孩子在艺术（音乐/美术/舞蹈/表演等）方面的兴趣如何？
+[答案]:非常浓厚（主动练习/创作）
+[题目]:孩子是否有长期学习/训练艺术类项目？
+[答案]:有（超过3年，持续学习）
+[题目]:孩子是否获得过艺术类（音乐/美术/舞蹈/戏剧等）奖项/证书？
+[答案]:国家级/省级
+[题目]:父母是否经常陪伴孩子？
+[答案]:经常陪伴
+[题目]:孩子与父母的沟通频率是？
+[答案]:每天都会聊（1次以上）
+[题目]:孩子自己对未来最大的期待是？
+[答案]:考入理想学校
+[题目]:父母对孩子未来的最大期望是？（最多选3项）
+[答案]:学习成绩好，考上名校,综合发展，德智体美全面,健康快乐，心态阳光
+[题目]:孩子有什么梦想吗？
+[答案]:他梦想成为一名医生
+[题目]:如果给未来的孩子一个“魔法选择”，最希望拥有的能力是？
+[答案]:创造发明（能造出新东西）
+[题目]:孩子最喜欢的学科是？
+[答案]:数学/理科
+[题目]:孩子在和同伴合作时，更像是？
+[答案]:主动组织者
+[题目]:在公众场合，孩子更可能？
+[答案]:踊跃发言
+[题目]:当孩子面对批评时，更可能？
+[答案]:反思并改进
+[题目]:孩子是否容易坚持完成一件事？
+[答案]:大多数能坚持
+[题目]:在陌生环境，孩子的适应速度是？
+[答案]:需要一些时间
+[题目]:孩子在团队中更像？
+[答案]:执行型
+[题目]:在生活习惯上，孩子更像？
+[答案]:偶尔需要提醒,经常拖延
+[题目]:孩子最大的 3 个性格优点是？（请选择 3 个）
+[答案]:自信勇敢,善良助人,自律认真
+[题目]:孩子最需要改的 3 个性格缺点是？（请选择 3 个）
+[答案]:爱顶嘴,固执,依赖
+[题目]:如果一时想不出具体的事情，可以选择以下情境，哪个情境最可能让孩子获得成就感：
+[答案]:在艺术或兴趣活动中有作品展示/作品被认可
+[题目]:孩子平时成绩大致在哪个水平？
+[答案]:班级前30%
+[题目]:当孩子遇到困难时，更常见的反应是？
+[答案]:主动想办法解决
+[题目]:孩子是否存在“偏科”？
+[答案]:基本均衡
+[题目]:最近一次重要考试，孩子的表现是？
+[答案]:超出预期
+[题目]:孩子参加了多少学科补习班？
+[答案]:没有学科补习班
+[题目]:孩子对自己未来3–5年的学习目标有想法吗？
+[答案]:很清楚，知道要做到什么（比如考好成绩、学会新本领）
+[题目]:完成作业时，孩子的态度是？
+[答案]:主动完成，不用催,能完成，但要提醒,经常拖到最后
+[题目]:老师平时评价孩子的学习有哪些优点？（最多3个）
+[答案]:思维灵活,作业认真,乐于发言
+[题目]:老师常提醒孩子哪些方面需要改进？（最多3个）
+[答案]:作业拖拉,粗心大意,发言不多
+[题目]:孩子在阅读理解英文时，通常能理解到什么程度？
+[答案]:能读小短文（100词），大概知道意思
+[题目]:孩子在日常英文交流中，一般能做到哪种程度？
+[答案]:能聊熟悉话题几句（学校、兴趣、点餐）
+[题目]:孩子写英文时，能写到什么程度？
+[答案]:能写一小段（5–7句）
+[题目]:孩子是否参加过以下英语考试？请选择最近一次且成绩最高的一项。
+[答案]:剑桥英语一级（KET）及格（Pass）
+
+# 你的输出
+[2025-10-11 14:50:53,194] [953154] [INFO] - gen_report_wo_db.get_instant_report (gen_report_wo_db.py:199) - 异步调用大模型开始时间2025-10-11 14:50:53
+[2025-10-11 14:50:53,196] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:228) - 人才画像类型:ALPR｜工程师Engineer🏗️⚙️📈
+[2025-10-11 14:50:53,196] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:231) - target plan keys:['画像代码', '中文名', '英文名', '最终目标', '阶段里程碑', 'A档升学主线', 'B档升学主线', '升学规划要求', '升学路径适配要点']
+[2025-10-11 14:50:53,196] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:244) - college_goal_path:中国大陆本科
+[2025-10-11 14:50:53,196] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:254) - growth advice prompt is:# 角色
+你是一位十分有经验的教育专家，且专注于低龄升学规划。
+
+# 任务
+根据学生基本信息，以及学生当前所属人才画像的升学规划要求，生成一份从当前年级一直到G12的升学规划。
+
+# 学生基本信息
+{
+    "姓名": "Maggie",
+    "所在城市": "深圳市",
+    "当前学校类型": "私立",
+    "当前年级": "G1",
+    "人才画像类型": "ALPR｜工程师Engineer🏗️⚙️📈",
+    "分档": "B",
+    "升学路径": "中国大陆本科",
+    "兴趣学科": "数学,理科"
+}
+
+# 人才画像升学规划要求
+{
+    "画像代码": "ALPR",
+    "中文名": "工程师",
+    "英文名": "Engineer",
+    "最终目标": "G12前完成至少1个工程项目成果+省级竞赛证据，学术达标。",
+    "阶段里程碑": [
+        "G6前完成校级作品",
+        "G9前市级工程竞赛",
+        "G10–11省级工程设计/科研成果",
+        "G12标化达标。"
+    ],
+    "B档升学主线": "市级竞赛奖+长期作品记录，标化达一本线或US前50。",
+    "升学规划要求": {
+        "instruction": "请生成当前年级–G12逐年R/G/S：R=现实(1句)，G=当年可验证目标(1句)，S=策略(1–2条)。每年≤150字，家长友好。必须与最终目标和阶段里程碑对齐，避免堆资源名或指定赛事。"
+    },
+    "升学路径适配要点": {
+        "中国大陆本科": "工科竞赛+综评"
+    }
+}
+
+# 升学规划生成规则
+1. 每一年级的升学包含以下四个要点：
+*    **📌 学年定位&目标**：每一学年的规划目标
+*    **🛠️ 战略规划**：⭐ 核心任务（2条，最低目标+理想目标，必须可验证），➕ 选做（兴趣/运动/公益等）。
+*    **⏰ 时间与家庭协同**：要落实到具体行动
+*    **🏆 关键成果**：1–2个硬核证据 + 年度标签；并且要做到逐年级递进。
+2. 转轨说明：
+    - 如果学生**当前学校类型**是公立，但是**升学路径**非中国大陆本科，那么在G6升G7、G8升G9或者G9升G10节点提示转轨国际学校，并推荐合适课程体系（AP/IB/AL，按学科优势匹配）。
+    - 转轨的节点只选择一个即可。
+3. 如果**人才画像升学规划**要求里要求参加科研类类竞赛，那么要求如下：
+    - 若**升学路径**只有中国大陆本科，则优先推荐教育部认可的白名单赛事（如全国中学生学科竞赛五大联赛、**所在城市**对应的省市科技创新大赛）。
+    - 若**升学路径**只有海外本科，则优先推荐国际认可赛事（如AMC、AIME、ISEF、NSDA、John Locke Essay）等。
+    - 若**升学路径**目标是双轨（既有中国大陆本科，也有海外本科），则两类赛事都需给出：国内白名单作为保底，国际赛事作为亮点。
+    - 禁止输出“市级比赛/省级比赛”，或者“参加国际会议”等不明确的表述，必须给出**具体**且**真实存在**的竞赛或者项目。若根据你的知识无法确认，则应该做出提示：“需家长确认本地教育局/协会官网赛事公告”。
+4. 需要特别注意：
+    - 你生成的规划一定要**明确**且**可落地**，避免空洞的描述；如果有行业公认的评价指标，可以列出详细的目标值。
+    - 即使是艺术或者体育类人才画像的学生，生成的规划也要包含学业目标（目标不要定的过高）。
+    - 规划要结合学生基本信息里的**升学路径**信息，因此不同的升学路径（比如大陆本科，美国本科，英联邦本科）对学生的要求可能不一致。
+    - 每一年级的目标一定要和对应年龄段学生的心智能力相匹配，不能制定不切实际的目标。
+5. 输出的规划一定从当前年级开始，一直到12年级（G12）。
+6. 语言风格：简洁、家长友好、鼓励性。
+
+# 输出要求
+1. 只能输出逐年规划，不要输出其它任何无关内容。
+2. 严格按照JSON格式输出；输出格式模板如下：
+{
+     "G9": {
+          "📌 学年定位&目标":"xx",
+          "🛠️ 战略规划":"xx",
+          "⏰ 时间与家庭协同":"xx",
+          "🏆 关键成果":"xx"
+     },
+     "G10": {...},
+     "G11": {...},
+     "G12": {...}
+}
+
+# 你的输出
+[2025-10-11 14:50:53,196] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:261) - 异步调用大模型开始时间2025-10-11 14:50:53
+[2025-10-11 14:50:58,370] [953154] [INFO] - gen_report_wo_db.get_instant_report (gen_report_wo_db.py:205) - 异步调用大模型结束时间2025-10-11 14:50:58
+[2025-10-11 14:51:20,584] [953154] [INFO] - run_app.produe_swot (run_app.py:101) - 43b8fe07-a66e-11f0-978e-0242ac120003-swot generate time:27.603768825531006
+[2025-10-11 14:51:20,592] [953154] [INFO] - run_app.produe_growth_advice (run_app.py:134) - growth advice-input req is{'student_info': {'name': 'Maggie', 'gender': '女', 'school_type': '私立', 'current_grade': 'G1', 'city_location': '深圳市', 'college_goal_path': ['中国大陆本科'], 'id': '43b8fe07-a66e-11f0-978e-0242ac120003', 'subject_interest': '数学,理科', 'profile_type': 'ALPR｜工程师Engineer🏗️⚙️📈', 'english_level': '', 'rate': 'B'}, 'eval_result': [{'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否喜欢体育运动？', 'answer': ['非常喜欢（每天/每周固定）']}, {'question_section_name': '专注力', 'question_type': 1, 'question': '学习时，孩子的专注程度是？', 'answer': ['总是专注']}, {'question_section_name': '写作能力', 'question_type': 1, 'question': '写语文作文时，孩子的表现如何？', 'answer': ['老师常当范文，写得特别好']}, {'question_section_name': '数理思维', 'question_type': 1, 'question': '孩子数学成绩表现更常是？', 'answer': ['经常在 90% 以上（优秀）']}, {'question_section_name': '检查习惯', 'question_type': 1, 'question': '做题时，孩子是否会检查？', 'answer': ['总是检查']}, {'question_section_name': '时间管理', 'question_type': 1, 'question': '孩子的时间管理习惯是？', 'answer': ['能规划并执行', '有计划但执行差', '基本没有规划']}, {'question_section_name': '协作力', 'question_type': 1, 'question': '孩子在和小伙伴相处时，更常见的表现是？', 'answer': ['带头小领导，喜欢组织大家']}, {'question_section_name': '公共表达', 'question_type': 1, 'question': '孩子在公众场合发言时，更像？', 'answer': ['在公共场合自信大方，全场焦点']}, {'question_section_name': '创造力', 'question_type': 1, 'question': '当遇到需要创新的作业时，孩子会？', 'answer': ['点子多，喜欢尝试不同方法']}, {'question_section_name': '解决问题能力', 'question_type': 1, 'question': '当面对复杂问题时，孩子更常？', 'answer': ['主动分析，找到逻辑关系']}, {'question_section_name': '社会认知', 'question_type': 1, 'question': '孩子平时会不会关心新闻或身边发生的大事？', 'answer': ['很关心，经常主动和别人讨论']}, {'question_section_name': '探索力', 'question_type': 1, 'question': '孩子是否参加过学科类实践/社会公益活动？', 'answer': ['多次参与并积极投入']}, {'question_section_name': '学术竞争力', 'question_type': 1, 'question': '孩子是否参加过学科类竞赛/学术探究活动？', 'answer': ['多次并获奖']}, {'question_section_name': '学习习惯', 'question_type': 1, 'question': '孩子是否会主动预习/复习？', 'answer': ['经常主动']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否有长期参与某项运动的专业训练？', 'answer': ['有（超过5年，固定项目/俱乐部）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否参加过体育比赛或获得奖项？', 'answer': ['有国家/省级以上奖项']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子在艺术（音乐/美术/舞蹈/表演等）方面的兴趣如何？', 'answer': ['非常浓厚（主动练习/创作）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否有长期学习/训练艺术类项目？', 'answer': ['有（超过3年，持续学习）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否获得过艺术类（音乐/美术/舞蹈/戏剧等）奖项/证书？', 'answer': ['国家级/省级']}, {'question_section_name': '家庭陪伴', 'question_type': 1, 'question': '父母是否经常陪伴孩子？', 'answer': ['经常陪伴']}, {'question_section_name': '亲子沟通', 'question_type': 1, 'question': '孩子与父母的沟通频率是？', 'answer': ['每天都会聊（1次以上）']}, {'question_section_name': '孩子期望', 'question_type': 1, 'question': '孩子自己对未来最大的期待是？', 'answer': ['考入理想学校']}, {'question_section_name': '家长期望', 'question_type': 1, 'question': '父母对孩子未来的最大期望是？（最多选3项）', 'answer': ['学习成绩好，考上名校', '综合发展，德智体美全面', '健康快乐，心态阳光']}, {'question_section_name': '孩子未来愿景', 'question_type': 2, 'question': '孩子有什么梦想吗？', 'answer': ['他梦想成为一名医生']}, {'question_section_name': '潜力意向', 'question_type': 1, 'question': '如果给未来的孩子一个“魔法选择”，最希望拥有的能力是？', 'answer': ['创造发明（能造出新东西）']}, {'question_section_name': '学科兴趣', 'question_type': 1, 'question': '孩子最喜欢的学科是？', 'answer': ['数学/理科']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '孩子在和同伴合作时，更像是？', 'answer': ['主动组织者']}, {'question_section_name': '社交表达', 'question_type': 1, 'question': '在公众场合，孩子更可能？', 'answer': ['踊跃发言']}, {'question_section_name': '情绪调节', 'question_type': 1, 'question': '当孩子面对批评时，更可能？', 'answer': ['反思并改进']}, {'question_section_name': '毅力', 'question_type': 1, 'question': '孩子是否容易坚持完成一件事？', 'answer': ['大多数能坚持']}, {'question_section_name': '适应力', 'question_type': 1, 'question': '在陌生环境，孩子的适应速度是？', 'answer': ['需要一些时间']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '孩子在团队中更像？', 'answer': ['执行型']}, {'question_section_name': '自律习惯', 'question_type': 1, 'question': '在生活习惯上，孩子更像？', 'answer': ['偶尔需要提醒', '经常拖延']}, {'question_section_name': '自我认知（优势）', 'question_type': 1, 'question': '孩子最大的 3 个性格优点是？（请选择 3 个）', 'answer': ['自信勇敢', '善良助人', '自律认真']}, {'question_section_name': '自我认知（短板）', 'question_type': 1, 'question': '孩子最需要改的 3 个性格缺点是？（请选择 3 个）', 'answer': ['爱顶嘴', '固执', '依赖']}, {'question_section_name': '成就动机', 'question_type': 1, 'question': '如果一时想不出具体的事情，可以选择以下情境，哪个情境最可能让孩子获得成就感：', 'answer': ['在艺术或兴趣活动中有作品展示/作品被认可']}, {'question_section_name': '学科水平', 'question_type': 1, 'question': '孩子平时成绩大致在哪个水平？', 'answer': ['班级前30%']}, {'question_section_name': '性格韧性', 'question_type': 1, 'question': '当孩子遇到困难时，更常见的反应是？', 'answer': ['主动想办法解决']}, {'question_section_name': '偏科情况', 'question_type': 1, 'question': '孩子是否存在“偏科”？', 'answer': ['基本均衡']}, {'question_section_name': '学业稳定度', 'question_type': 1, 'question': '最近一次重要考试，孩子的表现是？', 'answer': ['超出预期']}, {'question_section_name': '补习情况', 'question_type': 1, 'question': '孩子参加了多少学科补习班？', 'answer': ['没有学科补习班']}, {'question_section_name': '目标感', 'question_type': 1, 'question': '孩子对自己未来3–5年的学习目标有想法吗？', 'answer': ['很清楚，知道要做到什么（比如考好成绩、学会新本领）']}, {'question_section_name': '作业态度', 'question_type': 1, 'question': '完成作业时，孩子的态度是？', 'answer': ['主动完成，不用催', '能完成，但要提醒', '经常拖到最后']}, {'question_section_name': '老师评价（优点）', 'question_type': 1, 'question': '老师平时评价孩子的学习有哪些优点？（最多3个）', 'answer': ['思维灵活', '作业认真', '乐于发言']}, {'question_section_name': '老师评价（短板）', 'question_type': 1, 'question': '老师常提醒孩子哪些方面需要改进？（最多3个）', 'answer': ['作业拖拉', '粗心大意', '发言不多']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子在阅读理解英文时，通常能理解到什么程度？', 'answer': ['能读小短文（100词），大概知道意思']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子在日常英文交流中，一般能做到哪种程度？', 'answer': ['能聊熟悉话题几句（学校、兴趣、点餐）']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子写英文时，能写到什么程度？', 'answer': ['能写一小段（5–7句）']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '孩子是否参加过以下英语考试？请选择最近一次且成绩最高的一项。', 'answer': ['剑桥英语一级（KET）及格（Pass）']}]}
+[2025-10-11 14:51:20,592] [953154] [INFO] - gen_report_wo_db.get_instant_report (gen_report_wo_db.py:193) - instant report prompt is:# 角色
+你是一个经验丰富的教育专家，对学生的各种评估维度都理解深刻，且十分擅长低龄升学建议。
+
+# 任务
+你的任务是根据学生基本信息，以及学生评测问答结果，生成一份给家长的升学建议。
+
+# 升学建议包含：
+*    **✍️ SHAI人才官评语**：一句话说明学生的现状，以及基于现状，怎么达到对应的人才画像要求。
+*    **📊 资源与精力分配**：告诉家长为了达到目标，需要在哪方面投入精力，并且给出大致的精力分配占比。
+*    **🏫 目标院校池**：根据学生的分档以及目标升学路径，给出5所建议的目标本科院校，并给出推荐理由。
+
+# 生成规则
+1. 生成的内容总字数不能超过150字。
+2. 学生分档信息适用说明：
+   - 如果是“A档”，则推荐符合**目标升学路径**的top类学校；
+   - 如果是“B档”，则推荐符合**目标升学路径**的普通类学校；
+3. 语言简洁，面向家长，避免专业术语。
+
+# 输出格式
+请以json格式输出你的分析结果，模板如下：
+{
+   "✍️ SHAI人才官评语": "xx"
+   "📊 资源与精力分配": "xx"
+   "🏫 目标院校池": "xx"
+}
+
+# 学生基本信息
+性别:女
+学校类型:私立
+当前年级:G1
+所在城市:深圳市
+目标升学路径:中国大陆本科
+兴趣学科:数学,理科
+人才画像:ALPR｜工程师Engineer🏗️⚙️📈
+画像描述:体育见长，执行力强，理工思维突出，擅长把科研与想法转化为实物或项目成果。既能钻研技术，又能带领团队完成落地，是‘工程+转化’的双能型人才。
+英语水平:
+
+# 学生评测问答结果
+[题目]:孩子是否喜欢体育运动？
+[答案]:非常喜欢（每天/每周固定）
+[题目]:学习时，孩子的专注程度是？
+[答案]:总是专注
+[题目]:写语文作文时，孩子的表现如何？
+[答案]:老师常当范文，写得特别好
+[题目]:孩子数学成绩表现更常是？
+[答案]:经常在 90% 以上（优秀）
+[题目]:做题时，孩子是否会检查？
+[答案]:总是检查
+[题目]:孩子的时间管理习惯是？
+[答案]:能规划并执行,有计划但执行差,基本没有规划
+[题目]:孩子在和小伙伴相处时，更常见的表现是？
+[答案]:带头小领导，喜欢组织大家
+[题目]:孩子在公众场合发言时，更像？
+[答案]:在公共场合自信大方，全场焦点
+[题目]:当遇到需要创新的作业时，孩子会？
+[答案]:点子多，喜欢尝试不同方法
+[题目]:当面对复杂问题时，孩子更常？
+[答案]:主动分析，找到逻辑关系
+[题目]:孩子平时会不会关心新闻或身边发生的大事？
+[答案]:很关心，经常主动和别人讨论
+[题目]:孩子是否参加过学科类实践/社会公益活动？
+[答案]:多次参与并积极投入
+[题目]:孩子是否参加过学科类竞赛/学术探究活动？
+[答案]:多次并获奖
+[题目]:孩子是否会主动预习/复习？
+[答案]:经常主动
+[题目]:孩子是否有长期参与某项运动的专业训练？
+[答案]:有（超过5年，固定项目/俱乐部）
+[题目]:孩子是否参加过体育比赛或获得奖项？
+[答案]:有国家/省级以上奖项
+[题目]:孩子在艺术（音乐/美术/舞蹈/表演等）方面的兴趣如何？
+[答案]:非常浓厚（主动练习/创作）
+[题目]:孩子是否有长期学习/训练艺术类项目？
+[答案]:有（超过3年，持续学习）
+[题目]:孩子是否获得过艺术类（音乐/美术/舞蹈/戏剧等）奖项/证书？
+[答案]:国家级/省级
+[题目]:父母是否经常陪伴孩子？
+[答案]:经常陪伴
+[题目]:孩子与父母的沟通频率是？
+[答案]:每天都会聊（1次以上）
+[题目]:孩子自己对未来最大的期待是？
+[答案]:考入理想学校
+[题目]:父母对孩子未来的最大期望是？（最多选3项）
+[答案]:学习成绩好，考上名校,综合发展，德智体美全面,健康快乐，心态阳光
+[题目]:孩子有什么梦想吗？
+[答案]:他梦想成为一名医生
+[题目]:如果给未来的孩子一个“魔法选择”，最希望拥有的能力是？
+[答案]:创造发明（能造出新东西）
+[题目]:孩子最喜欢的学科是？
+[答案]:数学/理科
+[题目]:孩子在和同伴合作时，更像是？
+[答案]:主动组织者
+[题目]:在公众场合，孩子更可能？
+[答案]:踊跃发言
+[题目]:当孩子面对批评时，更可能？
+[答案]:反思并改进
+[题目]:孩子是否容易坚持完成一件事？
+[答案]:大多数能坚持
+[题目]:在陌生环境，孩子的适应速度是？
+[答案]:需要一些时间
+[题目]:孩子在团队中更像？
+[答案]:执行型
+[题目]:在生活习惯上，孩子更像？
+[答案]:偶尔需要提醒,经常拖延
+[题目]:孩子最大的 3 个性格优点是？（请选择 3 个）
+[答案]:自信勇敢,善良助人,自律认真
+[题目]:孩子最需要改的 3 个性格缺点是？（请选择 3 个）
+[答案]:爱顶嘴,固执,依赖
+[题目]:如果一时想不出具体的事情，可以选择以下情境，哪个情境最可能让孩子获得成就感：
+[答案]:在艺术或兴趣活动中有作品展示/作品被认可
+[题目]:孩子平时成绩大致在哪个水平？
+[答案]:班级前30%
+[题目]:当孩子遇到困难时，更常见的反应是？
+[答案]:主动想办法解决
+[题目]:孩子是否存在“偏科”？
+[答案]:基本均衡
+[题目]:最近一次重要考试，孩子的表现是？
+[答案]:超出预期
+[题目]:孩子参加了多少学科补习班？
+[答案]:没有学科补习班
+[题目]:孩子对自己未来3–5年的学习目标有想法吗？
+[答案]:很清楚，知道要做到什么（比如考好成绩、学会新本领）
+[题目]:完成作业时，孩子的态度是？
+[答案]:主动完成，不用催,能完成，但要提醒,经常拖到最后
+[题目]:老师平时评价孩子的学习有哪些优点？（最多3个）
+[答案]:思维灵活,作业认真,乐于发言
+[题目]:老师常提醒孩子哪些方面需要改进？（最多3个）
+[答案]:作业拖拉,粗心大意,发言不多
+[题目]:孩子在阅读理解英文时，通常能理解到什么程度？
+[答案]:能读小短文（100词），大概知道意思
+[题目]:孩子在日常英文交流中，一般能做到哪种程度？
+[答案]:能聊熟悉话题几句（学校、兴趣、点餐）
+[题目]:孩子写英文时，能写到什么程度？
+[答案]:能写一小段（5–7句）
+[题目]:孩子是否参加过以下英语考试？请选择最近一次且成绩最高的一项。
+[答案]:剑桥英语一级（KET）及格（Pass）
+
+# 你的输出
+[2025-10-11 14:51:20,593] [953154] [INFO] - gen_report_wo_db.get_instant_report (gen_report_wo_db.py:199) - 异步调用大模型开始时间2025-10-11 14:51:20
+[2025-10-11 14:51:20,594] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:228) - 人才画像类型:ALPR｜工程师Engineer🏗️⚙️📈
+[2025-10-11 14:51:20,594] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:231) - target plan keys:['画像代码', '中文名', '英文名', '最终目标', '阶段里程碑', 'A档升学主线', 'B档升学主线', '升学规划要求', '升学路径适配要点']
+[2025-10-11 14:51:20,594] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:244) - college_goal_path:中国大陆本科
+[2025-10-11 14:51:20,594] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:254) - growth advice prompt is:# 角色
+你是一位十分有经验的教育专家，且专注于低龄升学规划。
+
+# 任务
+根据学生基本信息，以及学生当前所属人才画像的升学规划要求，生成一份从当前年级一直到G12的升学规划。
+
+# 学生基本信息
+{
+    "姓名": "Maggie",
+    "所在城市": "深圳市",
+    "当前学校类型": "私立",
+    "当前年级": "G1",
+    "人才画像类型": "ALPR｜工程师Engineer🏗️⚙️📈",
+    "分档": "B",
+    "升学路径": "中国大陆本科",
+    "兴趣学科": "数学,理科"
+}
+
+# 人才画像升学规划要求
+{
+    "画像代码": "ALPR",
+    "中文名": "工程师",
+    "英文名": "Engineer",
+    "最终目标": "G12前完成至少1个工程项目成果+省级竞赛证据，学术达标。",
+    "阶段里程碑": [
+        "G6前完成校级作品",
+        "G9前市级工程竞赛",
+        "G10–11省级工程设计/科研成果",
+        "G12标化达标。"
+    ],
+    "B档升学主线": "市级竞赛奖+长期作品记录，标化达一本线或US前50。",
+    "升学规划要求": {
+        "instruction": "请生成当前年级–G12逐年R/G/S：R=现实(1句)，G=当年可验证目标(1句)，S=策略(1–2条)。每年≤150字，家长友好。必须与最终目标和阶段里程碑对齐，避免堆资源名或指定赛事。"
+    },
+    "升学路径适配要点": {
+        "中国大陆本科": "工科竞赛+综评"
+    }
+}
+
+# 升学规划生成规则
+1. 每一年级的升学包含以下四个要点：
+*    **📌 学年定位&目标**：每一学年的规划目标
+*    **🛠️ 战略规划**：⭐ 核心任务（2条，最低目标+理想目标，必须可验证），➕ 选做（兴趣/运动/公益等）。
+*    **⏰ 时间与家庭协同**：要落实到具体行动
+*    **🏆 关键成果**：1–2个硬核证据 + 年度标签；并且要做到逐年级递进。
+2. 转轨说明：
+    - 如果学生**当前学校类型**是公立，但是**升学路径**非中国大陆本科，那么在G6升G7、G8升G9或者G9升G10节点提示转轨国际学校，并推荐合适课程体系（AP/IB/AL，按学科优势匹配）。
+    - 转轨的节点只选择一个即可。
+3. 如果**人才画像升学规划**要求里要求参加科研类类竞赛，那么要求如下：
+    - 若**升学路径**只有中国大陆本科，则优先推荐教育部认可的白名单赛事（如全国中学生学科竞赛五大联赛、**所在城市**对应的省市科技创新大赛）。
+    - 若**升学路径**只有海外本科，则优先推荐国际认可赛事（如AMC、AIME、ISEF、NSDA、John Locke Essay）等。
+    - 若**升学路径**目标是双轨（既有中国大陆本科，也有海外本科），则两类赛事都需给出：国内白名单作为保底，国际赛事作为亮点。
+    - 禁止输出“市级比赛/省级比赛”，或者“参加国际会议”等不明确的表述，必须给出**具体**且**真实存在**的竞赛或者项目。若根据你的知识无法确认，则应该做出提示：“需家长确认本地教育局/协会官网赛事公告”。
+4. 需要特别注意：
+    - 你生成的规划一定要**明确**且**可落地**，避免空洞的描述；如果有行业公认的评价指标，可以列出详细的目标值。
+    - 即使是艺术或者体育类人才画像的学生，生成的规划也要包含学业目标（目标不要定的过高）。
+    - 规划要结合学生基本信息里的**升学路径**信息，因此不同的升学路径（比如大陆本科，美国本科，英联邦本科）对学生的要求可能不一致。
+    - 每一年级的目标一定要和对应年龄段学生的心智能力相匹配，不能制定不切实际的目标。
+5. 输出的规划一定从当前年级开始，一直到12年级（G12）。
+6. 语言风格：简洁、家长友好、鼓励性。
+
+# 输出要求
+1. 只能输出逐年规划，不要输出其它任何无关内容。
+2. 严格按照JSON格式输出；输出格式模板如下：
+{
+     "G9": {
+          "📌 学年定位&目标":"xx",
+          "🛠️ 战略规划":"xx",
+          "⏰ 时间与家庭协同":"xx",
+          "🏆 关键成果":"xx"
+     },
+     "G10": {...},
+     "G11": {...},
+     "G12": {...}
+}
+
+# 你的输出
+[2025-10-11 14:51:20,594] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:261) - 异步调用大模型开始时间2025-10-11 14:51:20
+[2025-10-11 14:51:26,863] [953154] [INFO] - gen_report_wo_db.get_instant_report (gen_report_wo_db.py:205) - 异步调用大模型结束时间2025-10-11 14:51:26
+[2025-10-11 14:52:01,383] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:267) - 异步调用大模型结束时间2025-10-11 14:52:01
+[2025-10-11 14:52:01,383] [953154] [INFO] - run_app.produe_growth_advice (run_app.py:138) - <built-in function id>-report generate time:68.18940591812134
+[2025-10-11 14:52:29,098] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:267) - 异步调用大模型结束时间2025-10-11 14:52:29
+[2025-10-11 14:52:29,099] [953154] [INFO] - run_app.produe_growth_advice (run_app.py:138) - <built-in function id>-report generate time:68.50680303573608
+[2025-10-11 16:46:37,527] [953154] [INFO] - run_app.produe_instant_profile (run_app.py:70) - instant_profile input req:{'student_info': {'name': '大头儿子', 'gender': '男', 'school_type': '国际', 'current_grade': 'G9', 'city_location': '北屯市', 'college_goal_path': ['中国大陆本科'], 'id': '141de63a-8f7a-11f0-86aa-0242ac120003'}, 'eval_result': [{'question_section_name': '体育艺术', 'question_type': 1, 'question': '如果不好描述，请选择最接近的情况（可多选运动类型 + 坚持程度）：', 'answer': ['冰雪运动（滑冰、滑雪、冰球等）', '体操与技巧类（体操、啦啦操、杂技类等）']}, {'question_section_name': '学能表现', 'question_type': 1, 'question': '孩子在每天学习和专注方面情况如何？时间管理和专注力表现怎样？会有厌学和沉迷游戏/短视频的情况吗？', 'answer': ['缺乏计划，常拖延，易分心，游戏和短视频时间每天2小时以上']}, {'question_section_name': '综合素质', 'question_type': 1, 'question': '如果要选一项孩子空闲时间最常做的事情，会是？', 'answer': ['练习艺术（绘画 / 乐器 / 唱歌 / 表演等）']}, {'question_section_name': '综合素质', 'question_type': 1, 'question': '如果有一个机会，可以让孩子带领同学完成一件事，孩子最可能选择什么？', 'answer': ['带大家排练一场节目 / 艺术创作']}, {'question_section_name': '综合素质', 'question_type': 1, 'question': '如果要大致概括孩子周末的安排，以下哪几类最符合？（可多选）', 'answer': ['娱乐休闲（打游戏、刷手机、看电视、逛街等）', '体育运动（游泳、篮球、足球等）']}, {'question_section_name': '综合素质', 'question_type': 1, 'question': '在班级里，孩子更像：', 'answer': ['喜欢当班干部、组织大家的人']}, {'question_section_name': '综合素质', 'question_type': 1, 'question': '如果有一场比赛，孩子更想：', 'answer': ['参加演讲/辩论/策划类活动']}, {'question_section_name': '综合素质', 'question_type': 1, 'question': '孩子遇到问题时，更常见的做法是：', 'answer': ['找人商量，带大家一起解决']}, {'question_section_name': '综合素质', 'question_type': 1, 'question': '孩子对哪类内容更感兴趣？', 'answer': ['艺术与人文类（绘画、写作、音乐、表演、文学历史）']}, {'question_section_name': '综合素质', 'question_type': 1, 'question': '假如让孩子当“小老师”，最想讲的内容是：', 'answer': ['讲一段有趣的历史故事或文学片段']}, {'question_section_name': '学能表现', 'question_type': 1, 'question': '孩子在做数学题时，计算是否准确？学过的知识是否能灵活应用到生活里？', 'answer': ['偶尔出错，大部分能应用']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '如果学校有社团活动，你更愿意参加以下哪些？（最多选3个）', 'answer': ['文学类（写作、演讲、读书会）', '公益类（志愿服务、环保行动）', '学术类（数学社、英语角、辩论队）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '关于孩子的体育爱好情况，以下哪些符合？（可多选）', 'answer': ['有专业教练阶段性指导（偶尔培训/短期集训）', '参加过区/市级体育比赛']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '关于孩子的艺术兴趣和坚持情况，以下哪些符合？', 'answer': [' 有阶段性训练（1–3 年，间断参与）', '完全自学，纯兴趣爱好']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否经常参加艺术类展示或比赛？', 'answer': ['经常']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '孩子是否喜欢通过文学/艺术/表演等方式表达思想或情感？', 'answer': ['偶尔']}, {'question_section_name': '家庭教育', 'question_type': 1, 'question': '如果不好完整描述，请勾选最符合期待的方向（可选 2–4 项）', 'answer': ['培养责任感 / 独立性', '参加竞赛 / 获得奖项']}, {'question_section_name': '家庭教育', 'question_type': 1, 'question': '如果不好完整描述，请勾选最符合{SELF}家庭关系的情况', 'answer': ['经常聊天/陪伴', '遇事能沟通', '偶尔交流，时间有限']}, {'question_section_name': '家庭教育', 'question_type': 1, 'question': '如果可以改变一件事，你更希望改变的是：', 'answer': ['孩子的兴趣与坚持（能长期坚持一项爱好/特长）']}, {'question_section_name': '家庭教育', 'question_type': 1, 'question': '平时是谁主要陪伴孩子和参与孩子教育？', 'answer': ['父母双方']}, {'question_section_name': '学业表现', 'question_type': 1, 'question': '孩子在日常英文交流中，一般能做到哪种程度？', 'answer': ['能连贯地描述经历/观点，参与简单辩论，大体听懂常速英语。']}, {'question_section_name': '性格特质', 'question_type': 2, 'question': '请回忆孩子最近一次和同学/朋友发生不愉快的事情，描述一下经过。', 'answer': ['昨天课间，孩子带的漫画书被同学小王借走后，小王不小心撕坏了封面。孩子看到后很生气，直接抢过书指责小王，两人吵了起来，小王也委屈地说不是故意的。最后老师过来调解，小王道歉，孩子也慢慢平复了情绪，答应一起修补书。']}, {'question_section_name': '性格特质', 'question_type': 1, 'question': '你觉得这件事让孩子有成就感，主要是因为：', 'answer': ['得到了老师/家长的认可']}, {'question_section_name': '性格特质', 'question_type': 1, 'question': '当孩子在考试、比赛或测评中表现不理想时，通常会怎么做？', 'answer': ['很难释怀，总担心下次失败']}, {'question_section_name': '学业表现', 'question_type': 1, 'question': '快速勾选符合孩子校内表现和学习态度的选项（选3–6个）', 'answer': ['经常举手', '被点才说', '不愿发言', '偶尔举手']}, {'question_section_name': '学业表现', 'question_type': 1, 'question': '如果不好完整描述，请快速勾选符合孩子的情况（学科 + 竞赛 + 奖项）', 'answer': ['语文', '艺术/音乐', '数学']}, {'question_section_name': '学业表现', 'question_type': 1, 'question': '孩子最近一次的学习成绩怎么样？（月考/期中/期末）', 'answer': ['偶尔会有B或C（80分左右/满分100）']}, {'question_section_name': '学业表现', 'question_type': 1, 'question': '孩子平时成绩在班里排名区段', 'answer': ['中上']}, {'question_section_name': '学业表现', 'question_type': 1, 'question': '孩子平时会主动预习和复习吗？', 'answer': ['偶尔会主动']}, {'question_section_name': '学业表现', 'question_type': 1, 'question': '孩子在阅读英文材料时，通常能理解到什么程度？', 'answer': ['能读100–150词的小短文，抓到事实信息（如时间/地点/人物）。']}, {'question_section_name': '性格特质', 'question_type': 2, 'question': '如何描述孩子的性格？（三个优点/三个缺点）', 'answer': ['优点：共情力强，家人不适会主动照顾，会安慰哭闹的小伙伴；好奇心足，爱观察蚂蚁、问科普问题，还会模仿手工教程尝试；有责任心，能坚持整理书包、照顾盆栽。\n缺点：受挫易急躁，积木倒就哭闹；注意力易分散，写作业常被外界干扰；有时固执，天冷非要穿薄裙，不愿接受']}, {'question_section_name': '学业表现', 'question_type': 1, 'question': '孩子在英文写作和语法方面，通常能完成到什么水平？', 'answer': ['写5–7句连贯段落（现在/一般过去时），能写请假条、日记。']}, {'question_section_name': '学业表现', 'question_type': 1, 'question': '孩子是否参加过以下英语考试？请选择最近一次且成绩最高的一项。', 'answer': ['KET Distinction']}, {'question_section_name': '学能表现', 'question_type': 1, 'question': '孩子目前是否参加过学科补习班？主要情况是？', 'answer': ['没有参加过补习班']}, {'question_section_name': '学能表现', 'question_type': 1, 'question': '孩子平时会不会主动去读课外书？通常会选择哪些类型的书？', 'answer': ['会主动读，但多是自己喜欢的书']}, {'question_section_name': '学能表现', 'question_type': 1, 'question': '用一句话来描述孩子的写作水平，更接近哪种？', 'answer': ['能完成规定题目的作文，条理基本清楚，但常依赖模板，细节少。']}, {'question_section_name': '学能表现', 'question_type': 1, 'question': '孩子在玩推理游戏或遇到复杂问题时，会不会主动一步步分析并寻找解决办法？', 'answer': ['有兴趣，会分析一些']}, {'question_section_name': '学能表现', 'question_type': 1, 'question': '在课堂或和别人交流时，孩子会不会主动表达自己的看法？别人能不能听懂？', 'answer': ['比较害羞，说得不清楚']}, {'question_section_name': '学能表现', 'question_type': 1, 'question': '当遇到不懂的问题时，孩子会怎么找答案？找到后会不会整理学习资料？', 'answer': ['会用网络或 AI 工具查找，并简单整理']}, {'question_section_name': '学能表现', 'question_type': 1, 'question': '孩子在学习新知识后，通常能记住多久？记得牢不牢？', 'answer': ['记住一部分，但容易忘']}]}
+[2025-10-11 16:46:37,600] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:42) - 异步调用大模型开始时间2025-10-11 16:46:37
+[2025-10-11 16:46:37,602] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:42) - 异步调用大模型开始时间2025-10-11 16:46:37
+[2025-10-11 16:46:37,603] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:42) - 异步调用大模型开始时间2025-10-11 16:46:37
+[2025-10-11 16:46:37,605] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:42) - 异步调用大模型开始时间2025-10-11 16:46:37
+[2025-10-11 16:46:40,790] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:49) - 异步调用大模型结束时间2025-10-11 16:46:40
+[2025-10-11 16:46:43,428] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:49) - 异步调用大模型结束时间2025-10-11 16:46:43
+[2025-10-11 16:46:45,009] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:49) - 异步调用大模型结束时间2025-10-11 16:46:45
+[2025-10-11 16:46:46,506] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:49) - 异步调用大模型结束时间2025-10-11 16:46:46
+[2025-10-11 16:46:46,507] [953154] [INFO] - main.get_TP_evidence (main.py:129) - tp_evidence extract:8.979266166687012
+[2025-10-11 16:46:46,507] [953154] [INFO] - compute_score.cal_tp_score (compute_score.py:84) - *************evi is:{
+    "体育突出型-强": [
+        {
+            "每周固定训练2年以上": "20"
+        },
+        {
+            "兴趣班持续，获得过奖项": "20"
+        },
+        {
+            "担任校队成员": "20"
+        }
+    ],
+    "体育突出型-中": [
+        {
+            "参加过校队，但不稳定": "20"
+        },
+        {
+            "兴趣班1年，有时请假": "60"
+        },
+        {
+            "比赛偶尔有奖": "60"
+        }
+    ],
+    "体育一般型-弱": [
+        {
+            "随便玩玩，不爱运动": "60"
+        },
+        {
+            "家长说孩子不喜欢体育": "20"
+        },
+        {
+            "运动断断续续，没有持续": "60"
+        }
+    ]
+}
+[2025-10-11 16:46:46,507] [953154] [INFO] - compute_score.cal_tp_score (compute_score.py:84) - *************evi is:{
+    "领导型-强": [
+        {
+            "担任班长/组长": 100
+        },
+        {
+            "主持校内活动": 60
+        },
+        {
+            "主动发言、组织队伍": 60
+        }
+    ],
+    "领导型-中": [
+        {
+            "小组长，偶尔发言": 60
+        },
+        {
+            "带头参与班级活动": 100
+        },
+        {
+            "负责部分任务": 100
+        }
+    ],
+    "协作执行型-弱": [
+        {
+            "喜欢听老师安排": 20
+        },
+        {
+            "完成分配任务": 60
+        },
+        {
+            "习惯做跟随者": 20
+        }
+    ]
+}
+[2025-10-11 16:46:46,507] [953154] [INFO] - compute_score.cal_tp_score (compute_score.py:84) - *************evi is:{
+    "艺术/人文突出型-强": [
+        {
+            "喜欢画画唱歌": 100
+        },
+        {
+            "参加过艺术表演": 100
+        },
+        {
+            "课余时间写小故事": 60
+        }
+    ],
+    "艺术/人文突出型-中": [
+        {
+            "兴趣班刚开始": 20
+        },
+        {
+            "有时画画，有时弹琴": 100
+        },
+        {
+            "作品零散": 60
+        }
+    ],
+    "艺术一般/偏实用型-弱": [
+        {
+            "喜欢拼装乐高": 20
+        },
+        {
+            "能独立解决小问题": 20
+        },
+        {
+            "偏好动手做实验": 20
+        }
+    ]
+}
+[2025-10-11 16:46:46,507] [953154] [INFO] - compute_score.cal_tp_score (compute_score.py:84) - *************evi is:{
+    "理工思维突出型-强": [
+        {
+            "数学成绩突出": "20"
+        },
+        {
+            "参加过信息学竞赛": "20"
+        },
+        {
+            "科学实验表现优秀": "20"
+        }
+    ],
+    "理工思维突出型-中": [
+        {
+            "理科成绩中等": "60"
+        },
+        {
+            "做过小实验": "60"
+        },
+        {
+            "偶尔参加科技活动": "20"
+        }
+    ],
+    "理工思维一般型-弱": [
+        {
+            "明确表示不喜欢数学": "20"
+        },
+        {
+            "理科薄弱": "60"
+        },
+        {
+            "对实验没兴趣": "20"
+        }
+    ]
+}
+[2025-10-11 17:47:59,951] [953154] [INFO] - run_app.produe_open_question_ans (run_app.py:47) - open question input req:{'student_info': {'name': '中', 'gender': '男', 'school_type': '公立', 'current_grade': 'G5', 'city_location': '葫芦岛市', 'college_goal_path': ['中国大陆本科'], 'id': '37f544d8-a687-11f0-978e-0242ac120003'}, 'eval_result': [{'question_section_name': '成就动机', 'question_type': 2, 'question': '请分享一件让你最有成就感的事情。', 'answer': '让你最有成就的事情'}]}
+[2025-10-11 17:48:54,107] [953154] [INFO] - run_app.produe_open_question_ans (run_app.py:47) - open question input req:{'student_info': {'name': '中', 'gender': '男', 'school_type': '公立', 'current_grade': 'G5', 'city_location': '葫芦岛市', 'college_goal_path': ['中国大陆本科'], 'id': '37f544d8-a687-11f0-978e-0242ac120003'}, 'eval_result': [{'question_section_name': '孩子未来愿景', 'question_type': 2, 'question': '你有什么梦想吗？', 'answer': '我想当一个科学家画家运动员。'}]}
+[2025-10-11 17:49:02,599] [953154] [INFO] - run_app.produe_instant_profile (run_app.py:70) - instant_profile input req:{'student_info': {'name': '中', 'gender': '男', 'school_type': '公立', 'current_grade': 'G5', 'city_location': '葫芦岛市', 'college_goal_path': ['中国大陆本科'], 'id': '37f544d8-a687-11f0-978e-0242ac120003'}, 'eval_result': [{'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否喜欢体育运动？', 'answer': ['偶尔喜欢（看心情）']}, {'question_section_name': '专注力', 'question_type': 1, 'question': '学习时，你的专注程度是？', 'answer': ['偶尔分心']}, {'question_section_name': '写作能力', 'question_type': 1, 'question': '写语文作文时，你的表现如何？', 'answer': ['能写完，但话不多']}, {'question_section_name': '数理思维', 'question_type': 1, 'question': '你数学成绩表现更常是？', 'answer': ['多数在 60%–74%（及格）']}, {'question_section_name': '检查习惯', 'question_type': 1, 'question': '做题时，你是否会检查？', 'answer': ['偶尔检查']}, {'question_section_name': '时间管理', 'question_type': 1, 'question': '你的时间管理习惯是？', 'answer': ['基本没有规划', '经常拖延']}, {'question_section_name': '协作力', 'question_type': 1, 'question': '你在和小伙伴相处时，更常见的表现是？', 'answer': ['跟着大家，别人怎么做就跟着做']}, {'question_section_name': '公共表达', 'question_type': 1, 'question': '你在公众场合发言时，更像？', 'answer': ['在老师点名下发言，内容清楚']}, {'question_section_name': '创造力', 'question_type': 1, 'question': '当遇到需要创新的作业时，你会？', 'answer': ['不喜欢创新']}, {'question_section_name': '解决问题能力', 'question_type': 1, 'question': '当面对复杂问题时，你更常？', 'answer': ['尝试一步步推理']}, {'question_section_name': '社会认知', 'question_type': 1, 'question': '你平时会不会关心新闻或身边发生的大事？', 'answer': ['偶尔会听一听或看看']}, {'question_section_name': '探索力', 'question_type': 1, 'question': '你是否参加过学科类实践/社会公益活动？', 'answer': ['从未参与']}, {'question_section_name': '学术竞争力', 'question_type': 1, 'question': '你是否参加过学科类竞赛/学术探究活动？', 'answer': ['有过尝试']}, {'question_section_name': '学习习惯', 'question_type': 1, 'question': '你是否会主动预习/复习？', 'answer': ['偶尔才会']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否有长期参与某项运动的专业训练？', 'answer': ['有坚持运动，但是没有专业教练']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否参加过体育比赛或获得奖项？', 'answer': ['有市级/校级奖项']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你在艺术（音乐/美术/舞蹈/表演等）方面的兴趣如何？', 'answer': ['没兴趣']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否有长期学习/训练艺术类项目？', 'answer': ['有（1–2年）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否获得过艺术类（音乐/美术/舞蹈/戏剧等）奖项/证书？', 'answer': ['培训机构/兴趣班颁发']}, {'question_section_name': '家庭陪伴', 'question_type': 1, 'question': '父母是否经常陪伴你？', 'answer': ['偶尔陪伴']}, {'question_section_name': '亲子沟通', 'question_type': 1, 'question': '你与父母的沟通频率是？', 'answer': ['一周聊1–2次']}, {'question_section_name': '孩子期望', 'question_type': 1, 'question': '你自己对未来最大的期待是？', 'answer': ['做喜欢的事']}, {'question_section_name': '家长期望', 'question_type': 1, 'question': '父母对你未来的最大期望是？（最多选3项）', 'answer': ['健康快乐，心态阳光', '成为领导者，带团队']}, {'question_section_name': '孩子未来愿景', 'question_type': 2, 'question': '你有什么梦想吗？', 'answer': ['我想当一个科学家画家运动员。']}, {'question_section_name': '潜力意向', 'question_type': 1, 'question': '如果给未来的你一个“魔法选择”，最希望拥有的能力是？', 'answer': ['创造发明（能造出新东西）']}, {'question_section_name': '学科兴趣', 'question_type': 1, 'question': '你最喜欢的学科是？', 'answer': ['英语/外语']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '你在和同伴合作时，更像是？', 'answer': ['团队执行者']}, {'question_section_name': '社交表达', 'question_type': 1, 'question': '在公众场合，你更可能？', 'answer': ['不太愿意发言']}, {'question_section_name': '情绪调节', 'question_type': 1, 'question': '当你面对批评时，更可能？', 'answer': ['容易情绪化']}, {'question_section_name': '毅力', 'question_type': 1, 'question': '你是否容易坚持完成一件事？', 'answer': ['偶尔半途而废']}, {'question_section_name': '适应力', 'question_type': 1, 'question': '在陌生环境，你的适应速度是？', 'answer': ['较慢']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '你在团队中更像？', 'answer': ['支持型']}, {'question_section_name': '自律习惯', 'question_type': 1, 'question': '在生活习惯上，你更像？', 'answer': ['经常拖延', '自律规律']}, {'question_section_name': '自我认知（优势）', 'question_type': 1, 'question': '你最大的 3 个性格优点是？（请选择 3 个）', 'answer': ['善良助人', '反应灵敏', '冷静稳重']}, {'question_section_name': '自我认知（短板）', 'question_type': 1, 'question': '你最需要改的 3 个性格缺点是？（请选择 3 个）', 'answer': ['害羞', '犟脾气', '内向']}, {'question_section_name': '成就动机', 'question_type': 1, 'question': '如果一时想不出具体的事情，可以选择以下情境，哪个情境最可能让你获得成就感：', 'answer': ['在帮助他人或集体中感受到价值', '目前还没有特别觉得成就感的事情']}, {'question_section_name': '学科水平', 'question_type': 1, 'question': '你平时成绩大致在哪个水平？', 'answer': ['中等水平']}, {'question_section_name': '性格韧性', 'question_type': 1, 'question': '当你遇到困难时，更常见的反应是？', 'answer': ['容易放弃']}, {'question_section_name': '偏科情况', 'question_type': 1, 'question': '你是否存在“偏科”？', 'answer': ['基本均衡']}, {'question_section_name': '学业稳定度', 'question_type': 1, 'question': '最近一次重要考试，你的表现是？', 'answer': ['明显退步']}, {'question_section_name': '补习情况', 'question_type': 1, 'question': '你参加了多少学科补习班？', 'answer': ['1 个（学科补习班/家教）']}, {'question_section_name': '目标感', 'question_type': 1, 'question': '你对自己未来3–5年的学习目标有想法吗？', 'answer': ['不太清楚，需要老师或爸妈提醒']}, {'question_section_name': '作业态度', 'question_type': 1, 'question': '完成作业时，你的态度是？', 'answer': ['经常拖到最后', '抱怨多，不想写']}, {'question_section_name': '老师评价（优点）', 'question_type': 1, 'question': '老师平时评价你的学习有哪些优点？（最多3个）', 'answer': ['成绩稳定', '喜欢阅读']}, {'question_section_name': '老师评价（短板）', 'question_type': 1, 'question': '老师常提醒你哪些方面需要改进？（最多3个）', 'answer': ['粗心大意', '不爱阅读']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你在阅读理解英文时，通常能理解到什么程度？', 'answer': ['能读中篇（300词），查生词能懂大意']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你在日常英文交流中，一般能做到哪种程度？', 'answer': ['能连续说2分钟，有条理互动自然']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你写英文时，能写到什么程度？', 'answer': ['能写120–180词的作文/邮件']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你是否参加过以下英语考试？请选择最近一次且成绩最高的一项。', 'answer': ['剑桥英语一级（KET）优秀（Distinction）']}]}
+[2025-10-11 17:49:02,672] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:42) - 异步调用大模型开始时间2025-10-11 17:49:02
+[2025-10-11 17:49:02,674] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:42) - 异步调用大模型开始时间2025-10-11 17:49:02
+[2025-10-11 17:49:02,675] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:42) - 异步调用大模型开始时间2025-10-11 17:49:02
+[2025-10-11 17:49:02,677] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:42) - 异步调用大模型开始时间2025-10-11 17:49:02
+[2025-10-11 17:49:05,539] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:49) - 异步调用大模型结束时间2025-10-11 17:49:05
+[2025-10-11 17:49:05,597] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:49) - 异步调用大模型结束时间2025-10-11 17:49:05
+[2025-10-11 17:49:05,655] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:49) - 异步调用大模型结束时间2025-10-11 17:49:05
+[2025-10-11 17:49:06,158] [953154] [INFO] - call_llm_model.async_call_model (call_llm_model.py:49) - 异步调用大模型结束时间2025-10-11 17:49:06
+[2025-10-11 17:49:06,158] [953154] [INFO] - main.get_TP_evidence (main.py:129) - tp_evidence extract:3.559307336807251
+[2025-10-11 17:49:06,159] [953154] [INFO] - compute_score.cal_tp_score (compute_score.py:84) - *************evi is:{
+    "体育突出型-强": [
+        {
+            "每周固定训练2年以上": 20
+        },
+        {
+            "兴趣班持续，获得过奖项": 60
+        },
+        {
+            "担任校队成员": 20
+        }
+    ],
+    "体育突出型-中": [
+        {
+            "参加过校队，但不稳定": 20
+        },
+        {
+            "兴趣班1年，有时请假": 20
+        },
+        {
+            "比赛偶尔有奖": 100
+        }
+    ],
+    "体育一般型-弱": [
+        {
+            "随便玩玩，不爱运动": 60
+        },
+        {
+            "家长说孩子不喜欢体育": 20
+        },
+        {
+            "运动断断续续，没有持续": 60
+        }
+    ]
+}
+[2025-10-11 17:49:06,159] [953154] [INFO] - compute_score.cal_tp_score (compute_score.py:84) - *************evi is:{
+    "领导型-强": [
+        {
+            "担任班长/组长": 20
+        },
+        {
+            "主持校内活动": 20
+        },
+        {
+            "主动发言、组织队伍": 20
+        }
+    ],
+    "领导型-中": [
+        {
+            "小组长，偶尔发言": 60
+        },
+        {
+            "带头参与班级活动": 20
+        },
+        {
+            "负责部分任务": 20
+        }
+    ],
+    "协作执行型-弱": [
+        {
+            "喜欢听老师安排": 100
+        },
+        {
+            "完成分配任务": 100
+        },
+        {
+            "习惯做跟随者": 100
+        }
+    ]
+}
+[2025-10-11 17:49:06,159] [953154] [INFO] - compute_score.cal_tp_score (compute_score.py:84) - *************evi is:{
+    "艺术/人文突出型-强": [
+        {
+            "喜欢画画唱歌": 20
+        },
+        {
+            "参加过艺术表演": 20
+        },
+        {
+            "课余时间写小故事": 20
+        }
+    ],
+    "艺术/人文突出型-中": [
+        {
+            "兴趣班刚开始": 60
+        },
+        {
+            "有时画画，有时弹琴": 20
+        },
+        {
+            "作品零散": 20
+        }
+    ],
+    "艺术一般/偏实用型-弱": [
+        {
+            "喜欢拼装乐高": 20
+        },
+        {
+            "能独立解决小问题": 60
+        },
+        {
+            "偏好动手做实验": 20
+        }
+    ]
+}
+[2025-10-11 17:49:06,159] [953154] [INFO] - compute_score.cal_tp_score (compute_score.py:84) - *************evi is:{
+    "理工思维突出型-强": [
+        {
+            "数学成绩突出": "20"
+        },
+        {
+            "参加过信息学竞赛": "20"
+        },
+        {
+            "科学实验表现优秀": "20"
+        }
+    ],
+    "理工思维突出型-中": [
+        {
+            "理科成绩中等": "100"
+        },
+        {
+            "做过小实验": "20"
+        },
+        {
+            "偶尔参加科技活动": "60"
+        }
+    ],
+    "理工思维一般型-弱": [
+        {
+            "明确表示不喜欢数学": "20"
+        },
+        {
+            "理科薄弱": "60"
+        },
+        {
+            "对实验没兴趣": "20"
+        }
+    ]
+}
+[2025-10-11 17:49:06,834] [953154] [INFO] - compute_score.cal_dim_score (compute_score.py:231) - 学业表现**question-你平时成绩大致在哪个水平？**score-33
+[2025-10-11 17:49:06,835] [953154] [INFO] - compute_score.cal_dim_score (compute_score.py:231) - 学业表现**question-最近一次重要考试，你的表现是？**score-0
+[2025-10-11 17:49:06,835] [953154] [INFO] - compute_score.cal_dim_score (compute_score.py:231) - 学业表现**question-你参加了多少学科补习班？**score-75
+[2025-10-11 17:49:06,835] [953154] [INFO] - compute_score.cal_dim_score (compute_score.py:231) - 学业表现**question-你对自己未来3–5年的学习目标有想法吗？**score-33
+[2025-10-11 17:49:06,835] [953154] [INFO] - compute_score.multi_select_score (compute_score.py:180) - **multi-select-question-完成作业时，你的态度是？**option-经常拖到最后**score--10
+[2025-10-11 17:49:06,835] [953154] [INFO] - compute_score.multi_select_score (compute_score.py:180) - **multi-select-question-完成作业时，你的态度是？**option-抱怨多，不想写**score--25
+[2025-10-11 17:49:06,835] [953154] [INFO] - compute_score.cal_dim_score (compute_score.py:238) - **multi-select-question-完成作业时，你的态度是？**sum_score-141
+[2025-10-11 17:49:06,836] [953154] [INFO] - compute_score.multi_select_score (compute_score.py:180) - **multi-select-question-老师平时评价你的学习有哪些优点？（最多3个）**option-成绩稳定**score-10
+[2025-10-11 17:49:06,836] [953154] [INFO] - compute_score.multi_select_score (compute_score.py:180) - **multi-select-question-老师平时评价你的学习有哪些优点？（最多3个）**option-喜欢阅读**score-0
+[2025-10-11 17:49:06,836] [953154] [INFO] - compute_score.cal_dim_score (compute_score.py:238) - **multi-select-question-老师平时评价你的学习有哪些优点？（最多3个）**sum_score-151
+[2025-10-11 17:49:06,836] [953154] [INFO] - compute_score.multi_select_score (compute_score.py:180) - **multi-select-question-老师常提醒你哪些方面需要改进？（最多3个）**option-粗心大意**score--10
+[2025-10-11 17:49:06,836] [953154] [INFO] - compute_score.multi_select_score (compute_score.py:180) - **multi-select-question-老师常提醒你哪些方面需要改进？（最多3个）**option-不爱阅读**score-0
+[2025-10-11 17:49:06,836] [953154] [INFO] - compute_score.cal_dim_score (compute_score.py:238) - **multi-select-question-老师常提醒你哪些方面需要改进？（最多3个）**sum_score-141
+[2025-10-11 17:49:06,836] [953154] [INFO] - compute_score.cal_dim_score (compute_score.py:231) - 学能表现**question-你是否会主动预习/复习？**score-33
+[2025-10-11 17:49:06,836] [953154] [INFO] - compute_score.cal_dim_score (compute_score.py:231) - 学能表现**question-学习时，你的专注程度是？**score-33
+[2025-10-11 17:49:06,836] [953154] [INFO] - compute_score.cal_dim_score (compute_score.py:231) - 学能表现**question-写语文作文时，你的表现如何？**score-50
+[2025-10-11 17:49:06,837] [953154] [INFO] - compute_score.cal_dim_score (compute_score.py:231) - 学能表现**question-你数学成绩表现更常是？**score-33
+[2025-10-11 17:49:06,837] [953154] [INFO] - compute_score.cal_dim_score (compute_score.py:231) - 学能表现**question-做题时，你是否会检查？**score-33
+[2025-10-11 17:49:06,837] [953154] [INFO] - compute_score.rate_classify (compute_score.py:260) - 加权总分:41.25**学业表现分数:35,学能表现分数:36,英语分数:50
+[2025-10-11 17:49:06,837] [953154] [INFO] - run_app.produe_instant_profile (run_app.py:75) - 37f544d8-a687-11f0-978e-0242ac120003-instant profile generate time:4.238057374954224
+[2025-10-11 17:49:06,850] [953154] [INFO] - run_app.produe_swot (run_app.py:93) - swot-input req is{'student_info': {'name': '中', 'gender': '男', 'school_type': '公立', 'current_grade': 'G5', 'city_location': '葫芦岛市', 'college_goal_path': ['中国大陆本科'], 'id': '37f544d8-a687-11f0-978e-0242ac120003', 'subject_interest': '英语/外语', 'profile_type': 'SJPB｜运营官 Operator 🌏🗂️🤝', 'english_level': 'A2', 'rate': 'B'}, 'eval_result': [{'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否喜欢体育运动？', 'answer': ['偶尔喜欢（看心情）']}, {'question_section_name': '专注力', 'question_type': 1, 'question': '学习时，你的专注程度是？', 'answer': ['偶尔分心']}, {'question_section_name': '写作能力', 'question_type': 1, 'question': '写语文作文时，你的表现如何？', 'answer': ['能写完，但话不多']}, {'question_section_name': '数理思维', 'question_type': 1, 'question': '你数学成绩表现更常是？', 'answer': ['多数在 60%–74%（及格）']}, {'question_section_name': '检查习惯', 'question_type': 1, 'question': '做题时，你是否会检查？', 'answer': ['偶尔检查']}, {'question_section_name': '时间管理', 'question_type': 1, 'question': '你的时间管理习惯是？', 'answer': ['基本没有规划', '经常拖延']}, {'question_section_name': '协作力', 'question_type': 1, 'question': '你在和小伙伴相处时，更常见的表现是？', 'answer': ['跟着大家，别人怎么做就跟着做']}, {'question_section_name': '公共表达', 'question_type': 1, 'question': '你在公众场合发言时，更像？', 'answer': ['在老师点名下发言，内容清楚']}, {'question_section_name': '创造力', 'question_type': 1, 'question': '当遇到需要创新的作业时，你会？', 'answer': ['不喜欢创新']}, {'question_section_name': '解决问题能力', 'question_type': 1, 'question': '当面对复杂问题时，你更常？', 'answer': ['尝试一步步推理']}, {'question_section_name': '社会认知', 'question_type': 1, 'question': '你平时会不会关心新闻或身边发生的大事？', 'answer': ['偶尔会听一听或看看']}, {'question_section_name': '探索力', 'question_type': 1, 'question': '你是否参加过学科类实践/社会公益活动？', 'answer': ['从未参与']}, {'question_section_name': '学术竞争力', 'question_type': 1, 'question': '你是否参加过学科类竞赛/学术探究活动？', 'answer': ['有过尝试']}, {'question_section_name': '学习习惯', 'question_type': 1, 'question': '你是否会主动预习/复习？', 'answer': ['偶尔才会']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否有长期参与某项运动的专业训练？', 'answer': ['有坚持运动，但是没有专业教练']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否参加过体育比赛或获得奖项？', 'answer': ['有市级/校级奖项']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你在艺术（音乐/美术/舞蹈/表演等）方面的兴趣如何？', 'answer': ['没兴趣']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否有长期学习/训练艺术类项目？', 'answer': ['有（1–2年）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否获得过艺术类（音乐/美术/舞蹈/戏剧等）奖项/证书？', 'answer': ['培训机构/兴趣班颁发']}, {'question_section_name': '家庭陪伴', 'question_type': 1, 'question': '父母是否经常陪伴你？', 'answer': ['偶尔陪伴']}, {'question_section_name': '亲子沟通', 'question_type': 1, 'question': '你与父母的沟通频率是？', 'answer': ['一周聊1–2次']}, {'question_section_name': '孩子期望', 'question_type': 1, 'question': '你自己对未来最大的期待是？', 'answer': ['做喜欢的事']}, {'question_section_name': '家长期望', 'question_type': 1, 'question': '父母对你未来的最大期望是？（最多选3项）', 'answer': ['健康快乐，心态阳光', '成为领导者，带团队']}, {'question_section_name': '孩子未来愿景', 'question_type': 2, 'question': '你有什么梦想吗？', 'answer': ['我想当一个科学家画家运动员。']}, {'question_section_name': '潜力意向', 'question_type': 1, 'question': '如果给未来的你一个“魔法选择”，最希望拥有的能力是？', 'answer': ['创造发明（能造出新东西）']}, {'question_section_name': '学科兴趣', 'question_type': 1, 'question': '你最喜欢的学科是？', 'answer': ['英语/外语']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '你在和同伴合作时，更像是？', 'answer': ['团队执行者']}, {'question_section_name': '社交表达', 'question_type': 1, 'question': '在公众场合，你更可能？', 'answer': ['不太愿意发言']}, {'question_section_name': '情绪调节', 'question_type': 1, 'question': '当你面对批评时，更可能？', 'answer': ['容易情绪化']}, {'question_section_name': '毅力', 'question_type': 1, 'question': '你是否容易坚持完成一件事？', 'answer': ['偶尔半途而废']}, {'question_section_name': '适应力', 'question_type': 1, 'question': '在陌生环境，你的适应速度是？', 'answer': ['较慢']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '你在团队中更像？', 'answer': ['支持型']}, {'question_section_name': '自律习惯', 'question_type': 1, 'question': '在生活习惯上，你更像？', 'answer': ['经常拖延', '自律规律']}, {'question_section_name': '自我认知（优势）', 'question_type': 1, 'question': '你最大的 3 个性格优点是？（请选择 3 个）', 'answer': ['善良助人', '反应灵敏', '冷静稳重']}, {'question_section_name': '自我认知（短板）', 'question_type': 1, 'question': '你最需要改的 3 个性格缺点是？（请选择 3 个）', 'answer': ['害羞', '犟脾气', '内向']}, {'question_section_name': '成就动机', 'question_type': 1, 'question': '如果一时想不出具体的事情，可以选择以下情境，哪个情境最可能让你获得成就感：', 'answer': ['在帮助他人或集体中感受到价值', '目前还没有特别觉得成就感的事情']}, {'question_section_name': '学科水平', 'question_type': 1, 'question': '你平时成绩大致在哪个水平？', 'answer': ['中等水平']}, {'question_section_name': '性格韧性', 'question_type': 1, 'question': '当你遇到困难时，更常见的反应是？', 'answer': ['容易放弃']}, {'question_section_name': '偏科情况', 'question_type': 1, 'question': '你是否存在“偏科”？', 'answer': ['基本均衡']}, {'question_section_name': '学业稳定度', 'question_type': 1, 'question': '最近一次重要考试，你的表现是？', 'answer': ['明显退步']}, {'question_section_name': '补习情况', 'question_type': 1, 'question': '你参加了多少学科补习班？', 'answer': ['1 个（学科补习班/家教）']}, {'question_section_name': '目标感', 'question_type': 1, 'question': '你对自己未来3–5年的学习目标有想法吗？', 'answer': ['不太清楚，需要老师或爸妈提醒']}, {'question_section_name': '作业态度', 'question_type': 1, 'question': '完成作业时，你的态度是？', 'answer': ['经常拖到最后', '抱怨多，不想写']}, {'question_section_name': '老师评价（优点）', 'question_type': 1, 'question': '老师平时评价你的学习有哪些优点？（最多3个）', 'answer': ['成绩稳定', '喜欢阅读']}, {'question_section_name': '老师评价（短板）', 'question_type': 1, 'question': '老师常提醒你哪些方面需要改进？（最多3个）', 'answer': ['粗心大意', '不爱阅读']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你在阅读理解英文时，通常能理解到什么程度？', 'answer': ['能读中篇（300词），查生词能懂大意']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你在日常英文交流中，一般能做到哪种程度？', 'answer': ['能连续说2分钟，有条理互动自然']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你写英文时，能写到什么程度？', 'answer': ['能写120–180词的作文/邮件']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你是否参加过以下英语考试？请选择最近一次且成绩最高的一项。', 'answer': ['剑桥英语一级（KET）优秀（Distinction）']}]}
+[2025-10-11 17:49:06,918] [953154] [INFO] - run_app.produe_growth_advice (run_app.py:134) - growth advice-input req is{'student_info': {'name': '中', 'gender': '男', 'school_type': '公立', 'current_grade': 'G5', 'city_location': '葫芦岛市', 'college_goal_path': ['中国大陆本科'], 'id': '37f544d8-a687-11f0-978e-0242ac120003', 'subject_interest': '英语/外语', 'profile_type': 'SJPB｜运营官 Operator 🌏🗂️🤝', 'english_level': 'A2', 'rate': 'B'}, 'eval_result': [{'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否喜欢体育运动？', 'answer': ['偶尔喜欢（看心情）']}, {'question_section_name': '专注力', 'question_type': 1, 'question': '学习时，你的专注程度是？', 'answer': ['偶尔分心']}, {'question_section_name': '写作能力', 'question_type': 1, 'question': '写语文作文时，你的表现如何？', 'answer': ['能写完，但话不多']}, {'question_section_name': '数理思维', 'question_type': 1, 'question': '你数学成绩表现更常是？', 'answer': ['多数在 60%–74%（及格）']}, {'question_section_name': '检查习惯', 'question_type': 1, 'question': '做题时，你是否会检查？', 'answer': ['偶尔检查']}, {'question_section_name': '时间管理', 'question_type': 1, 'question': '你的时间管理习惯是？', 'answer': ['基本没有规划', '经常拖延']}, {'question_section_name': '协作力', 'question_type': 1, 'question': '你在和小伙伴相处时，更常见的表现是？', 'answer': ['跟着大家，别人怎么做就跟着做']}, {'question_section_name': '公共表达', 'question_type': 1, 'question': '你在公众场合发言时，更像？', 'answer': ['在老师点名下发言，内容清楚']}, {'question_section_name': '创造力', 'question_type': 1, 'question': '当遇到需要创新的作业时，你会？', 'answer': ['不喜欢创新']}, {'question_section_name': '解决问题能力', 'question_type': 1, 'question': '当面对复杂问题时，你更常？', 'answer': ['尝试一步步推理']}, {'question_section_name': '社会认知', 'question_type': 1, 'question': '你平时会不会关心新闻或身边发生的大事？', 'answer': ['偶尔会听一听或看看']}, {'question_section_name': '探索力', 'question_type': 1, 'question': '你是否参加过学科类实践/社会公益活动？', 'answer': ['从未参与']}, {'question_section_name': '学术竞争力', 'question_type': 1, 'question': '你是否参加过学科类竞赛/学术探究活动？', 'answer': ['有过尝试']}, {'question_section_name': '学习习惯', 'question_type': 1, 'question': '你是否会主动预习/复习？', 'answer': ['偶尔才会']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否有长期参与某项运动的专业训练？', 'answer': ['有坚持运动，但是没有专业教练']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否参加过体育比赛或获得奖项？', 'answer': ['有市级/校级奖项']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你在艺术（音乐/美术/舞蹈/表演等）方面的兴趣如何？', 'answer': ['没兴趣']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否有长期学习/训练艺术类项目？', 'answer': ['有（1–2年）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否获得过艺术类（音乐/美术/舞蹈/戏剧等）奖项/证书？', 'answer': ['培训机构/兴趣班颁发']}, {'question_section_name': '家庭陪伴', 'question_type': 1, 'question': '父母是否经常陪伴你？', 'answer': ['偶尔陪伴']}, {'question_section_name': '亲子沟通', 'question_type': 1, 'question': '你与父母的沟通频率是？', 'answer': ['一周聊1–2次']}, {'question_section_name': '孩子期望', 'question_type': 1, 'question': '你自己对未来最大的期待是？', 'answer': ['做喜欢的事']}, {'question_section_name': '家长期望', 'question_type': 1, 'question': '父母对你未来的最大期望是？（最多选3项）', 'answer': ['健康快乐，心态阳光', '成为领导者，带团队']}, {'question_section_name': '孩子未来愿景', 'question_type': 2, 'question': '你有什么梦想吗？', 'answer': ['我想当一个科学家画家运动员。']}, {'question_section_name': '潜力意向', 'question_type': 1, 'question': '如果给未来的你一个“魔法选择”，最希望拥有的能力是？', 'answer': ['创造发明（能造出新东西）']}, {'question_section_name': '学科兴趣', 'question_type': 1, 'question': '你最喜欢的学科是？', 'answer': ['英语/外语']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '你在和同伴合作时，更像是？', 'answer': ['团队执行者']}, {'question_section_name': '社交表达', 'question_type': 1, 'question': '在公众场合，你更可能？', 'answer': ['不太愿意发言']}, {'question_section_name': '情绪调节', 'question_type': 1, 'question': '当你面对批评时，更可能？', 'answer': ['容易情绪化']}, {'question_section_name': '毅力', 'question_type': 1, 'question': '你是否容易坚持完成一件事？', 'answer': ['偶尔半途而废']}, {'question_section_name': '适应力', 'question_type': 1, 'question': '在陌生环境，你的适应速度是？', 'answer': ['较慢']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '你在团队中更像？', 'answer': ['支持型']}, {'question_section_name': '自律习惯', 'question_type': 1, 'question': '在生活习惯上，你更像？', 'answer': ['经常拖延', '自律规律']}, {'question_section_name': '自我认知（优势）', 'question_type': 1, 'question': '你最大的 3 个性格优点是？（请选择 3 个）', 'answer': ['善良助人', '反应灵敏', '冷静稳重']}, {'question_section_name': '自我认知（短板）', 'question_type': 1, 'question': '你最需要改的 3 个性格缺点是？（请选择 3 个）', 'answer': ['害羞', '犟脾气', '内向']}, {'question_section_name': '成就动机', 'question_type': 1, 'question': '如果一时想不出具体的事情，可以选择以下情境，哪个情境最可能让你获得成就感：', 'answer': ['在帮助他人或集体中感受到价值', '目前还没有特别觉得成就感的事情']}, {'question_section_name': '学科水平', 'question_type': 1, 'question': '你平时成绩大致在哪个水平？', 'answer': ['中等水平']}, {'question_section_name': '性格韧性', 'question_type': 1, 'question': '当你遇到困难时，更常见的反应是？', 'answer': ['容易放弃']}, {'question_section_name': '偏科情况', 'question_type': 1, 'question': '你是否存在“偏科”？', 'answer': ['基本均衡']}, {'question_section_name': '学业稳定度', 'question_type': 1, 'question': '最近一次重要考试，你的表现是？', 'answer': ['明显退步']}, {'question_section_name': '补习情况', 'question_type': 1, 'question': '你参加了多少学科补习班？', 'answer': ['1 个（学科补习班/家教）']}, {'question_section_name': '目标感', 'question_type': 1, 'question': '你对自己未来3–5年的学习目标有想法吗？', 'answer': ['不太清楚，需要老师或爸妈提醒']}, {'question_section_name': '作业态度', 'question_type': 1, 'question': '完成作业时，你的态度是？', 'answer': ['经常拖到最后', '抱怨多，不想写']}, {'question_section_name': '老师评价（优点）', 'question_type': 1, 'question': '老师平时评价你的学习有哪些优点？（最多3个）', 'answer': ['成绩稳定', '喜欢阅读']}, {'question_section_name': '老师评价（短板）', 'question_type': 1, 'question': '老师常提醒你哪些方面需要改进？（最多3个）', 'answer': ['粗心大意', '不爱阅读']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你在阅读理解英文时，通常能理解到什么程度？', 'answer': ['能读中篇（300词），查生词能懂大意']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你在日常英文交流中，一般能做到哪种程度？', 'answer': ['能连续说2分钟，有条理互动自然']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你写英文时，能写到什么程度？', 'answer': ['能写120–180词的作文/邮件']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你是否参加过以下英语考试？请选择最近一次且成绩最高的一项。', 'answer': ['剑桥英语一级（KET）优秀（Distinction）']}]}
+[2025-10-11 17:49:06,918] [953154] [INFO] - gen_report_wo_db.get_instant_report (gen_report_wo_db.py:193) - instant report prompt is:# 角色
+你是一个经验丰富的教育专家，对学生的各种评估维度都理解深刻，且十分擅长低龄升学建议。
+
+# 任务
+你的任务是根据学生基本信息，以及学生评测问答结果，生成一份给家长的升学建议。
+
+# 升学建议包含：
+*    **✍️ SHAI人才官评语**：一句话说明学生的现状，以及基于现状，怎么达到对应的人才画像要求。
+*    **📊 资源与精力分配**：告诉家长为了达到目标，需要在哪方面投入精力，并且给出大致的精力分配占比。
+*    **🏫 目标院校池**：根据学生的分档以及目标升学路径，给出5所建议的目标本科院校，并给出推荐理由。
+
+# 生成规则
+1. 生成的内容总字数不能超过150字。
+2. 学生分档信息适用说明：
+   - 如果是“A档”，则推荐符合**目标升学路径**的top类学校；
+   - 如果是“B档”，则推荐符合**目标升学路径**的普通类学校；
+3. 语言简洁，面向家长，避免专业术语。
+
+# 输出格式
+请以json格式输出你的分析结果，模板如下：
+{
+   "✍️ SHAI人才官评语": "xx"
+   "📊 资源与精力分配": "xx"
+   "🏫 目标院校池": "xx"
+}
+
+# 学生基本信息
+性别:男
+学校类型:公立
+当前年级:G5
+所在城市:葫芦岛市
+目标升学路径:中国大陆本科
+兴趣学科:英语/外语
+人才画像:SJPB｜运营官 Operator 🌏🗂️🤝
+画像描述:体育一般、理工不强，但踏实可靠、沟通顺畅、执行力与服务意识强。不抢风头，擅长做会务、活动、渠道、客户与后勤，让一场活动、一次项目、一个团队按时、按质、按预算落地。
+英语水平:A2
+
+# 学生评测问答结果
+[题目]:你是否喜欢体育运动？
+[答案]:偶尔喜欢（看心情）
+[题目]:学习时，你的专注程度是？
+[答案]:偶尔分心
+[题目]:写语文作文时，你的表现如何？
+[答案]:能写完，但话不多
+[题目]:你数学成绩表现更常是？
+[答案]:多数在 60%–74%（及格）
+[题目]:做题时，你是否会检查？
+[答案]:偶尔检查
+[题目]:你的时间管理习惯是？
+[答案]:基本没有规划,经常拖延
+[题目]:你在和小伙伴相处时，更常见的表现是？
+[答案]:跟着大家，别人怎么做就跟着做
+[题目]:你在公众场合发言时，更像？
+[答案]:在老师点名下发言，内容清楚
+[题目]:当遇到需要创新的作业时，你会？
+[答案]:不喜欢创新
+[题目]:当面对复杂问题时，你更常？
+[答案]:尝试一步步推理
+[题目]:你平时会不会关心新闻或身边发生的大事？
+[答案]:偶尔会听一听或看看
+[题目]:你是否参加过学科类实践/社会公益活动？
+[答案]:从未参与
+[题目]:你是否参加过学科类竞赛/学术探究活动？
+[答案]:有过尝试
+[题目]:你是否会主动预习/复习？
+[答案]:偶尔才会
+[题目]:你是否有长期参与某项运动的专业训练？
+[答案]:有坚持运动，但是没有专业教练
+[题目]:你是否参加过体育比赛或获得奖项？
+[答案]:有市级/校级奖项
+[题目]:你在艺术（音乐/美术/舞蹈/表演等）方面的兴趣如何？
+[答案]:没兴趣
+[题目]:你是否有长期学习/训练艺术类项目？
+[答案]:有（1–2年）
+[题目]:你是否获得过艺术类（音乐/美术/舞蹈/戏剧等）奖项/证书？
+[答案]:培训机构/兴趣班颁发
+[题目]:父母是否经常陪伴你？
+[答案]:偶尔陪伴
+[题目]:你与父母的沟通频率是？
+[答案]:一周聊1–2次
+[题目]:你自己对未来最大的期待是？
+[答案]:做喜欢的事
+[题目]:父母对你未来的最大期望是？（最多选3项）
+[答案]:健康快乐，心态阳光,成为领导者，带团队
+[题目]:你有什么梦想吗？
+[答案]:我想当一个科学家画家运动员。
+[题目]:如果给未来的你一个“魔法选择”，最希望拥有的能力是？
+[答案]:创造发明（能造出新东西）
+[题目]:你最喜欢的学科是？
+[答案]:英语/外语
+[题目]:你在和同伴合作时，更像是？
+[答案]:团队执行者
+[题目]:在公众场合，你更可能？
+[答案]:不太愿意发言
+[题目]:当你面对批评时，更可能？
+[答案]:容易情绪化
+[题目]:你是否容易坚持完成一件事？
+[答案]:偶尔半途而废
+[题目]:在陌生环境，你的适应速度是？
+[答案]:较慢
+[题目]:你在团队中更像？
+[答案]:支持型
+[题目]:在生活习惯上，你更像？
+[答案]:经常拖延,自律规律
+[题目]:你最大的 3 个性格优点是？（请选择 3 个）
+[答案]:善良助人,反应灵敏,冷静稳重
+[题目]:你最需要改的 3 个性格缺点是？（请选择 3 个）
+[答案]:害羞,犟脾气,内向
+[题目]:如果一时想不出具体的事情，可以选择以下情境，哪个情境最可能让你获得成就感：
+[答案]:在帮助他人或集体中感受到价值,目前还没有特别觉得成就感的事情
+[题目]:你平时成绩大致在哪个水平？
+[答案]:中等水平
+[题目]:当你遇到困难时，更常见的反应是？
+[答案]:容易放弃
+[题目]:你是否存在“偏科”？
+[答案]:基本均衡
+[题目]:最近一次重要考试，你的表现是？
+[答案]:明显退步
+[题目]:你参加了多少学科补习班？
+[答案]:1 个（学科补习班/家教）
+[题目]:你对自己未来3–5年的学习目标有想法吗？
+[答案]:不太清楚，需要老师或爸妈提醒
+[题目]:完成作业时，你的态度是？
+[答案]:经常拖到最后,抱怨多，不想写
+[题目]:老师平时评价你的学习有哪些优点？（最多3个）
+[答案]:成绩稳定,喜欢阅读
+[题目]:老师常提醒你哪些方面需要改进？（最多3个）
+[答案]:粗心大意,不爱阅读
+[题目]:你在阅读理解英文时，通常能理解到什么程度？
+[答案]:能读中篇（300词），查生词能懂大意
+[题目]:你在日常英文交流中，一般能做到哪种程度？
+[答案]:能连续说2分钟，有条理互动自然
+[题目]:你写英文时，能写到什么程度？
+[答案]:能写120–180词的作文/邮件
+[题目]:你是否参加过以下英语考试？请选择最近一次且成绩最高的一项。
+[答案]:剑桥英语一级（KET）优秀（Distinction）
+
+# 你的输出
+[2025-10-11 17:49:06,918] [953154] [INFO] - gen_report_wo_db.get_instant_report (gen_report_wo_db.py:199) - 异步调用大模型开始时间2025-10-11 17:49:06
+[2025-10-11 17:49:06,920] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:228) - 人才画像类型:SJPB｜运营官 Operator 🌏🗂️🤝
+[2025-10-11 17:49:06,921] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:231) - target plan keys:['画像代码', '中文名', '英文名', '最终目标', '阶段里程碑', 'A档升学主线', 'B档升学主线', '升学规划要求', '升学路径适配要点']
+[2025-10-11 17:49:06,921] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:244) - college_goal_path:中国大陆本科
+[2025-10-11 17:49:06,921] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:254) - growth advice prompt is:# 角色
+你是一位十分有经验的教育专家，且专注于低龄升学规划。
+
+# 任务
+根据学生基本信息，以及学生当前所属人才画像的升学规划要求，生成一份从当前年级一直到G12的升学规划。
+
+# 学生基本信息
+{
+    "姓名": "中",
+    "所在城市": "葫芦岛市",
+    "当前学校类型": "公立",
+    "当前年级": "G5",
+    "人才画像类型": "SJPB｜运营官 Operator 🌏🗂️🤝",
+    "分档": "B",
+    "升学路径": "中国大陆本科",
+    "兴趣学科": "英语/外语"
+}
+
+# 人才画像升学规划要求
+{
+    "画像代码": "SJPB",
+    "中文名": "运营官",
+    "英文名": "Operator",
+    "最终目标": "G12前完成运营/活动管理成果，学术达标。",
+    "阶段里程碑": [
+        "G6前校级活动运营",
+        "G9前市级运营项目",
+        "G10–11省级运营成果",
+        "G12标化达标。"
+    ],
+    "B档升学主线": "市级成果+长期运营记录，标化达一本线/US前50。",
+    "升学规划要求": {
+        "instruction": "请生成当前年级–G12逐年R/G/S：R=现实(1句)，G=当年可验证目标(1句)，S=策略(1–2条)。每年≤150字，家长友好。必须与最终目标和阶段里程碑对齐，避免堆资源名或指定赛事。"
+    },
+    "升学路径适配要点": {
+        "中国大陆本科": "综评+运营成果"
+    }
+}
+
+# 升学规划生成规则
+1. 每一年级的升学包含以下四个要点：
+*    **📌 学年定位&目标**：每一学年的规划目标
+*    **🛠️ 战略规划**：⭐ 核心任务（2条，最低目标+理想目标，必须可验证），➕ 选做（兴趣/运动/公益等）。
+*    **⏰ 时间与家庭协同**：要落实到具体行动
+*    **🏆 关键成果**：1–2个硬核证据 + 年度标签；并且要做到逐年级递进。
+2. 转轨说明：
+    - 如果学生**当前学校类型**是公立，但是**升学路径**非中国大陆本科，那么在G6升G7、G8升G9或者G9升G10节点提示转轨国际学校，并推荐合适课程体系（AP/IB/AL，按学科优势匹配）。
+    - 转轨的节点只选择一个即可。
+3. 如果**人才画像升学规划**要求里要求参加科研类类竞赛，那么要求如下：
+    - 若**升学路径**只有中国大陆本科，则优先推荐教育部认可的白名单赛事（如全国中学生学科竞赛五大联赛、**所在城市**对应的省市科技创新大赛）。
+    - 若**升学路径**只有海外本科，则优先推荐国际认可赛事（如AMC、AIME、ISEF、NSDA、John Locke Essay）等。
+    - 若**升学路径**目标是双轨（既有中国大陆本科，也有海外本科），则两类赛事都需给出：国内白名单作为保底，国际赛事作为亮点。
+    - 禁止输出“市级比赛/省级比赛”，或者“参加国际会议”等不明确的表述，必须给出**具体**且**真实存在**的竞赛或者项目。若根据你的知识无法确认，则应该做出提示：“需家长确认本地教育局/协会官网赛事公告”。
+4. 需要特别注意：
+    - 你生成的规划一定要**明确**且**可落地**，避免空洞的描述；如果有行业公认的评价指标，可以列出详细的目标值。
+    - 即使是艺术或者体育类人才画像的学生，生成的规划也要包含学业目标（目标不要定的过高）。
+    - 规划要结合学生基本信息里的**升学路径**信息，因此不同的升学路径（比如大陆本科，美国本科，英联邦本科）对学生的要求可能不一致。
+    - 每一年级的目标一定要和对应年龄段学生的心智能力相匹配，不能制定不切实际的目标。
+5. 输出的规划一定从当前年级开始，一直到12年级（G12）。
+6. 语言风格：简洁、家长友好、鼓励性。
+
+# 输出要求
+1. 只能输出逐年规划，不要输出其它任何无关内容。
+2. 严格按照JSON格式输出；输出格式模板如下：
+{
+     "G9": {
+          "📌 学年定位&目标":"xx",
+          "🛠️ 战略规划":"xx",
+          "⏰ 时间与家庭协同":"xx",
+          "🏆 关键成果":"xx"
+     },
+     "G10": {...},
+     "G11": {...},
+     "G12": {...}
+}
+
+# 你的输出
+[2025-10-11 17:49:06,921] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:261) - 异步调用大模型开始时间2025-10-11 17:49:06
+[2025-10-11 17:49:10,380] [953154] [INFO] - gen_report_wo_db.get_instant_report (gen_report_wo_db.py:205) - 异步调用大模型结束时间2025-10-11 17:49:10
+[2025-10-11 17:49:19,150] [953154] [INFO] - run_app.produe_swot (run_app.py:101) - 37f544d8-a687-11f0-978e-0242ac120003-swot generate time:12.299915075302124
+[2025-10-11 17:49:19,158] [953154] [INFO] - run_app.produe_growth_advice (run_app.py:134) - growth advice-input req is{'student_info': {'name': '中', 'gender': '男', 'school_type': '公立', 'current_grade': 'G5', 'city_location': '葫芦岛市', 'college_goal_path': ['中国大陆本科'], 'id': '37f544d8-a687-11f0-978e-0242ac120003', 'subject_interest': '英语/外语', 'profile_type': 'SJPB｜运营官 Operator 🌏🗂️🤝', 'english_level': 'A2', 'rate': 'B'}, 'eval_result': [{'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否喜欢体育运动？', 'answer': ['偶尔喜欢（看心情）']}, {'question_section_name': '专注力', 'question_type': 1, 'question': '学习时，你的专注程度是？', 'answer': ['偶尔分心']}, {'question_section_name': '写作能力', 'question_type': 1, 'question': '写语文作文时，你的表现如何？', 'answer': ['能写完，但话不多']}, {'question_section_name': '数理思维', 'question_type': 1, 'question': '你数学成绩表现更常是？', 'answer': ['多数在 60%–74%（及格）']}, {'question_section_name': '检查习惯', 'question_type': 1, 'question': '做题时，你是否会检查？', 'answer': ['偶尔检查']}, {'question_section_name': '时间管理', 'question_type': 1, 'question': '你的时间管理习惯是？', 'answer': ['基本没有规划', '经常拖延']}, {'question_section_name': '协作力', 'question_type': 1, 'question': '你在和小伙伴相处时，更常见的表现是？', 'answer': ['跟着大家，别人怎么做就跟着做']}, {'question_section_name': '公共表达', 'question_type': 1, 'question': '你在公众场合发言时，更像？', 'answer': ['在老师点名下发言，内容清楚']}, {'question_section_name': '创造力', 'question_type': 1, 'question': '当遇到需要创新的作业时，你会？', 'answer': ['不喜欢创新']}, {'question_section_name': '解决问题能力', 'question_type': 1, 'question': '当面对复杂问题时，你更常？', 'answer': ['尝试一步步推理']}, {'question_section_name': '社会认知', 'question_type': 1, 'question': '你平时会不会关心新闻或身边发生的大事？', 'answer': ['偶尔会听一听或看看']}, {'question_section_name': '探索力', 'question_type': 1, 'question': '你是否参加过学科类实践/社会公益活动？', 'answer': ['从未参与']}, {'question_section_name': '学术竞争力', 'question_type': 1, 'question': '你是否参加过学科类竞赛/学术探究活动？', 'answer': ['有过尝试']}, {'question_section_name': '学习习惯', 'question_type': 1, 'question': '你是否会主动预习/复习？', 'answer': ['偶尔才会']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否有长期参与某项运动的专业训练？', 'answer': ['有坚持运动，但是没有专业教练']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否参加过体育比赛或获得奖项？', 'answer': ['有市级/校级奖项']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你在艺术（音乐/美术/舞蹈/表演等）方面的兴趣如何？', 'answer': ['没兴趣']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否有长期学习/训练艺术类项目？', 'answer': ['有（1–2年）']}, {'question_section_name': '体育艺术', 'question_type': 1, 'question': '你是否获得过艺术类（音乐/美术/舞蹈/戏剧等）奖项/证书？', 'answer': ['培训机构/兴趣班颁发']}, {'question_section_name': '家庭陪伴', 'question_type': 1, 'question': '父母是否经常陪伴你？', 'answer': ['偶尔陪伴']}, {'question_section_name': '亲子沟通', 'question_type': 1, 'question': '你与父母的沟通频率是？', 'answer': ['一周聊1–2次']}, {'question_section_name': '孩子期望', 'question_type': 1, 'question': '你自己对未来最大的期待是？', 'answer': ['做喜欢的事']}, {'question_section_name': '家长期望', 'question_type': 1, 'question': '父母对你未来的最大期望是？（最多选3项）', 'answer': ['健康快乐，心态阳光', '成为领导者，带团队']}, {'question_section_name': '孩子未来愿景', 'question_type': 2, 'question': '你有什么梦想吗？', 'answer': ['我想当一个科学家画家运动员。']}, {'question_section_name': '潜力意向', 'question_type': 1, 'question': '如果给未来的你一个“魔法选择”，最希望拥有的能力是？', 'answer': ['创造发明（能造出新东西）']}, {'question_section_name': '学科兴趣', 'question_type': 1, 'question': '你最喜欢的学科是？', 'answer': ['英语/外语']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '你在和同伴合作时，更像是？', 'answer': ['团队执行者']}, {'question_section_name': '社交表达', 'question_type': 1, 'question': '在公众场合，你更可能？', 'answer': ['不太愿意发言']}, {'question_section_name': '情绪调节', 'question_type': 1, 'question': '当你面对批评时，更可能？', 'answer': ['容易情绪化']}, {'question_section_name': '毅力', 'question_type': 1, 'question': '你是否容易坚持完成一件事？', 'answer': ['偶尔半途而废']}, {'question_section_name': '适应力', 'question_type': 1, 'question': '在陌生环境，你的适应速度是？', 'answer': ['较慢']}, {'question_section_name': '团队角色', 'question_type': 1, 'question': '你在团队中更像？', 'answer': ['支持型']}, {'question_section_name': '自律习惯', 'question_type': 1, 'question': '在生活习惯上，你更像？', 'answer': ['经常拖延', '自律规律']}, {'question_section_name': '自我认知（优势）', 'question_type': 1, 'question': '你最大的 3 个性格优点是？（请选择 3 个）', 'answer': ['善良助人', '反应灵敏', '冷静稳重']}, {'question_section_name': '自我认知（短板）', 'question_type': 1, 'question': '你最需要改的 3 个性格缺点是？（请选择 3 个）', 'answer': ['害羞', '犟脾气', '内向']}, {'question_section_name': '成就动机', 'question_type': 1, 'question': '如果一时想不出具体的事情，可以选择以下情境，哪个情境最可能让你获得成就感：', 'answer': ['在帮助他人或集体中感受到价值', '目前还没有特别觉得成就感的事情']}, {'question_section_name': '学科水平', 'question_type': 1, 'question': '你平时成绩大致在哪个水平？', 'answer': ['中等水平']}, {'question_section_name': '性格韧性', 'question_type': 1, 'question': '当你遇到困难时，更常见的反应是？', 'answer': ['容易放弃']}, {'question_section_name': '偏科情况', 'question_type': 1, 'question': '你是否存在“偏科”？', 'answer': ['基本均衡']}, {'question_section_name': '学业稳定度', 'question_type': 1, 'question': '最近一次重要考试，你的表现是？', 'answer': ['明显退步']}, {'question_section_name': '补习情况', 'question_type': 1, 'question': '你参加了多少学科补习班？', 'answer': ['1 个（学科补习班/家教）']}, {'question_section_name': '目标感', 'question_type': 1, 'question': '你对自己未来3–5年的学习目标有想法吗？', 'answer': ['不太清楚，需要老师或爸妈提醒']}, {'question_section_name': '作业态度', 'question_type': 1, 'question': '完成作业时，你的态度是？', 'answer': ['经常拖到最后', '抱怨多，不想写']}, {'question_section_name': '老师评价（优点）', 'question_type': 1, 'question': '老师平时评价你的学习有哪些优点？（最多3个）', 'answer': ['成绩稳定', '喜欢阅读']}, {'question_section_name': '老师评价（短板）', 'question_type': 1, 'question': '老师常提醒你哪些方面需要改进？（最多3个）', 'answer': ['粗心大意', '不爱阅读']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你在阅读理解英文时，通常能理解到什么程度？', 'answer': ['能读中篇（300词），查生词能懂大意']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你在日常英文交流中，一般能做到哪种程度？', 'answer': ['能连续说2分钟，有条理互动自然']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你写英文时，能写到什么程度？', 'answer': ['能写120–180词的作文/邮件']}, {'question_section_name': '英语能力', 'question_type': 1, 'question': '你是否参加过以下英语考试？请选择最近一次且成绩最高的一项。', 'answer': ['剑桥英语一级（KET）优秀（Distinction）']}]}
+[2025-10-11 17:49:19,158] [953154] [INFO] - gen_report_wo_db.get_instant_report (gen_report_wo_db.py:193) - instant report prompt is:# 角色
+你是一个经验丰富的教育专家，对学生的各种评估维度都理解深刻，且十分擅长低龄升学建议。
+
+# 任务
+你的任务是根据学生基本信息，以及学生评测问答结果，生成一份给家长的升学建议。
+
+# 升学建议包含：
+*    **✍️ SHAI人才官评语**：一句话说明学生的现状，以及基于现状，怎么达到对应的人才画像要求。
+*    **📊 资源与精力分配**：告诉家长为了达到目标，需要在哪方面投入精力，并且给出大致的精力分配占比。
+*    **🏫 目标院校池**：根据学生的分档以及目标升学路径，给出5所建议的目标本科院校，并给出推荐理由。
+
+# 生成规则
+1. 生成的内容总字数不能超过150字。
+2. 学生分档信息适用说明：
+   - 如果是“A档”，则推荐符合**目标升学路径**的top类学校；
+   - 如果是“B档”，则推荐符合**目标升学路径**的普通类学校；
+3. 语言简洁，面向家长，避免专业术语。
+
+# 输出格式
+请以json格式输出你的分析结果，模板如下：
+{
+   "✍️ SHAI人才官评语": "xx"
+   "📊 资源与精力分配": "xx"
+   "🏫 目标院校池": "xx"
+}
+
+# 学生基本信息
+性别:男
+学校类型:公立
+当前年级:G5
+所在城市:葫芦岛市
+目标升学路径:中国大陆本科
+兴趣学科:英语/外语
+人才画像:SJPB｜运营官 Operator 🌏🗂️🤝
+画像描述:体育一般、理工不强，但踏实可靠、沟通顺畅、执行力与服务意识强。不抢风头，擅长做会务、活动、渠道、客户与后勤，让一场活动、一次项目、一个团队按时、按质、按预算落地。
+英语水平:A2
+
+# 学生评测问答结果
+[题目]:你是否喜欢体育运动？
+[答案]:偶尔喜欢（看心情）
+[题目]:学习时，你的专注程度是？
+[答案]:偶尔分心
+[题目]:写语文作文时，你的表现如何？
+[答案]:能写完，但话不多
+[题目]:你数学成绩表现更常是？
+[答案]:多数在 60%–74%（及格）
+[题目]:做题时，你是否会检查？
+[答案]:偶尔检查
+[题目]:你的时间管理习惯是？
+[答案]:基本没有规划,经常拖延
+[题目]:你在和小伙伴相处时，更常见的表现是？
+[答案]:跟着大家，别人怎么做就跟着做
+[题目]:你在公众场合发言时，更像？
+[答案]:在老师点名下发言，内容清楚
+[题目]:当遇到需要创新的作业时，你会？
+[答案]:不喜欢创新
+[题目]:当面对复杂问题时，你更常？
+[答案]:尝试一步步推理
+[题目]:你平时会不会关心新闻或身边发生的大事？
+[答案]:偶尔会听一听或看看
+[题目]:你是否参加过学科类实践/社会公益活动？
+[答案]:从未参与
+[题目]:你是否参加过学科类竞赛/学术探究活动？
+[答案]:有过尝试
+[题目]:你是否会主动预习/复习？
+[答案]:偶尔才会
+[题目]:你是否有长期参与某项运动的专业训练？
+[答案]:有坚持运动，但是没有专业教练
+[题目]:你是否参加过体育比赛或获得奖项？
+[答案]:有市级/校级奖项
+[题目]:你在艺术（音乐/美术/舞蹈/表演等）方面的兴趣如何？
+[答案]:没兴趣
+[题目]:你是否有长期学习/训练艺术类项目？
+[答案]:有（1–2年）
+[题目]:你是否获得过艺术类（音乐/美术/舞蹈/戏剧等）奖项/证书？
+[答案]:培训机构/兴趣班颁发
+[题目]:父母是否经常陪伴你？
+[答案]:偶尔陪伴
+[题目]:你与父母的沟通频率是？
+[答案]:一周聊1–2次
+[题目]:你自己对未来最大的期待是？
+[答案]:做喜欢的事
+[题目]:父母对你未来的最大期望是？（最多选3项）
+[答案]:健康快乐，心态阳光,成为领导者，带团队
+[题目]:你有什么梦想吗？
+[答案]:我想当一个科学家画家运动员。
+[题目]:如果给未来的你一个“魔法选择”，最希望拥有的能力是？
+[答案]:创造发明（能造出新东西）
+[题目]:你最喜欢的学科是？
+[答案]:英语/外语
+[题目]:你在和同伴合作时，更像是？
+[答案]:团队执行者
+[题目]:在公众场合，你更可能？
+[答案]:不太愿意发言
+[题目]:当你面对批评时，更可能？
+[答案]:容易情绪化
+[题目]:你是否容易坚持完成一件事？
+[答案]:偶尔半途而废
+[题目]:在陌生环境，你的适应速度是？
+[答案]:较慢
+[题目]:你在团队中更像？
+[答案]:支持型
+[题目]:在生活习惯上，你更像？
+[答案]:经常拖延,自律规律
+[题目]:你最大的 3 个性格优点是？（请选择 3 个）
+[答案]:善良助人,反应灵敏,冷静稳重
+[题目]:你最需要改的 3 个性格缺点是？（请选择 3 个）
+[答案]:害羞,犟脾气,内向
+[题目]:如果一时想不出具体的事情，可以选择以下情境，哪个情境最可能让你获得成就感：
+[答案]:在帮助他人或集体中感受到价值,目前还没有特别觉得成就感的事情
+[题目]:你平时成绩大致在哪个水平？
+[答案]:中等水平
+[题目]:当你遇到困难时，更常见的反应是？
+[答案]:容易放弃
+[题目]:你是否存在“偏科”？
+[答案]:基本均衡
+[题目]:最近一次重要考试，你的表现是？
+[答案]:明显退步
+[题目]:你参加了多少学科补习班？
+[答案]:1 个（学科补习班/家教）
+[题目]:你对自己未来3–5年的学习目标有想法吗？
+[答案]:不太清楚，需要老师或爸妈提醒
+[题目]:完成作业时，你的态度是？
+[答案]:经常拖到最后,抱怨多，不想写
+[题目]:老师平时评价你的学习有哪些优点？（最多3个）
+[答案]:成绩稳定,喜欢阅读
+[题目]:老师常提醒你哪些方面需要改进？（最多3个）
+[答案]:粗心大意,不爱阅读
+[题目]:你在阅读理解英文时，通常能理解到什么程度？
+[答案]:能读中篇（300词），查生词能懂大意
+[题目]:你在日常英文交流中，一般能做到哪种程度？
+[答案]:能连续说2分钟，有条理互动自然
+[题目]:你写英文时，能写到什么程度？
+[答案]:能写120–180词的作文/邮件
+[题目]:你是否参加过以下英语考试？请选择最近一次且成绩最高的一项。
+[答案]:剑桥英语一级（KET）优秀（Distinction）
+
+# 你的输出
+[2025-10-11 17:49:19,158] [953154] [INFO] - gen_report_wo_db.get_instant_report (gen_report_wo_db.py:199) - 异步调用大模型开始时间2025-10-11 17:49:19
+[2025-10-11 17:49:19,160] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:228) - 人才画像类型:SJPB｜运营官 Operator 🌏🗂️🤝
+[2025-10-11 17:49:19,160] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:231) - target plan keys:['画像代码', '中文名', '英文名', '最终目标', '阶段里程碑', 'A档升学主线', 'B档升学主线', '升学规划要求', '升学路径适配要点']
+[2025-10-11 17:49:19,160] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:244) - college_goal_path:中国大陆本科
+[2025-10-11 17:49:19,160] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:254) - growth advice prompt is:# 角色
+你是一位十分有经验的教育专家，且专注于低龄升学规划。
+
+# 任务
+根据学生基本信息，以及学生当前所属人才画像的升学规划要求，生成一份从当前年级一直到G12的升学规划。
+
+# 学生基本信息
+{
+    "姓名": "中",
+    "所在城市": "葫芦岛市",
+    "当前学校类型": "公立",
+    "当前年级": "G5",
+    "人才画像类型": "SJPB｜运营官 Operator 🌏🗂️🤝",
+    "分档": "B",
+    "升学路径": "中国大陆本科",
+    "兴趣学科": "英语/外语"
+}
+
+# 人才画像升学规划要求
+{
+    "画像代码": "SJPB",
+    "中文名": "运营官",
+    "英文名": "Operator",
+    "最终目标": "G12前完成运营/活动管理成果，学术达标。",
+    "阶段里程碑": [
+        "G6前校级活动运营",
+        "G9前市级运营项目",
+        "G10–11省级运营成果",
+        "G12标化达标。"
+    ],
+    "B档升学主线": "市级成果+长期运营记录，标化达一本线/US前50。",
+    "升学规划要求": {
+        "instruction": "请生成当前年级–G12逐年R/G/S：R=现实(1句)，G=当年可验证目标(1句)，S=策略(1–2条)。每年≤150字，家长友好。必须与最终目标和阶段里程碑对齐，避免堆资源名或指定赛事。"
+    },
+    "升学路径适配要点": {
+        "中国大陆本科": "综评+运营成果"
+    }
+}
+
+# 升学规划生成规则
+1. 每一年级的升学包含以下四个要点：
+*    **📌 学年定位&目标**：每一学年的规划目标
+*    **🛠️ 战略规划**：⭐ 核心任务（2条，最低目标+理想目标，必须可验证），➕ 选做（兴趣/运动/公益等）。
+*    **⏰ 时间与家庭协同**：要落实到具体行动
+*    **🏆 关键成果**：1–2个硬核证据 + 年度标签；并且要做到逐年级递进。
+2. 转轨说明：
+    - 如果学生**当前学校类型**是公立，但是**升学路径**非中国大陆本科，那么在G6升G7、G8升G9或者G9升G10节点提示转轨国际学校，并推荐合适课程体系（AP/IB/AL，按学科优势匹配）。
+    - 转轨的节点只选择一个即可。
+3. 如果**人才画像升学规划**要求里要求参加科研类类竞赛，那么要求如下：
+    - 若**升学路径**只有中国大陆本科，则优先推荐教育部认可的白名单赛事（如全国中学生学科竞赛五大联赛、**所在城市**对应的省市科技创新大赛）。
+    - 若**升学路径**只有海外本科，则优先推荐国际认可赛事（如AMC、AIME、ISEF、NSDA、John Locke Essay）等。
+    - 若**升学路径**目标是双轨（既有中国大陆本科，也有海外本科），则两类赛事都需给出：国内白名单作为保底，国际赛事作为亮点。
+    - 禁止输出“市级比赛/省级比赛”，或者“参加国际会议”等不明确的表述，必须给出**具体**且**真实存在**的竞赛或者项目。若根据你的知识无法确认，则应该做出提示：“需家长确认本地教育局/协会官网赛事公告”。
+4. 需要特别注意：
+    - 你生成的规划一定要**明确**且**可落地**，避免空洞的描述；如果有行业公认的评价指标，可以列出详细的目标值。
+    - 即使是艺术或者体育类人才画像的学生，生成的规划也要包含学业目标（目标不要定的过高）。
+    - 规划要结合学生基本信息里的**升学路径**信息，因此不同的升学路径（比如大陆本科，美国本科，英联邦本科）对学生的要求可能不一致。
+    - 每一年级的目标一定要和对应年龄段学生的心智能力相匹配，不能制定不切实际的目标。
+5. 输出的规划一定从当前年级开始，一直到12年级（G12）。
+6. 语言风格：简洁、家长友好、鼓励性。
+
+# 输出要求
+1. 只能输出逐年规划，不要输出其它任何无关内容。
+2. 严格按照JSON格式输出；输出格式模板如下：
+{
+     "G9": {
+          "📌 学年定位&目标":"xx",
+          "🛠️ 战略规划":"xx",
+          "⏰ 时间与家庭协同":"xx",
+          "🏆 关键成果":"xx"
+     },
+     "G10": {...},
+     "G11": {...},
+     "G12": {...}
+}
+
+# 你的输出
+[2025-10-11 17:49:19,160] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:261) - 异步调用大模型开始时间2025-10-11 17:49:19
+[2025-10-11 17:49:22,400] [953154] [INFO] - gen_report_wo_db.get_instant_report (gen_report_wo_db.py:205) - 异步调用大模型结束时间2025-10-11 17:49:22
+[2025-10-11 17:49:49,987] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:267) - 异步调用大模型结束时间2025-10-11 17:49:49
+[2025-10-11 17:49:49,987] [953154] [INFO] - run_app.produe_growth_advice (run_app.py:138) - <built-in function id>-report generate time:43.06921029090881
+[2025-10-11 17:49:58,469] [953154] [INFO] - gen_report_wo_db.get_detail_report (gen_report_wo_db.py:267) - 异步调用大模型结束时间2025-10-11 17:49:58
+[2025-10-11 17:49:58,469] [953154] [INFO] - run_app.produe_growth_advice (run_app.py:138) - <built-in function id>-report generate time:39.31159424781799

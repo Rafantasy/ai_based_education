@@ -68,6 +68,7 @@ def get_profile_def(lars_tag):
     #     if lars_tag in item['name']:
     #         return item
      
+    print('profile_def_tag:',lars_tag)
     for item in TP_DATA:
         if lars_tag in item['name']:
             return item
